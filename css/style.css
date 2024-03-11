@@ -1,0 +1,25 @@
+@font-face{
+
+}
+
+header #header-top{
+	background-color: rgb(20,20,20);
+	color: #fff;
+	padding: 10px;
+}
+
+header #nav{
+	text-align: right;
+	padding: 20px;
+	background-color: rgb(20,20,20);
+	color: #fff;
+}
+
+header .col-lg-2 , header .col-lg-1{
+	text-align: center;
+}
+
+
+#hero{
+	text-align: center;
+}
