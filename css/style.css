@@ -2,6 +2,18 @@
 
 }
 
+.btn-main{
+	background : rgb(255,177,28);
+	color: #fff;
+	padding : 9px;
+	margin : 5px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
 header #header-top{
 	background-color: rgb(20,20,20);
 	color: #fff;
@@ -19,7 +31,289 @@ header .col-lg-2 , header .col-lg-1{
 	text-align: center;
 }
 
+/***********************hero*********************
+*************************************************/
 
 #hero{
 	text-align: center;
+	color: #fff;
+	background: url('../images/hero.jpg');
+	background-size: 100%;
+	height: 500px;
+}
+
+#hero div{
+	background-color: #111111aa;
+	height: 100%;
+	text-align: center;
+}
+
+#hero h1{
+	font-weight: 900;
+	font-size: 50px;
+}
+
+#hero h1 b{
+	color: rgb(255,177,28);
+}
+
+
+#hero p {
+	width: 54%;
+	font-weight: bold;
+}
+
+/*************************************************/
+
+
+/***********************why*********************
+*************************************************/
+
+#why{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-align: right;
+	font-weight: bold;
+	font-stretch: expanded;
+}
+
+#why h4{
+	color: rgb(255,177,28);
+}
+
+#why h1 , h4 , h3{
+	font-weight: 500px;
+}
+
+/*************************************************/
+
+/***********************about*********************
+*************************************************/
+
+#about{
+	background :url('../images/about-bg-ground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 670px;
+	color: #fff;
+	text-align: right;
+	padding-top: 130px;
+	padding-left: 50px;
+}
+
+
+
+#about h4{
+	color: rgb(255,177,28);
+}
+
+/*************************************************/
+
+/***********************services*********************
+*************************************************/
+
+#services{
+	background-color: rgb(243,243,243);
+	padding:20px;
+	text-align: right;
+}
+
+#services h4{
+	font-weight: 900px;
+	color: rgb(255,177,28);
+}
+
+#services h2{
+	font-weight: 1500;
+}
+
+#services .col-lg-3{
+	padding : 10px;
+}
+
+#services .col-lg-3 div{
+	width: 100%;
+	background-color: #fff;
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#services .col-lg-3 img{
+	width: 50px;
+	height: 50px;
+}
+
+#services .col-lg-3 h5{
+	color: #000;
+	font-weight: 2000;
+	padding : 5px;
+	margin: 5px;
+
+}
+
+#services .col-lg-3 p{
+	padding : 5px;
+	margin: 5px;
+	color: rgb(135,135,135);
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#services .col-lg-3 a{
+	padding : 5px;
+	margin: 5px;
+	color: rgb(135,135,135);
+}
+
+/*************************************************/
+
+/***********************statics*********************
+*************************************************/
+
+#statics{
+	padding-top : 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: rgb(18,17,12);
+	color  : rgb(118,117,116);
+}
+
+#statics h2{
+	color : #fff;
+}
+
+#statics h4{
+	color : rgb(232,144,18);
+}
+
+#statics .col-lg-2{
+	padding: 10px;
+}
+
+#statics .col-lg-2 div{
+	width: 100%;
+	background-color: rgb(27,26,22); 
+	padding-top: 5px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+#statics .col-lg-2 div img{
+	background-color: rgb(24,22,19);
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top : -30px;
+	border : solid 5px rgb(18,17,12); 
+	border-radius: 50%;
+}
+
+#statics .col-lg-2 div h3{
+	font-size: 35px;
+	font-weight: 700;
+}
+
+#statics .col-lg-2 div b{
+	font-size: 13px;
+	font-weight: 600;
+}
+
+/*************************************************/
+
+/***********************fileds*********************
+*************************************************/
+
+#fileds{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background-color: rgb(239 , 238 , 237 );
+	height: 500px;
+}
+
+#fileds h4{
+	color : rgb(232,144,18);
+} 
+
+#fileds  .item{
+	background-color: silver;
+	width: 16%;
+	height: 250px;
+	float: right;
+	margin: 4px;
+	border-color: rgba( 12,12,12,50 );
+}
+
+#fileds  .item img{
+	width: 200px;
+	height: 250px;
+}
+
+#fileds  .item h5{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+#fileds  .item p{
+	font-size: 12px;
+	font-weight: 500;
+	color: #eee;
+	display: none;
+}
+
+#fileds  .item a{
+	text-decoration: none;
+	color: #eee;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#fileds  .item a:hover{
+	color: rgb(255,177,28);
+}
+
+#fileds .trans{
+	background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+	background-color: #00000040 ;
+	/*opacity: 0.5;*/
+	padding: 10px;
+	font-size: 17px;
+	color: #fff;
+	position: relative;
+	top :-80px;
+	background:linear-gradient(to bottom , #00000020 10%, #000000cc 60%);
+}
+
+#fileds .trans:hover{
+	top :-125px;
+}
+
+/*************************************************/
+
+/*/////////////////////////MOBILE DESIGIN///////////////*/
+@media only screen and (max-width: 800px) {
+
+	#about{
+		background : none;
+		background-color: #222;
+		padding-top : 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 40px;
+		height: auto;
+	}
+
+	#fileds  .item{
+		width: 100%;
+	}
+
 }
