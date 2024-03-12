@@ -49,7 +49,10 @@
 </div>
 
 <div  class="col-lg-1">
-مجالاتنا
+
+
+<a href="workfields.php"> مجالات العمل</a>
+
 </div>
 
 <div  class="col-lg-1">
@@ -57,12 +60,15 @@
 </div>
 
 <div  class="col-lg-1">
-من نحن
+<a href="aboutus.php">من نحن</a>
 </div>
 
 
 <div  class="col-lg-1">
-الرئيسية
+
+<a href="index.php">الرئيسية
+ </a>
+
 </div>
 
 <div  class="col-lg-2" style="background-color: #fff;">
