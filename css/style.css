@@ -222,6 +222,10 @@ header .col-lg-2 , header .col-lg-1{
 	font-weight: 700;
 }
 
+#statics .col-lg-2 div h3:hover{
+	color: rgb(232,144,18);
+}
+
 #statics .col-lg-2 div b{
 	font-size: 13px;
 	font-weight: 600;
