@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -84,6 +84,6 @@
 
 
 
-
+<?php include 'footer.php'; ?>
 </body>
 </html>

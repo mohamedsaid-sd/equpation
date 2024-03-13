@@ -1,84 +1,60 @@
-<header>
-<div id="header-top">
-	
+<header id="header">
+<div id="top">
+
 	<div class="row">
-		<div class="col-lg-1">
-			العربية
+
+		<div  class="col-lg-2">
+			<a href="#"> sudanit2015@gmail.com </a>
 		</div>
 
-		<div class="col-lg-1">
-			EN
+		<div  class="col-lg-2">
+			<a href="#"> 00956-247457745 </a>
 		</div>
 
 		<div style="text-align: right;" class="col-lg-6">
 			7:301m - 4:30pm
 		</div>
 
-		<div  class="col-lg-2">
-			0999298338
+		<div class="col-lg-1">
+			<a href="#"> EN </a>
 		</div>
 
-		<div  class="col-lg-2">
-			sudanit2015@gmail.com
+		<div class="col-lg-1">
+			<a href="#">العربية</a>
 		</div>
+		
 	</div>
-	<hr style="color: gray;background-color: gray;" />
+
+
 </div>
 
-<div id="nav">
+<!-- <hr style="color: gray;background-color: gray;" /> -->
+
+<div class="bottom">
 
 <div class="row">
 
-<div  class="col-lg-2">
-إستعلام وإستفسار
-</div>
+	<div class="col-lg-2" style="background-color: #fff;padding: 0px;">
+		<img src="images/logo/logo.jpg" width="100" height="49">
+		<img src="images/h-divider.png" width="50" height="53" style="float: left;">
+	</div>
 
-<div  class="col-lg-1">
+	<div class="col-lg-8">
+		    <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">الرئيسية</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">خدماتنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"> مجالات العمل </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> الأخبار</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
+            </ul>
+	</div>
 
-</div>
-<div  class="col-lg-1">
-
-</div>
-
-<div  class="col-lg-1">
-اتصل بنا
-</div>
-
-<div  class="col-lg-1">
-الاخبار
-</div>
-
-<div  class="col-lg-1">
-
-
-<a href="workfields.php"> مجالات العمل</a>
-
-</div>
-
-<div  class="col-lg-1">
-خدماتنا
-</div>
-
-<div  class="col-lg-1">
-<a href="aboutus.php">من نحن</a>
-</div>
-
-
-<div  class="col-lg-1">
-
-<a href="index.php">الرئيسية
- </a>
-
-</div>
-
-<div  class="col-lg-2" style="background-color: #fff;">
-<img src="images/logo/logo.jpg" width="100">
-</div>
-
-
-
-
-</div>
+	<div class="col-lg-2">
+		<button class="btn-main"> إستعلام وإستفسار >> </button>
+	</div>
+		
+	</div>
 
 </div>
 

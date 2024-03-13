@@ -1,26 +1,53 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-كن جزءا من عالم أكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>إكوبيشن </h3>
 
 
-            <p>
-            
-              <strong>رقم الهاتف:</strong> 249912322447<br>
-              <strong>البريد الالكتروني الرسمي</strong> info@equipation.sd<br>
+    <div class="row">
 
-              <strong> عنواننا:</strong> الخرطوم - عطبره - بورسودان<br>
-            </p>
-          </div>
+      <div class="col-lg-6">
+        <h2>كن جزءا من عالم أكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد</h2>
+      </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4> القائمه</h4>
-            <ul>
+      <div class="col-lg-6" style="text-align: left;">
+        <br/>
+      <form>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+          <input type="text" class="form-control" placeholder="البريد الالكتروني" name="">  
+          <button type="subdcribe" name="send-email"> اشتراك </button>
+      </div>
+    </form>
+
+      
+    </div>
+  </div>
+
+    <div class="row">
+
+      <div class="col-lg-4">
+        <h4>عنواننا</h4> 
+        <p> الخرطوم - عطبرة - بورتسودان </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h4>البريد الإلكتروني الرسمي</h4>
+        <p> info@equpation.sd </p>
+      </div>
+
+       <div class="col-lg-4">
+        <h4> رقم الهاتف </h4> 
+        <p> 249912322447 </p>
+      </div>
+
+    </div>
+
+    <hr style="color: gray;background-color: gray;" />
+
+    <div class="row"> 
+      <div class="col-lg-9">
+              <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#hero">الرئيسية</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#about">من نحن</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">خدماتنا</a></li>
@@ -29,53 +56,13 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
 
             </ul>
-          </div>
+      </div>
 
+      <div class="col-lg-3" style="text-align: center;vertical-align: center;padding: 10px;">
+      
+          جميع الحقوق محفوظة لدي إيكوبيشن@
 
-
-          <!-- <li><a class="nav-link scrollto" href="#doctors">المنتجات</a></li> -->
-
-
-
-
-          
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>خدماتنا</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#doctors">الاسطول</a></li>
-           
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.jpg" style="width: 280px;"></a></h1>
-
-          </div>
-
-        </div>
       </div>
     </div>
 
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy;  <strong><span> شركة ايكيوبيشن </span>2023</strong>. كل الحقوق محفوظة
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-           تصميم <a href="#">SmartDev</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
   </footer><!-- End Footer -->

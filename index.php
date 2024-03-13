@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- <?php include 'header.php'; ?> -->
+<?php include 'header.php'; ?>
 
 <section id="hero">
 	<div>
@@ -427,11 +427,13 @@
 <img src="images/logo/logo.jpg"/>
 <img src="images/logo/logo.jpg"/>
 <img src="images/logo/logo.jpg"/>
-<img src="images/logo/logo.jpg"/>
 
 </section>
 
 <img src="images/divider2.png" style="width: 100%;border:none;">
+
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>

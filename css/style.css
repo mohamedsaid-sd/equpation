@@ -8,27 +8,62 @@
 	padding : 9px;
 	margin : 5px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 3px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 15px;
 }
 
-header #header-top{
+#header{
+
+}
+
+#header #top{
 	background-color: rgb(20,20,20);
 	color: #fff;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-left:8px;
+	padding-bottom: 3px;
+	font-weight: 400;
+	border-bottom: solid 1px #444; 
+}
+
+#header a{
+	color: #fff;
+}
+
+#header .bottom{
+	background-color: rgb(29,29,29);
+	color: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px
+	padding-left 10px;
+	padding-right: 10px; 
+}
+
+#header .row{
+	padding: 5px;
+}
+
+#header .bottom ul{
+	list-style-type: none;
+}
+
+#header .bottom ul li a{
+	color: #fff ; 
+	float: right;
 	padding: 10px;
+	font-weight: bold;
 }
 
-header #nav{
-	text-align: right;
-	padding: 20px;
-	background-color: rgb(20,20,20);
-	color: #fff;
+#header .bottom ul li a:active{
+	color: rgb(255,177,28);
 }
 
-header .col-lg-2 , header .col-lg-1{
-	text-align: center;
+#header .bottom ul li a:hover{
+	color: rgb(255,177,28);
+	text-decoration: none;
 }
 
 /***********************hero*********************
@@ -351,6 +386,68 @@ header .col-lg-2 , header .col-lg-1{
 
 }
 
+
+/*************************************************/
+
+
+/***********************footer*********************
+*************************************************/
+
+#footer{
+	padding: 20px;
+	text-align: right;
+	background-color: rgb(24,23,20);
+	color: #fff;
+}
+
+#footer .col-lg-6 h2{
+	padding: 20px;
+	width: 90%;
+	height: 120px;
+	font-size: 25px;
+}
+
+#footer .col-lg-6 form{
+	background-color: red;
+	float: left;
+}
+
+#footer .col-lg-6 input{
+	max-width: 250px;
+	padding: 25px;
+}
+
+#footer .col-lg-6 button{
+	background-color: rgb(248,144,18);
+	color: #fff;
+	padding: 10px;
+	border: none;
+	width: 100px;
+}
+
+#footer .col-lg-4{
+	padding: 30px;
+}
+
+#footer .col-lg-4 h4{
+	color: rgb(160,112,54);
+	font-size: 19px;
+}
+
+#footer .col-lg-9{
+	
+}
+
+#footer .col-lg-9 ul{
+	list-style-type: none;
+}
+
+#footer .col-lg-9 ul li a{
+	color: silver ; 
+	float: right;
+	padding: 10px;
+	font-weight: bold;
+}
 
 /*************************************************/
 
