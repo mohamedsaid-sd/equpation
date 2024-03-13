@@ -252,7 +252,10 @@
 
 </section>
 
+
+
 <section id="statics">
+	<br/>
 	
 	<h4> إحصائيات إكوبيشن </h4>
 	<h2> نكشف عن إنجازاتنا بتفاصيل رقمية تكشف قوة الإنجاز والتميز </h2>	
@@ -382,7 +385,53 @@
 </section>
 
 
+<section id="galary">
 
+<h4> معرض الصور </h4>
+<h2> جانب من الاعمال والخدمات التي قدمتها الشركة لعملائها في جميع <br/>ولايات السودان </h2>	
+<br/>
+
+<div class="row">
+
+<div class="col-lg-4">
+<img src="images/fileds/1.jpg">
+<img src="images/fileds/1.jpg">
+<img src="images/fileds/1.jpg">
+</div>
+
+<div class="col-lg-4">
+<img src="images/fileds/1.jpg" style="height:380px;">
+<img src="images/fileds/1.jpg" style="height:380px;">	
+</div>
+
+<div class="col-lg-4">
+<img src="images/fileds/1.jpg">
+<img src="images/fileds/1.jpg">
+<img src="images/fileds/1.jpg">
+</div>
+	
+</div>
+
+</section>
+
+<section id="partener">
+<h4> شركاء النجاح في الريادة </h4>
+<h2> معا نبني مستقبل الإبتكار ونحقق الإنجازات والتميز </h2>
+<br/>
+
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+<img src="images/logo/logo.jpg"/>
+
+</section>
+
+<img src="images/divider2.png" style="width: 100%;border:none;">
 
 </body>
 </html>
