@@ -4,6 +4,7 @@
       <div class="container">
         <div class="row">
 كن جزءا من عالم أكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد
+
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>إكوبيشن </h3>
 
@@ -11,7 +12,9 @@
             <p>
             
               <strong>رقم الهاتف:</strong> 249912322447<br>
-              <strong>الايميل:</strong> info@equipation.sd<br>
+              <strong>البريد الالكتروني الرسمي</strong> info@equipation.sd<br>
+
+              <strong> عنواننا:</strong> الخرطوم - عطبره - بورسودان<br>
             </p>
           </div>
 
@@ -20,9 +23,11 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#hero">الرئيسية</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#about">من نحن</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">الخدمات</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"> مجالات عملنا </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> عملاءنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">خدماتنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"> مجالات العمل </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> الأخبار</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
+
             </ul>
           </div>
 
