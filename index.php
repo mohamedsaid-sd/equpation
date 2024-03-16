@@ -4,11 +4,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-	<title> موقع ايكيوبيشن الجديد </title>
+	<title> أيكوبيشن > الرئيسية </title>
 </head>
 <body>
 
 <?php include 'header.php'; ?>
+
+<section id="pointer">
+	<img src="images/pointer/divider.png"/>
+	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
+</section>
 
 <section id="hero">
 	<div>

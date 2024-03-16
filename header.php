@@ -43,9 +43,9 @@
 		    <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php">الرئيسية</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">خدماتنا</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"> مجالات العمل </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> الأخبار</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">خدماتنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
             </ul>
 	</div>
@@ -59,4 +59,18 @@
 </div>
 
 </header>
+
+<section id="services_list">
+	<ul>
+		<li> <a href="#"> خدمات تاسبس المواقع </a> </li>
+		<li> <a href="#"> | خدمات انظمة التتبع </a> </li>
+		<li> <a href="#"> | خدمات الترحيل </a> </li>
+		<li> <a href="#"> | خدمات الصيانة </a> </li>
+		<li> <a href="#"> | خدمات التوظيف </a> </li>
+		<li> <a href="#"> | خدمات التأجير </a> </li>
+		<li> <a href="#"> | خدمات التشغيل </a> </li>
+		<li> <a href="#"> | خدمات المقاولة </a> </li>
+		<li> <a href="#"> | خدمات تأسيس المواقع </a> </li>
+	</ul>
+</section>
 

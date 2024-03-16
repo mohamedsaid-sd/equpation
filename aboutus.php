@@ -4,16 +4,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-	<title> موقع ايكيوبيشن الجديد </title>
+	<title> أيكوبيشن >  من نحن </title>
 </head>
 <body>
 
 <?php include 'header.php'; ?>
 
-<br/>
-
-<h5 align="right" style="padding-right:20px;"> من نحن ؟  </h5>
-
+<section id="pointer">
+	<img src="images/pointer/divider.png"/>
+	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
+	/ <a href="#"><b> من نحن </b></a>
+</section>
 <section id="about" style="padding-top: 40px; background-color: rgb(239 , 238 , 237 );padding-bottom: 0px;height: 550px;">
 
 <div class="row">
