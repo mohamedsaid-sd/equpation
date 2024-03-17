@@ -46,7 +46,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">خدماتنا</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> إتصل بنا</a></li>
             </ul>
 	</div>
 

@@ -1,6 +1,20 @@
 @font-face{
-
+  font-family: Montserrat-Arabic-Regular ;
+  src : url('../fonts/Montserrat-Arabic-Regular.ttf');
 }
+
+@font-face{
+  font-family: Montserrat-Arabic-Bold ;
+  src : url('../fonts/Montserrat-Arabic-Bold.ttf');
+}
+
+/*section{
+	font-family: Montserrat-Arabic-Bold;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0em;
+}*/
 
 .btn-main{
 	background : rgb(255,177,28);
@@ -12,6 +26,10 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 15px;
+}
+
+.btn-main:hover{
+	background-color: gray;
 }
 
 #header{
@@ -40,6 +58,7 @@
 	padding-bottom: 0px
 	padding-left 10px;
 	padding-right: 10px; 
+
 }
 
 #header .row{
@@ -140,7 +159,8 @@
 
 #hero h1{
 	font-weight: 900;
-	font-size: 50px;
+	font-size: 40px;
+	font-family: Montserrat-Arabic-Bold;
 }
 
 #hero h1 b{
@@ -151,6 +171,8 @@
 #hero p {
 	width: 54%;
 	font-weight: bold;
+	font-size: 15px;
+	font-family: Montserrat-Arabic-Regular;
 }
 
 /*************************************************/
@@ -726,6 +748,155 @@
 }
 
 /*************************************************/
+
+/***********************footer*********************
+*************************************************/
+
+#contact{
+	padding: 25px;
+	text-align: center;
+	background-color:  rgb(239 , 238 , 237 );
+}
+
+#contact h4{
+	color : rgb(255,177,28);
+}
+
+#contact .row{
+	/*margin: 10px;*/
+}
+
+#contact .col-lg-6{
+	padding: 10px;
+}
+
+#contact .col-lg-6 .div{
+	text-align: right;
+	padding: 30px;
+	margin : 10px;
+	font-weight: bold;
+}
+
+#contact .col-lg-6 div{
+	padding: 10px;
+	margin : 10px;
+}
+
+#contact .col-lg-6 h3{
+	font-size: 25px;
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+#contact .col-lg-6 h5{
+	color: #123;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#contact input , #contact textarea{
+	background-color: rgb(250,250,250);
+}
+
+#contact form{
+	font-weight: bold;
+}
+
+#contact form label b{
+	color: red;
+}
+
+/*************************************************/
+
+/***********************success*********************
+*************************************************/
+
+#success{
+	padding: 30px;
+	text-align: center;
+	background-color:  rgb(239 , 238 , 237 );
+}
+
+#success .card{
+	text-align: center;
+	width: 450px;
+	height: 350px;
+	background-color: #fff;
+	padding: 10px;
+}
+
+
+
+#success .card img{
+	text-align: center;
+	width: 150px;
+	height: 130px;
+}
+
+#success .card h5{
+	color: gray;
+	font-size: 18px;
+}
+
+#success .card h6{
+	width: 250px;
+	background-color: rgb(230 , 230 , 230 );
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#success .card h3 , 
+#success .card h5 ,
+#success .card h6 {
+	padding: 10px;
+}  
+
+/*************************************************/
+
+#service-items{
+	padding: 20px;
+	background-color:  rgb(239 , 238 , 237 );
+}
+
+#service-items .row{
+	margin: 20px;
+	padding: 10px;
+	background-color: #fff;
+	text-align: right;
+}
+
+#service-items .row .col-lg-12{
+	padding: 10px;
+}
+
+#service-items .row .col-lg-12 img{
+	width: 100%;
+	height: 330px;
+}
+
+#service-items .row .col-lg-8 , 
+#service-items .row .col-lg-4 {
+	
+} 
+
+#service-items .row .col-lg-8 div , 
+#service-items .row .col-lg-4 div {
+	padding: 15px;
+} 
+
+#service-items .row .col-lg-4 ul{
+	list-style: none;
+}
+
+
+#service-items .row .col-lg-4 img{
+	width: 25px;
+}
+
+#service-items .row .col-lg-4 button{
+	width: 95%;
+}
+
 
 
 /***********************footer*********************
