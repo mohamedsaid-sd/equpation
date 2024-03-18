@@ -175,7 +175,7 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/hero.jpg">
+		<img class="main" src="images/r.jpeg">
 		<img class="icon" src="images/services/1.png">
 	</div>
 
@@ -187,7 +187,7 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/hero.jpg">
+		<img class="main" src="images/r2.jpeg"">
 		<img class="icon" src="images/services/1.png">
 	</div>
 
@@ -199,7 +199,7 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/hero.jpg">
+		<img class="main" src="images/r3.jpeg"">
 		<img class="icon" src="images/services/1.png">
 	</div>
 
@@ -231,7 +231,7 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/hero.jpg">
+		<img class="main" src="images/r4.jpeg">
 		<img class="icon" src="images/services/1.png">
 	</div>
 

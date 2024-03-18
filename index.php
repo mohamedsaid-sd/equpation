@@ -338,7 +338,7 @@
 	</div>
 
 	<div class="item">
-		<img src="images/fileds/1.jpg">
+		<img src="images/fileds/3.jpg">
 		<div class="trans">
 		<h5> المشاريع الزراعية </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
@@ -347,7 +347,7 @@
 	</div>
 
 	<div class="item">
-		<img src="images/fileds/1.jpg">
+		<img src="images/fileds/2.jpg">
 		<div class="trans">
 		<h5> مشاريع إستخراج المعادن </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
@@ -356,7 +356,7 @@
 	</div>
 
 	<div class="item">
-		<img src="images/fileds/1.jpg">
+		<img src="images/fileds/4.jpg">
 		<div class="trans">
 		<h5> مشاريع استخراج الاحجار </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
@@ -365,7 +365,7 @@
 	</div>
 
 	<div class="item">
-		<img src="images/fileds/1.jpg">
+		<img src="images/fileds/5.jpg">
 		<div class="trans">
 		<h5> مشاريع الطرق والجسور </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
@@ -374,10 +374,10 @@
 	</div>
 
 	<div class="item">
-		<img src="images/fileds/1.jpg">
+		<img src="images/fileds/6.jpg">
 		<div class="trans">
 		<h5> مشاريع الإنشاءات </h5>
-		<p style="display: inline;"> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
+		<p > نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
 		<a href="#"> مجالات العمل >> </a>
 		</div>
 	</div>
@@ -399,20 +399,20 @@
 <div class="row">
 
 <div class="col-lg-4">
-<img src="images/fileds/1.jpg">
-<img src="images/fileds/1.jpg">
-<img src="images/fileds/1.jpg">
+<img src="images/fileds/a5.jpeg">
+<img src="images/fileds/a6.jpeg">
+<img src="images/fileds/a5.jpeg">
 </div>
 
 <div class="col-lg-4">
-<img src="images/fileds/1.jpg" style="height:380px;">
-<img src="images/fileds/1.jpg" style="height:380px;">	
+<img src="images/fileds/a3.jpeg" style="height:380px;">
+<img src="images/fileds/a4.jpeg" style="height:380px;">	
 </div>
 
 <div class="col-lg-4">
-<img src="images/fileds/1.jpg">
-<img src="images/fileds/1.jpg">
-<img src="images/fileds/1.jpg">
+<img src="images/fileds/a1.jpeg">
+<img src="images/fileds/a2.jpeg">
+<img src="images/fileds/a2.jpeg">
 </div>
 	
 </div>
