@@ -26,7 +26,7 @@
 	</div>
 </section>
 
-<section id="why">
+<section id="why" style="background-color: rgb(239 , 238 , 237 );">
 
 <div class="row">
 
@@ -43,12 +43,10 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/1.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			أنشطتنا
 		</div>
 
@@ -63,12 +61,10 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/2.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			مشاريعنا
 		</div>
 
@@ -84,12 +80,10 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/3.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			فريقنا
 		</div>
 
