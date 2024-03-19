@@ -158,6 +158,7 @@
 }
 
 #hero h1{
+	padding-top: 150px;
 	font-weight: 900;
 	font-size: 40px;
 	font-family: Montserrat-Arabic-Bold;
@@ -1026,6 +1027,26 @@
 /*/////////////////////////MOBILE DESIGIN///////////////*/
 @media only screen and (max-width: 800px) {
 
+	body{
+		padding: 0px;
+		shape-margin: 0px;
+		background-color: red;
+	}
+
+	#hero{
+		height: 290px;
+		background-size: 100%;
+	}
+
+	#hero h1{
+		padding-top: 70px; 
+		font-size: 20px;
+	}
+
+	#hero p{
+		font-size: 10px;
+	}
+
 	#about{
 		background : none;
 		background-color: #222;
@@ -1037,7 +1058,11 @@
 	}
 
 	#fileds  .item{
-		width: 100%;
+		width: 47%;
 	}
 
+	#galary{
+		clear: both;
+		width: 100%;
+	}
 }
