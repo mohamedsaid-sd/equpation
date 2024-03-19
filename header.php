@@ -43,7 +43,7 @@
 		    <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php">الرئيسية</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">خدماتنا</a></li>
+              <li><i class="bx bx-chevron-right" onclick="fun();" id="service-togle"></i> <a onclick="fun();" href="#">خدماتنا</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> إتصل بنا</a></li>
@@ -73,4 +73,10 @@
 		<li> <a href="#"> | خدمات تأسيس المواقع </a> </li>
 	</ul>
 </section>
+
+<script type="text/javascript">
+	function fun(argument) {
+		$("#services_list").toggle();
+	}
+</script>
 
