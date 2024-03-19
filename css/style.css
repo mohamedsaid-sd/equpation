@@ -184,13 +184,13 @@
 *************************************************/
 
 #why{
+	font-family: Montserrat-Arabic-Regular;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-right: 30px;
 	padding-left: 30px;
 	text-align: right;
 	font-weight: bold;
-	font-stretch: expanded;
 }
 
 #why h4{
@@ -199,6 +199,15 @@
 
 #why h1 , h4 , h3{
 	font-weight: 500px;
+	padding: 5px;
+}
+
+#why img{
+	/*margin: 10px;*/
+	width: 50px;
+	height: 100%;
+	position: relative;
+	top: -10px;
 }
 
 /*************************************************/
