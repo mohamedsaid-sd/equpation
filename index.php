@@ -400,8 +400,8 @@
 </div>
 
 <div class="col-lg-4">
-<img src="images/fileds/a3.jpeg" style="height:380px;">
-<img src="images/fileds/a4.jpeg" style="height:380px;">	
+<img class="center" src="images/fileds/a3.jpeg" style="height:380px;">
+<img class="center" src="images/fileds/a4.jpeg" style="height:380px;">	
 </div>
 
 <div class="col-lg-4">
