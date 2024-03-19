@@ -2,11 +2,18 @@ $(document).ready(function () {
   var navListItems = $('div.setup-panel div a'),
           allWells = $('.setup-content'),
           allNextBtn = $('.nextBtn'),
-  		  allPrevBtn = $('.prevBtn');
+  		  allPrevBtn = $('.prevBtn'),
+        navlable = $('.stepwizard-step p');
 
   allWells.hide();
 
+  navlable.click(function(e){
+    navlable.removeClass('btn-warning').addClass('btn-default');
+    $navlable.addClass('btn-warning');
+  })
+
   navListItems.click(function (e) {
+    // alert("clicked");
       e.preventDefault();
       var $target = $($(this).attr('href')),
               $item = $(this);
