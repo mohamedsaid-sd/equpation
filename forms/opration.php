@@ -7,9 +7,156 @@
 
 	<title> أيكوبيشن > الخدمات >  خدمة التشغيل </title>
 </head>
+<script type="text/javascript">
+      // deal with period  
+   function select_brand(){
+     var type = document.getElementById("brand_id").value;
+      if(type == "hand"){
+      document.getElementById("brand_idhide").style.display = "block";
+      }else{
+      document.getElementById("brand_idhide").value = "";
+      document.getElementById("brand_idhide").style.display = "none";
+      }
+   }
+
+    function select_size(){
+     var type = document.getElementById("size_id").value;
+      if(type == "hand"){
+      document.getElementById("size_idhide").style.display = "block";
+      }else{
+      document.getElementById("size_idhide").value = "";
+      document.getElementById("size_idhide").style.display = "none";
+      }
+   }
+
+   function select_model(){
+     var type = document.getElementById("model_id").value;
+      if(type == "hand"){
+      document.getElementById("model_idhide").style.display = "block";
+      }else{
+      document.getElementById("model_idhide").value = "";
+      document.getElementById("model_idhide").style.display = "none";
+      }
+   }
+
+  function select_year(){
+     var type = document.getElementById("year_of_manufacture_id").value;
+      if(type == "hand"){
+      document.getElementById("year_of_manufacture_idhide").style.display = "block";
+      }else{
+      document.getElementById("year_of_manufacture_idhide").value = "";
+      document.getElementById("year_of_manufacture_idhide").style.display = "none";
+      }
+   }
+
+   function select_condition(){
+     var type = document.getElementById("condition_id").value;
+      if(type == "hand"){
+      document.getElementById("condition_idhide").style.display = "block";
+      }else{
+      document.getElementById("condition_idhide").value = "";
+      document.getElementById("condition_idhide").style.display = "none";
+      }
+   }
+
+  function select_state(){
+     var type = document.getElementById("state_id").value;
+      if(type == "hand"){
+      document.getElementById("state_idhide").style.display = "block";
+      }else{
+      document.getElementById("state_idhide").value = "";
+      document.getElementById("state_idhide").style.display = "none";
+      }
+   }
+
+   function select_advance(){
+     var type = document.getElementById("advance_id").value;
+      if(type == "hand"){
+      document.getElementById("advance_idhide").style.display = "block";
+      }else{
+      document.getElementById("advance_idhide").value = "";
+      document.getElementById("advance_idhide").style.display = "none";
+      }
+   }
+
+   function select_catogry(){
+     var type = document.getElementById("category_id").value;
+      if(type == "hand"){
+      document.getElementById("category_idhide").style.display = "block";
+      }else{
+      document.getElementById("category_idhide").value = "";
+      document.getElementById("category_idhide").style.display = "none";
+      }
+   }
+
+   function select_hourly_work(){
+    var variable = document.getElementById("hourly_work_id").value;
+    if(variable == "hand" || variable == "handx"){
+      document.getElementById("hourly_work_idhide").style.display = "block";
+    }else{
+      document.getElementById("hourly_work_idhide").value = "";
+      document.getElementById("hourly_work_idhide").style.display = "none";
+    }
+   }
+
+   function select_gorvernment_fees(){
+    var variable = document.getElementById("gorvernment_fees_id").value;
+    if(variable == "hand" || variable == "handx"){
+      document.getElementById("gorvernment_fees_idhide").style.display = "block";
+    }else{
+      document.getElementById("gorvernment_fees_idhide").value = "";
+      document.getElementById("gorvernment_fees_idhide").style.display = "none";
+    }
+   }
+
+   function select_availablity(){
+    var variable = document.getElementById("availability_id").value;
+    if(variable == "hand" || variable == "handx"){
+      document.getElementById("availability_idhide").style.display = "block";
+    }else{
+      document.getElementById("availability_idhide").value = "";
+      document.getElementById("availability_idhide").style.display = "none";
+    }
+   }
+
+   function select_hair_operator(){
+    var variable = document.getElementById("hair_operator_id").value;
+    if(variable == "hand"){
+      document.getElementById("hair_operator_idhide").style.display = "block";
+    }else{
+      document.getElementById("hair_operator_idhide").value = "";
+      document.getElementById("hair_operator_idhide").style.display = "none";
+    }
+   }
+
+   function select_maintenance(){
+    var variable = document.getElementById("maintenance_id").value;
+    if(variable == "hand" || variable == "handx"){
+      document.getElementById("maintenance_idhide").style.display = "block";
+    }else{
+      document.getElementById("maintenance_idhide").value = "";
+      document.getElementById("maintenance_idhide").style.display = "none";
+    }
+   }
+
+   function select_contracts(){
+    var variable = document.getElementById("cotracts_id").value;
+    if(variable == "hand"){
+      document.getElementById("cotracts_idhide").style.display = "block";
+    }else{
+      document.getElementById("cotracts_idhide").value = "";
+      document.getElementById("cotracts_idhide").style.display = "none";
+    }
+   }
+
+   function select_clearences(){
+    document.getElementById("clearances_idhide").style.display = "block";
+   }
+</script>
 <body>
 
 <?php include 'header.php'; ?>
+
 <section id="pointer">
 	<img src="../images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="../images/pointer/home.png"></a>
@@ -17,28 +164,40 @@
 </section>
 
 <section id="forms">
-	
-<div class="container">
-	
-</div>,
+	<br/><br/>
 <div class="container">
   
+ <div class="form-head">
+   <!--  <img style="width: 100%;height: 100px;" src="../images/hero.jpg"> -->
+    <h1 align="center"> طلب التشغيل </h1>
+  </div>
+
 <div class="stepwizard col-lg-12">
+
+
+
     <div class="stepwizard-row setup-panel">
+
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-warning btn-circle">1</a>
-        <p> بيانات المعدة </p>
+        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b> بيانات المعدة</a>
+       
       </div>
+
       <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-        <p> بيانات موقع الآلية </p>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  بيانات موقع الآلية</a>
+       
       </div>
+
       <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-        <p> بيانات العميل </p>
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  بيانات العميل</a>
+      
       </div>
+
     </div>
   </div>
+
+  <br/>
+  <br/>
   
   <form role="form" action="#" method="post">
     <div class="row setup-content" id="step-1">
