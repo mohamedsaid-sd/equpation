@@ -4,7 +4,7 @@
 	<div class="row">
 
 		<div  class="col-lg-2">
-			<a href="#"> sudanit2015@gmail.com </a>
+			<a href="#">info@equpation.sd</a>
 		</div>
 
 		<div  class="col-lg-2">

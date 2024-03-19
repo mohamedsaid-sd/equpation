@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
   	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title> أيكوبيشن > الرئيسية </title>
+	<title> إكوبيشن > الرئيسية </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
 <section id="hero">
 	<div>
 	
- 	<h1> مرحبا بكم في منصة <b> إيكوبيشن </b> <br/> <b> الإلكترونية </b> </h1>
+ 	<h1> مرحبا بكم في منصة <b> إكوبيشن </b> <br/> <b> الإلكترونية </b> </h1>
  	<center>
 	<p> نعمل إكوبيشن علي تنفيذ مشاريع المقاولات المدنية والبنى التحتية ومقاولات التعدين، مسلحة في ذلك بأحدث الآليات والمعدات وبفريق من المهندسين والفنيين الأكفاء المهرة، لتنفيذ المشاريع بأعلى جودة مطلوبة </p>
 	</center>
