@@ -1065,6 +1065,10 @@
 /*/////////////////////////MOBILE DESIGIN///////////////*/
 @media only screen and (max-width: 800px) {
 
+	#header .bottom , #header #top {
+		display: none;
+	}
+
 	#services .col-lg-3 , #statics .col-lg-2{
 		width: 50%;
 	}
@@ -1097,7 +1101,6 @@
 	body{
 		padding: 0px;
 		shape-margin: 0px;
-		background-color: red;
 	}
 
 	#hero{
