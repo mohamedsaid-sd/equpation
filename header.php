@@ -25,13 +25,16 @@
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
               <li class="dropdown"><a href="#"><span> خدماتنا </span>  <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="contract_request.php">طلب مقاولة</a></li>
-              <li><a href="rental_request.php">طلب تأجير</a></li>
-              <li><a href="job_request.php">طلب توظيف</a></li>
-              <li><a href="run_request.php">طلب تشغيل</a></li>
-              <li><a href="maintenance_request.php">طلب صيانة</a></li>
-              <li><a href="deportation_request.php">طلب ترحيل</a></li>
-            </ul>
+    <li> <a href="#"> خدمات تاسبس المواقع </a> </li>
+    <li> <a href="#">  خدمات انظمة التتبع </a> </li>
+    <li> <a href="#">  خدمات الترحيل </a> </li>
+    <li> <a href="#">  خدمات الصيانة </a> </li>
+    <li> <a href="#">  خدمات التوظيف </a> </li>
+    <li> <a href="#">  خدمات التأجير </a> </li>
+    <li> <a href="#">  خدمات التشغيل </a> </li>
+    <li> <a href="#">  خدمات المقاولة </a> </li>
+    <li> <a href="#">  خدمات تأسيس المواقع </a> </li>
+  </ul>
           </li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
@@ -194,9 +197,16 @@
 	</ul>
 </section>
 
+<div class="modal fade" id="form_modal" aria-hidden="true">
+<div class="modal-dialog">
+  <form method="POST" action="#">
+    <h3 align="center"> إضافة عميل جديد </h3>
+  </form>
+</div>
+</div>
 
 
-	<div class="modal fade" id="form_modal" aria-hidden="false">
+	<!-- <div class="modal fade" id="form_modal" aria-hidden="true">
 		<div class="modal-dialog">
 		
 		<form method="POST" action="customers.php?invoice_number=<?php echo $_GET['invoice_number']; ?>">
@@ -252,7 +262,7 @@
   	  	 </form>
 		</div>
 	</div>
-
+ -->
 
 <script type="text/javascript">
 	function fun(argument) {

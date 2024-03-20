@@ -1009,17 +1009,18 @@
 	text-align: right;
 	background-color: rgb(24,23,20);
 	color: #fff;
+	font-family:  Montserrat-Arabic-Regular;
 }
 
 #footer .col-lg-6 h2{
 	padding: 20px;
 	width: 90%;
 	height: 120px;
-	font-size: 25px;
+	font-size: 18px;
+	text-align: center;
 }
 
 #footer .col-lg-6 form{
-	background-color: red;
 	float: left;
 }
 
@@ -1064,6 +1065,85 @@
 
 /*/////////////////////////MOBILE DESIGIN///////////////*/
 @media only screen and (max-width: 800px) {
+
+/*---------------------------------------------------------
+mobilel General
+----------------------------------------------------------*/
+
+ h2 , h4 {
+	font-size: 20px;
+}
+
+/*---------------------------------------------------------
+mobilel fileds 
+----------------------------------------------------------*/
+
+#fildes{
+	padding: 5px;
+}
+
+#fildes h4 , #fildes h2{
+	font-size: 20px;
+}
+
+#fildes .row{
+margin: 10px;
+}
+
+#fildes .row ul{
+	padding: 0px;
+}
+
+#fildes .row .col-lg-4 ,
+#fildes .row .col-lg-3 ,
+#fildes .row .col-lg-5 {
+	padding: 0px;
+	margin: 5px;
+}
+
+
+/*---------------------------------------------------------
+mobilel why 
+----------------------------------------------------------*/
+
+#why , #about {
+	background-color: rgb(20,20,20);
+	color: #fff;
+}
+
+/*---------------------------------------------------------
+mobilel footer
+----------------------------------------------------------*/
+#footer{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#footer .row .col-lg-6 form{
+	width: 90%;
+	text-align: center;
+	position: relative;
+	top: -15px;
+}
+
+#footer .row .col-lg-4 p{
+	display: block;
+	text-align: center;
+}
+
+#footer .col-lg-6 , #footer .col-lg-4{
+	padding: 0px;
+	margin: 0px;
+}
+
+#footer .col-lg-9 ul li a{
+	font-size: 10px;
+}
+
+#our-messages .row .col-lg-2 .icon{
+		display: none;
+	}
 
 	#header .bottom , #header #top {
 		display: none;
@@ -1110,11 +1190,12 @@
 
 	#hero h1{
 		padding-top: 70px; 
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	#hero p{
 		font-size: 10px;
+		width: 85%;
 	}
 
 	#about{

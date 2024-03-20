@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-
-	<meta charset="utf-8">
-  	<meta content="width=device-width, initial-scale=1" name="viewport">
-
-	<title> إكوبيشن > الرئيسية </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-  <!-- Vendor CSS Files -->
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="vendor/css/style.css" rel="stylesheet"/>
-	
+<title> إكوبيشن > الرئيسية </title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="vendor/css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 
 <?php include 'header.php'; ?>
+
+
+<!--------------------------ADDING NEW CUSTOMER---------->
+	<div class="modal fade" id="form_modal" aria-hidden="true">
+		<div class="modal-dialog">
+		
+		<form method="POST" action="customers.php?invoice_number=<?php echo $_GET['invoice_number']; ?>">
+
+		<h3 align="center"> إضافة عميل جديد </h3>	
+  	  	  <table id="table" style="width: 400px; margin: auto;overflow-x:auto; overflow-y: auto;">
+  	  	 <tr>
+
+         <td> أسم العميل:</td>
+         <td><input type="text" name="c_name" size="10" placeholder=" أسم العميل" required></td>
+          </tr>
+          <tr id="row1">
+         <td> رقم الهاتف :</td>
+         <td><input type="text" name="c_phone"  size="10" placeholder="رقم الهاتف" required ></td>
+        </tr>
+        <tr>
+        <td> العنوان :</td>
+          <td><input type="text" name="c_address" size="10" placeholder="العنوان العميل "  required></td>
+        </tr>
+
+        <td> رقم بطاقة التامين :</td>
+          <td><input type="number" name="card" size="10" placeholder="Card  0123456789"><br/>
+          	<font color="red"> * حقل اختياري </font></td>
+        </tr>
+
+        <tr>
+        	<td> شركة التامين :</td>
+          <td>
+          	<select name="company">
+          		<option value=""> -- اختار شركة التامين -- </option>
+          		<option value="0"> -- خارج التامين -- </option>
+          		<?php
+
+          		$select_company = mysqli_query( $con , "SELECT * FROM `company`");
+          		while ($row = mysqli_fetch_array($select_company )) {
+          			echo "<option>". $row['name'] ."</option>";
+          		}
+
+          		?> 
+          	</select><br/>
+          	<font color="red"> * حقل اختياري </font></td>
+          </td>
+        </tr>
+        </tr>
+  
+        <tr>
+          <td><button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> إغلاق </button></td>
+          <td> <input type="submit" name="insert_customer" class="btn btn-success btn-large" style="width: 225px" value=" حفظ "> </td>
+        </tr>
+
+  	  	 </table> 
+        <br>
+  	  	 </form>
+		</div>
+	</div>
+<!-------------------------------------------------------->
 
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
@@ -33,7 +89,7 @@
 	</div>
 </section>
 
-<section id="why" style="background-color: rgb(239 , 238 , 237 );">
+<section id="why" style="">
 
 <div class="row">
 
@@ -58,7 +114,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام عن مختلف أنواع الخام
+			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام
 		</div>
 			
 		</div>
@@ -208,7 +264,7 @@
 
 	<div class="col-lg-3">
 		<div>
-			<b> o </b> <br/>
+			<b> <img src="images/services/5.png"> </b> <br/>
 			<h5> خدمات التوظيف  </h5>
 			<p> 
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
@@ -220,7 +276,7 @@
 
 	<div class="col-lg-3">
 		<div>
-			<b> o </b> <br/>
+			<b> <img src="images/services/6.png"> </b> <br/>
 			<h5> خدمات الصيانة  </h5>
 			<p> 
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
@@ -232,7 +288,7 @@
 
 	<div class="col-lg-3">
 		<div>
-			<b> o </b> <br/>
+			<b> <img src="images/services/7.png"> </b> <br/>
 			<h5> خدمات الترحيل </h5>
 			<p> 
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
@@ -244,7 +300,7 @@
 
 	<div class="col-lg-3">
 		<div>
-			<b> o </b> <br/>
+			<b> <img src="images/services/8.png"> </b> <br/>
 			<h5> تأسيس المواقع </h5>
 			<p> 
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
@@ -446,17 +502,4 @@
 
 
 </body>
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-  <!-- Vendor JS Files -->
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
-
 </html>

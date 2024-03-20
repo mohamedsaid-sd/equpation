@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
 	<title> أيكوبيشن >  الاخبار </title>
+		<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="vendor/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 

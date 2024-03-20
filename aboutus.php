@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
 	<title> إكوبيشن >  من نحن </title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="vendor/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,7 +18,7 @@
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ <a href="#"><b> من نحن </b></a>
 </section>
-<section id="about" style="padding-top: 40px; background-color: rgb(239 , 238 , 237 );padding-bottom: 0px;height: 550px;">
+<section id="about" style="padding-top: 40px;padding-bottom: 0px;height: 550px;">
 
 <div class="row">
 
@@ -84,9 +87,9 @@
 	
 </section>
 
-<img src="images/divider.png" style="width: 100%;border:none;">
+<img src="images/divider.png">
 
-<section id="why" style="background-color: rgb(239 , 238 , 237 );">
+<section id="why">
 
 <div class="row">
 
@@ -103,17 +106,15 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/1.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			أنشطتنا
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام عن مختلف أنواع الخام
+			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام
 		</div>
 			
 		</div>
@@ -123,12 +124,10 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/2.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			مشاريعنا
 		</div>
 
@@ -144,12 +143,10 @@
 		<div class="row">
 
 		<div class="col-lg-1">
-			<br/>
-			o
+			<img src="images/why/3.png">
 		</div>
 
 		<div class="col-lg-2">
-			<br/>
 			فريقنا
 		</div>
 
@@ -289,9 +286,7 @@
 	</div>
 	<br/><br/>
 </section>
-
 <img src="images/divider.png" style="width: 100%;border:none;">
-
 <section id="team">
 
 	<div class="row">

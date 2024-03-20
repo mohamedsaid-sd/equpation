@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
 	<title> أيكوبيشن >  مجالات العمل </title>
+	<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="vendor/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -25,7 +28,7 @@
 			<img src="images/fileds/1.png">
 		</div>
 
-		<div class="col-lg-4" style="padding: 20px;">
+		<div class="col-lg-4">
 			<h5> <b> 01 </b> مشاريع إستخراج المعادن </h5>
 			<p> تعمل شركة Equiption في مشاريع إستحراج الذهب في مختلف مناطق السودان </p>
 		</div>
@@ -43,7 +46,7 @@
 	</div>
 
 	<div class="row"> 
-		<div class="col-lg-4" style="padding: 20px;">
+		<div class="col-lg-4">
 			<h5> <b> 02 </b> مشاريع إستخراج الاحجار </h5>
 			<p> توفر Equipation الأليات اللازمة لتشغيل المحاجر وتعمل الشركة في </p>
 		</div>
@@ -84,7 +87,7 @@
 	</div>
 
 	<div class="row"> 
-		<div class="col-lg-4" style="padding: 20px;">
+		<div class="col-lg-4">
 			<h5> <b> 04 </b> مشاريع الطرق والجسور </h5>
 			<p> تعمل Equipation علي تنفيذ مشاريع الطرق والجسور ومصارف المياء مسلحة بأحدث الآليات وبواصفات عالمية </p>
 		</div>
@@ -125,7 +128,7 @@
 
 
 	<div class="row"> 
-		<div class="col-lg-4" style="padding: 20px;">
+		<div class="col-lg-4">
 			<h5> <b> 06 </b> المشاريع الوطنية </h5>
 			<p> انطلاقا من مسؤوليتها تجاه البلاد والعباد نفذت Equipation عددا من المشاريع الوطنية </p>
 		</div>
