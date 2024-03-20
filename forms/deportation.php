@@ -209,160 +209,102 @@
   		يرجي ملئ جميع بياات ومواصفات المعدة بشكل صحيح ...
 		</div>
 
-		<div class="row">
-
-       <div class="col-md-6 form-group">
-                <label> نوع المعدة </label>
-                
-                  <select class="form-control mr-1" name="machine_type" id="machine_type">
-                    <option value="" disabled selected> -- اختار نوع المعدة  -- </option>
-                    <option value="حفار"> حفار </option>
-                    <option value="لوبد">  لوبد </option>
-                    <option value="لودر">  لودر </option>
-                    <option value="دوزر">  دوزر </option>
-                    <option value="فوركلفت">  فوركلفت </option>
-                    <option value="درداقة">  درداقة </option>
-                    <option value="كرين">  كرين </option>
-                    <option value="تنكر ماء ">  تنكر ماء </option>
-                    <option value="قريدر">  قريدر </option>
-                    <option value=" تانكر جاز">   تانكر جاز </option>
-                    <option value="سطحة">  سطحة </option>
-                    <option value="مولد">  مولد </option>
-                    <option value="ماكينة تخريم">  ماكينة تخريم </option>
 
 
+          <div class="row">
+
+                <div class="col-md-4 form-group">
+                  <label>نوع الآلية المرحلة</label>
+                  <select class="form-control mr-1" name="machine" id="machine" onchange="select_type();" >
+                    <option value="" disabled selected> -- اختار النوع  -- </option>
+                    <option> دفار </option>
+                    <option> دوزر </option>
+                    <option> مولد </option>
+                    <option value="hand"> يدوي </option>
                   </select>
+                  <input id="machinehide" name="machinehide" type="text" class="form-control" placeholder=" ادخل نوع الالية يدوي "  style="display:none">
                 </div>
 
-       <div class="form-group col-md-6">
-         <label>     مقاس المعدة </label>
-         <input type="text" class="form-control" id="inputDate" name="size_id"/></div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                  <label>مقاس الآلية</label>
+                  <input type="number" step="0.01" id="comprossor" name="comprossor" class="form-control" placeholder="ادخل حجم كمبروسير ">
+                </div>
 
-        </div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                <label></label>
+                <input type="number" step="0.01" id="generator" name="generator" class="form-control" placeholder="ادخل حجم مولد ">
+                </div>
 
+              </div>
+
+              <div class="row">
+                
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <label></label>
+                <input type="number" step="0.01" id="welding_machine" name="welding_machine" class="form-control" placeholder="ادخل حجم  مكنة لحام  ">
+               </div>
+
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <label></label>
+                <input type="number" step="0.01" id="excavator" name="excavator" class="form-control" placeholder="ادخل حجم حفار">
+              </div>
+
+
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                 <label>ماركة الآلية المرحلة</label>
+                 <select class="form-control mr-1" name="model" id="model" onchange="select_brand();" >
+                    <option disabled selected> --  اختار الماركة  -- </option>
+                    <option> GAT </option>
+                    <option> JCB </option>
+                    <option> ATLAS CAPS </option>
+                    <option value="hand"> يدوي </option>
+                  </select>    
+                  <input id="modelhide" name="modelhide" type="text" class="form-control" placeholder=" ادخل ماركة الالية يدوي "  style="display:none">
+                </div>
+
+              
+                </div>
+
+     <!-- Start Input Start Time -->
      <div class="row">
 
-      <div class="form-group col-md-6">
-        <label>     ماركة المعدة </label>
-         <input type="text" class="form-control" id="inputDate" name="brand_id"/></div>
-
-    <div class="form-group col-md-6">
-        <label>      سنة الصنع </label>
-        <input type="text" class="form-control " id="year_of_manufacture_idhide" name="year_of_manufacture_idhide" placeholder="ادخل سنة الصنع" >     
-      </div>
-
-  	</div>
-
-  	<div class="row">
-
-     <div class="form-group col-md-6">
-            <label>  الترخيص </label>
-            <select class="form-control" id="" name="">
-              <option value="" disabled selected> </option>
-              <option value="ترخيص ساري ">  ترخيص ساري  </option>
-              <option value="ترخيص منتهي ">  ترخيص منتهي  </option>
-              <option value="غير مرخصة ">   غير مرخصة  </option>
-
-            </select>
-      </div>
-
-          <div class="form-group col-md-6">
-            <label>  التأمين </label>
-            <select class="form-control" id="insurance_type" name="insurance_type">
-              <option value="" disabled selected> </option>
-              <option value=".تأمين شامل  ">  .تأمين شامل    </option>
-              <option value=".تأمين هندسي  ">   .تأمين هندسي  </option>
-              <option value=".تأمين إجباري   ">   .تأمين إجباري   </option>
-              <option value=".غير مؤمنة    "> .غير مؤمنة   </option>
-
-
-            </select>
-          </div>
-
-      </div>
-        
-
-        <div class="row">
-
-      <div class="col-md-6 form-group  mt-3 mt-md-0">  
-      <label>  إضافة أي ملحقات مع المعدة  </label>
-
-      <input type="text" id="description" name="description" class="form-control" placeholder="   
-إضافة أي ملحقات مع المعدة "> <font color="red">  </font> 
-          </div> 
-
-
-        <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label> مجال العمل </label>
-                  <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();">
-                    <option disabled selected>  </option>
-                    <option> التعدين </option>
-                    <option>  الاسمنت </option>
-                    <option>  الزراعة </option>
-                    <!-- <option value="hand">  ادخال يدوي </option> -->
-                  </select>
-
-                  <!-- <input id="work_fieldhide" name="work_fieldhide" type="text" class="form-control" placeholder=" ادخل مجال العمل  يدويا " style="display: none;"> -->
-          </div>
-      </div>
-
-      <div class="row"> 
-      	
-
-          <div class="form-group col-md-6">
-          <label> مدة العقد:  </label>
-          <select class="form-control" id="cotracts_id" name="cotracts_id" onchange="select_contracts();">
-            <option value="" disabled selected>  </option>
-            <option> لا يوجد قيد </option>
-            <option> عقود طويلة (لا تقل عن 12 شهر) </option>
-            <option> عقود متوسطة (لا تقل عن 3 شهور)  </option>
-            <option> عقود قصيرة (لا تزيد عن شهر)  </option>
-            <option value="hand"> اضافة قيد جديد </option>
+     <div class="col-md-4 form-group">
+        <label>وزن الآلية (طن) </label>
+       
+          <select class="form-control mr-1" name="wieght" id="wieght" onchange="select_weight();" >
+          <option value="" disabled selected> -- اختار الوزن -- </option>  
+            <option value="10">10</option>
+            <option value="12">20</option>
+            <option value="15">30</option>
+            <option value="hand">ادخال يدوي</option>
           </select>
-        <input  id="cotracts_idhide" name="cotracts_idhide" type="text" class="form-control" placeholder="حدد القيد" style="display: none;">
-        </div>
+          <input id="wieghthide" name="wieghthide" type="text" class="form-control" placeholder=" ادخل الوزن يدوي " style="display: none;" />
+      </div>
 
-        <div class="form-group col-md-6">
-          <label> المكان </label>
-          <select class="form-control" id="state_id" name="state_id" onchange="select_state();">
-            <option value="" disabled selected>  </option>
-            <option> لا يوجد قيود </option>
-            <option> داخل السودان فقط </option>
-            <option> كل ولايات السودان عدا ... </option>
-            <option> ولاية محددة .... </option>
-            <option value="hand"> اضافة قيد مكان جديد </option>
+   
+      <div class="form-group col-md-4">
+        <label>  مقاس الالية المطلوبة للترحيل </label>
+        <input id="lowbed" name="lowbed" type="number" step="0.01" class="form-control" placeholder="ادخل مقاس اللوبيد"/>
+      </div>
+
+      <div class="form-group col-md-4">
+      <label></label>
+     <input id="truck" name="truck" type="number" step="0.01" class="form-control" placeholder="ادخل مقاس الدفار"/>
+      </div>
+  
+  </div>
+
+    <div class="form-group col-md-4">
+     <label>   سطحة </label>
+          <select class="form-control mr-1" name="trailer" id="trailer" >
+            <option value="zs" disabled selected> --  اختار -- </option>
+            <option value="zs">  zs </option>
+            <option value="zy">  zy </option>
+          
           </select>
-        <input type="text" id="state_idhide" name="state_idhide" class="form-control" placeholder="حدد الولاية" style="display: none;">
-        </div>
-
-        </div>
-
-        <div class="row">
-
-        <div class="form-group col-md-6">
-          <label> تعيين المشغلين  </label>
-            <select class="form-control mr-1" id="hair_operator_id" name="hair_operator_id" onchange="select_hair_operator();">
-               <option value="" disabled selected>  </option>
-               <option> تعيين بواسطة إكوبيشن </option>
-               <option> تعيين بواسطتي </option>
-               <option value="hand"> إضافة قيد جديد </option>
-             </select>
-        <input id="hair_operator_idhide" name="hair_operator_idhide" type="text" class="form-control" placeholder=" حدد القيد  " style="display: none;">
-        </div>
-
-
-        <div class="form-group col-md-6">
-          <label>  الجهات المفضلة في العمل: </label>
-          <select class="form-control" id="category_id" name="category_id" onchange="select_catogry();">
-            <option value="" disabled selected> </option>
-            <option> لا قيود في العمل    </option>
-            <option>  العمل مع الشركات فقط </option>
-            <!-- <option  value="hand"> اضافة قيد جديد </option> -->
-          </select>
-        <input type="text" id="category_idhide" name="category_idhide" class="form-control" placeholder="حدد القيد" style="display: none;">
-        </div>
-
     </div>
+       
+
 
         <div style="text-align: left;">
 
@@ -384,12 +326,18 @@
       يرجي ملئ جميع بياات موقع الآلية بشكل صحيح ...
     </div>
 
-        <div class="row">
 
-          <div class="form-group col-md-6">
-           <label>  الولاية </label>
+
+    <br/><h3 for="textAreaRemark">معلومات الموقع</h3>
+
+
+      <div class="row">
+
+        <div class="col-md-4 form-group">
+          <label></label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-           <select class="form-control mr-1" id="state_id" name="">
+             <select class="form-control mr-1" id="state" name="state" required>
+               <option value="" disabled selected> -- حدد  الولاية -- </option>
                <option value="ولاية الخرطوم">ولاية الخرطوم </option>
                <option value="ولاية الجزيرة">ولاية الجزيرة</option>
                <option value="ولاية البحر الأحمر">ولاية البحر الأحمر </option>
@@ -410,39 +358,106 @@
 
 
              </select>
-             </div>
-             
-          
-         </div>
-
-         <div class="col-md-6 form- mt-3 mt-md-0">
-              <br/>
-            <input type="text" class="form-control" name="address" id="address" placeholder="   اقرب مدينة    ">
-          </div>
-
-          </div>
-
-          <div class="row">
-
-          <div class="col-md-6 form- mt-3 mt-md-0">
-            <br/>
-            <input type="text" class="form-control" name="nearest_road" id="nearest_road" placeholder="مسافة أقرب طريق معبَّد">
-          </div>
-
-          <div class="col-md-6 form- mt-3 mt-md-0">
-              <label>  توفر الشبكة </label>
-           <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="ready" name="network">
-               <option value="" disabled selected> -- حدد نوع الشبكة -- </option>
-               <option value="متاح"> متاح  </option>
-               <option value="غير متاح"> غير متاح</option>
-             </select>
-           
            </div>
+        </div>
 
-          </div>  
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <label></label>
+          <input type="text" class="form-control" id="zone" name="zone" placeholder=" المدينة " >
+        </div>
+
+        <div class="form-group col-md-4">
+          <label></label>
+          <input type="text" class="form-control" id="workplace" name="workplace" placeholder="الشركة " >
+        </div>
+
       </div>
 
+      <div class="row">
+      
+      <div class="col-md-4 form-group mt-3 mt-md-0">
+        <label></label>
+        <textarea class="form-control" id="validationTextarea" name="description" placeholder="  وصف كتابي دقيق للموقع " ></textarea>    
+      </div>
+
+      <div class="col-md-4 form-group mt-3 mt-md-0">
+      <label></label>
+      <input type="text" class="form-control" id="location" name="location" placeholder="  الموقع ">
+      </div>
+       
+      <div class="form-group col-md-4">
+      <label></label>
+        <input type="number" class="form-control" id="phone" name="phone" placeholder=" رقم التواصل 1    مثال 00249123000000" >  
+    </div>
+         
+   
+         <div class="form-group col-md-4">
+          <label></label>
+         <input type="number" class="form-control" id="mobile" name="mobile" placeholder=" رقم التواصل 2   مثال 00249123000000" >  
+         </div>
+
+    </div>
+
+
+
+
+          <h3 for="textAreaRemark"> جهة توصيل الآلية </h3>
+
+
+          <div class="row">
+        <div class="col-md-4 form-group">
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="des_state" name="des_state" required>
+               <option value="" disabled selected> -- حدد  الولاية -- </option>
+               <option value="ولاية الخرطوم">ولاية الخرطوم </option>
+               <option value="ولاية الجزيرة">ولاية الجزيرة</option>
+               <option value="ولاية البحر الأحمر">ولاية البحر الأحمر </option>
+               <option value="ولاية كسلا">ولاية كسلا </option>
+               <option value="ولاية القضارف">ولاية القضارف </option>
+               <option value="ولاية سنار">ولاية سنار </option>
+               <option value="ولاية النيل الأبيض">ولاية النيل الأبيض </option>
+               <option value="ولاية النيل الأزرق">ولاية النيل الأزرق </option>
+               <option value="الولاية الشمالية">الولاية الشمالية </option>
+               <option value="ولاية نةر النيل">ولاية نةر النيل </option>
+               <option value="ولاية غرب كردفان">ولاية غرب كردفان </option>
+               <option value="ولاية جنوب كردفان">ولاية جنوب كردفان </option>
+               <option value="ولاية شمال دارفور">ولاية شمال دارفور </option>
+               <option value="ولاية غرب دارفور">ولاية غرب دارفور </option>
+               <option value="ولاية جنوب دارفور">ولاية جنوب دارفور </option>
+               <option value="ولاية شرق دارفور">ولاية شرق دارفور </option>
+               <option value="ولاية وسط دارفور">ولاية وسط دارفور </option>
+             </select>
+           </div>
+        </div>
+        
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="text" class="form-control" id="zone" name="des_zone" placeholder=" المدينة " >
+        </div>
+
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="workplace" name="des_workplace" placeholder="   الشركة " >
+        </div>
+
+      </div>
+
+      <div class="row">
+      
+      <div class="col-md-4 form-group mt-3 mt-md-0">
+        <label></label>
+        <textarea class="form-control" id="validationTextarea" name="des_description" placeholder="  وصف كتابي دقيق للموقع " ></textarea>    
+      </div>
+       
+      <div class="form-group col-md-4">
+        <label></label>  
+        <input type="number" class="form-control" id="phone" name="des_phone" placeholder="    رقم التواصل 1   مثال 00249123000000" >  
+      </div>
+         
+   
+         <div class="form-group col-md-4">
+          <label></label>
+         <input type="number" class="form-control" id="mobile" name="des_mobile" placeholder="   رقم التواصل 2   مثال 00249123000000" >  
+         </div>
+              </div>
 
       <br/>
 
@@ -458,45 +473,45 @@
 
 
 
+
+
+
+
     <div class="row setup-content" id="step-3">
       <div class=" col-lg-12 col-xs-6 col-md-offset-3">
 
 
-           <div class="row">
-
-<div class="col-md-6 form-">
-  <label></label>
-  <input type="text" name="full_name" class="form-control" id="full_name" placeholder="   الاسم  ثلاثي" required>
-</div>
-
-<div class="col-md-6 form-">
-  <label></label>
-  <input type="text" name="phone_number" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000" required>
-</div>
-
-</div>
-
-<div class="row">
   
-<div class="col-md-6 form-">
-  <label></label>
-  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    رقم الواتساب  مثال 00249123000000" required>
-</div>
+    <div class="row">
 
-      <div class="col-md-6 form- mt-3 mt-md-0">
+                <div class="col-md-4 form-group">
                   <label></label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل " required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="  الاسم  ثلاثي" >
                 </div>
 
-</div>
+                <div class="col-md-4 form-">
+                  <label></label>
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000" required>
+                </div>
 
-      <div class="row">
+                <div class="col-md-4 form-">
+                  <label></label>
+                  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    رقم الواتساب  مثال 00249123000000" required>
+                </div>               
 
+              </div>
 
+              <div class="row">
 
-                <div class="col-md-6 form-group">
+               <div class="col-md-4 form-group mt-3 mt-md-0">
+                <label></label>
+                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل " >
+                </div>
+
+                <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label>   نوع العلاقة بالموقع </label> 
                 <select class="form-control mr-1" name="job" id="job" onchange="" required>
+                <option value="" disabled selected> -- اختار  -- </option>
                 <option value="مالك"> مالك   </option>
                 <option value="شريك"> شريك </option>
                 <option value="مدير"> مدير </option>
@@ -504,55 +519,76 @@
                 <option value="مشرف"> مشرف </option>
                 <option value="وكيل"> وكيل </option>
                 <option value="وسيط"> وسيط </option>
-                </select> 
-                  </div>
 
-              <div class="col-md-6 form-">
-                <label> الجهة التابع لها </label> 
-                <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" required>
+                </select> 
+                      </div>
+
+              <div class="col-md-4 form-group">
+                <label> الجهة  التابع لها </label> 
+                <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" >
+                <option value="" disabled selected> -- اختار الجهة-- </option>
                 <option value="company"> شركة </option>
                 <option value="individual"> فرد </option>
                 </select>  
-                <input id="sidehide" type="text" name="company_name" class="form-control" placeholder=" ادخل اسم الشركة يدوي " style="display: none;" />
-              </div>  
+                <input id="work_forhide" name="work_forhide" type="text" class="form-control" placeholder=" ادخل اسم الشركة يدوي " style="display: none;" />
+              </div>
 
             </div>
 
-
-
-
             <div class="row">
 
-              <div class="col-md-6 form- mt-3 mt-md-0">
-              <label> هل  سبق لك العمل معنا </label> 
-                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" required>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+              <label>هل  سبق لك العمل معنا </label> 
+                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" >
+                <option value="yes" disabled selected> -- اختار الاجابة -- </option>
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
-
-               <input id="wwushide" type="text" class="form-control" placeholder=" في اي موقع عملت معنا " style="display: none;" />
-               <!-- required style="display:none" -->
-               
-              
-
+               <input id="previoushide" name="previoushide" type="text" class="form-control" placeholder=" في اي موقع عملت معنا " style="display: none;" />
               </div>
 
-
-              <div class="col-md-6 form- mt-3 mt-md-0">
-              <div class="form-">
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+              <div class="form-group">
               <label for="exampleFormControlSelect2">طريقة التعرف علينا</label>
-              <select  class="form-control" name="know" id="exampleFormControlSelect2">
+              <select  class="form-control" id="exampleFormControlSelect2" name="know">
                 <option value="media"> الفيسبوك </option>
                 <option value="media"> التويتر </option>
                 <option value="media"> الانستغرام </option>
                 <option value="friend"> عن طريق صديق </option>
-                <option value="advertisemen"> عن طريق الاعلانات  </option>
+                <option value="advertisemen">  الاعلانات  </option>
                 <option value="other">  اخري  </option>
               </select>
               </div>
              </div>
 
+              </div>
+
+
+                   <div class="row">
+
+              <div class="col-md-3 form-group">
+        <label>  رخصة الآلة </label>
+        <input type="file" name="Machinelicense" class="form-control">
       </div>
+              
+
+      <div class="col-md-3 form-group">
+        <label>  شهادة العميل </label>
+        <input type="file" name="Customercertificate" class="form-control">
+      </div>
+      <div class="col-md-3 form-group">
+        <label>  الترخيص </label>
+        <input type="file" name="Authorization" class="form-control">
+      </div>
+      <div class="col-md-3 form-group">
+        <label>  ملفات اخري </label>
+        <input type="file" name="otherdocument" class="form-control">
+      </div>
+      </div>
+      <br>
+  
+
+
 
       <br/><br/>
 
