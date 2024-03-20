@@ -24,19 +24,24 @@
 
     <div class="row">
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <h4> <i class="icon-map-marker"> </i>  عنواننا</h4> 
         <p> الخرطوم - عطبرة - بورتسودان </p>
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <h4> <i class="icon-envelope-alt"> </i> البريد الإلكتروني الرسمي</h4>
         <p> info@equpation.sd </p>
       </div>
 
-       <div class="col-lg-4">
+       <div class="col-lg-3">
         <h4> <i class="icon-phone"> </i> رقم الهاتف </h4> 
         <p> 249912322447 </p>
+      </div>
+
+       <div class="col-lg-3" style="color: rgb(160,112,54);">
+        <h4>  تابعنا على </h4> 
+        <p> <i class="icon-twitter-sign"> </i> <i class="icon-upload-alt"> </i> <i class="icon-camera-retro"> </i> <i class="icon-github"> </i> <i class="icon-google-plus-sign"> </i> </p>
       </div>
 
     </div>
@@ -78,3 +83,4 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>

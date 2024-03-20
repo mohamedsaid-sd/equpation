@@ -637,8 +637,7 @@
 	width: 50px;
 }
 
-/***********************footer*********************
-*************************************************/
+/*************************************************/
 
 /***********************fildes*********************
 *************************************************/
@@ -762,7 +761,7 @@
 
 /*************************************************/
 
-/***********************footer*********************
+/***********************contact*********************
 *************************************************/
 
 #contact{
@@ -948,6 +947,13 @@
 
 #forms .btn{
 	font-size: 15px;
+	margin: 5px;
+}
+
+#forms .container form button{
+	float: left;
+	margin: 10px;
+	direction: rtl;
 }
 
 /*************************************************/
@@ -1037,13 +1043,17 @@
 	width: 100px;
 }
 
-#footer .col-lg-4{
+#footer .col-lg-3{
 	padding: 30px;
 }
 
-#footer .col-lg-4 h4{
+#footer .col-lg-3 h4{
 	color: rgb(160,112,54);
 	font-size: 19px;
+}
+
+#footer .col-lg-3 i{
+	margin: 5px;
 }
 
 #footer .col-lg-9{
@@ -1127,12 +1137,12 @@ mobilel footer
 	top: -15px;
 }
 
-#footer .row .col-lg-4 p{
+#footer .row .col-lg-3 p{
 	display: block;
 	text-align: center;
 }
 
-#footer .col-lg-6 , #footer .col-lg-4{
+#footer .col-lg-6 , #footer .col-lg-3{
 	padding: 0px;
 	margin: 0px;
 }

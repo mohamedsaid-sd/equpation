@@ -8,6 +8,7 @@
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="vendor/css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 

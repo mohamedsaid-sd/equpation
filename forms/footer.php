@@ -3,15 +3,15 @@
     <div class="row">
 
       <div class="col-lg-6">
-        <h2>كن جزءا من عالم أكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد</h2>
+        <h2>كن جزءا من عالم إكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد</h2>
       </div>
 
-      <div class="col-lg-6" style="text-align: left;">
+      <div class="col-lg-6">
         <br/>
       <form>
       <div class="input-group">
         <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
+          <div class="input-group-text"><i class="icon-envelope-alt"> </i></div>
         </div>
           <input type="text" class="form-control" placeholder="البريد الالكتروني" name="">  
           <button type="subdcribe" name="send-email"> اشتراك </button>
@@ -25,17 +25,17 @@
     <div class="row">
 
       <div class="col-lg-4">
-        <h4>عنواننا</h4> 
+        <h4> <i class="icon-map-marker"> </i>  عنواننا</h4> 
         <p> الخرطوم - عطبرة - بورتسودان </p>
       </div>
 
       <div class="col-lg-4">
-        <h4>البريد الإلكتروني الرسمي</h4>
+        <h4> <i class="icon-envelope-alt"> </i> البريد الإلكتروني الرسمي</h4>
         <p> info@equpation.sd </p>
       </div>
 
        <div class="col-lg-4">
-        <h4> رقم الهاتف </h4> 
+        <h4> <i class="icon-phone"> </i> رقم الهاتف </h4> 
         <p> 249912322447 </p>
       </div>
 
@@ -64,3 +64,17 @@
     </div>
 
   </footer><!-- End Footer -->
+
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/main.js"></script>

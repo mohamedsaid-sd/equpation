@@ -8,6 +8,7 @@
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="vendor/css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 
@@ -101,7 +102,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="forms/opration.php"><button class="btn-main"> تقديم طلب الحدمةd </button></a>
+			<a href="opration.php"><button class="btn-main"> تقديم طلب الحدمةd </button></a>
 			</div>
 			</div>
 		</div>

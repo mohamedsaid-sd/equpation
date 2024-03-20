@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-
-	<title> أيكوبيشن > الخدمات >  خدمة التأجير </title>
+<title> أيكوبيشن > الخدمات >  خدمة التأجير </title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link href="vendor/css/style.css" rel="stylesheet"/>
 </head>
 <script type="text/javascript">
       // deal with period  
@@ -158,8 +161,8 @@
 <?php include 'header.php'; ?>
 
 <section id="pointer">
-	<img src="../images/pointer/divider.png"/>
-	<a href="index.php"><img style="height: 30px;" src="../images/pointer/home.png"></a>
+	<img src="images/pointer/divider.png"/>
+	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ <a href="#"><b> الخدمات </b></a> / <a href="#"><b> خدمة التأجير </b></a>
 </section>
 
@@ -547,8 +550,10 @@
       <br/>
 
           <div style="text-align: left;">
-          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> السابق  </button>
+          
           <button class="btn btn-warning nextBtn btn-lg pull-right" type="button"> تأكيد وإستمرار -> </button>
+
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق  </button>
           </div>
         </div>
       </div>
@@ -662,8 +667,10 @@
       <br/><br/>
 
       <div style="text-align: left;">
-          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق </button>
+          
           <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب </button>
+
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق </button>
         </div>
         </div>
       </div>
@@ -672,7 +679,7 @@
 </section>
 
 
-<img src="../images/divider2.png" style="width: 100%;border:none;">
+<img src="images/divider2.png" style="width: 100%;border:none;">
 <?php include 'footer.php'; ?>
 <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../js/script.js"></script>

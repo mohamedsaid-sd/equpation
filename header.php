@@ -187,13 +187,12 @@
 	<ul>
 		<li> <a href="#"> خدمات تاسبس المواقع </a> </li>
 		<li> <a href="#"> | خدمات انظمة التتبع </a> </li>
-		<li> <a href="#"> | خدمات الترحيل </a> </li>
-		<li> <a href="#"> | خدمات الصيانة </a> </li>
+		<li> <a href="deportation.php"> | خدمات الترحيل </a> </li>
+		<li> <a href="maintenance.php"> | خدمات الصيانة </a> </li>
 		<li> <a href="#"> | خدمات التوظيف </a> </li>
-		<li> <a href="#"> | خدمات التأجير </a> </li>
-		<li> <a href="#"> | خدمات التشغيل </a> </li>
-		<li> <a href="#"> | خدمات المقاولة </a> </li>
-		<li> <a href="#"> | خدمات تأسيس المواقع </a> </li>
+		<li> <a href="rental.php"> | خدمات التأجير </a> </li>
+		<li> <a href="opration.php"> | خدمات التشغيل </a> </li>
+		<li> <a href="contract.php"> | خدمات المقاولة </a> </li>
 	</ul>
 </section>
 
