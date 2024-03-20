@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
+
 	<meta charset="utf-8">
   	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<title> إكوبيشن > الرئيسية </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="vendor/css/style.css" rel="stylesheet"/>
+	
 </head>
 <body>
 
@@ -435,7 +442,21 @@
 
 <?php include 'footer.php'; ?>
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
 </body>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
 </html>
