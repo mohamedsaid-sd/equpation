@@ -11,6 +11,16 @@
 /*-------------------------------------------------------------
 General
 ---------------------------------------------------------------*/
+h4{
+	font-family: Montserrat-Arabic-Regular ;
+	font-size: 20px;
+}
+
+h2{
+	font-family: Montserrat-Arabic-Bold ;
+	font-size: 25px;
+	font-weight: normal;
+}
 
 
 .btn-main{
