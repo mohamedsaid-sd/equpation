@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<title> أيكوبيشن > تاكيد الطلب </title>
+	<title> إكوبيشن > تاكيد الطلب </title>
 		<meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">

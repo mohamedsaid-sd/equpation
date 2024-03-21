@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
-	<title> أيكوبيشن > الخدمات >  خدمة التشغيل </title>
+	<title> إكوبيشن > الخدمات >  خدمة التشغيل </title>
 </head>
 <script type="text/javascript">
       // deal with period  
