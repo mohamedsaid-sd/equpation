@@ -8,13 +8,10 @@
   src : url('../fonts/Montserrat-Arabic-Bold.ttf');
 }
 
-/*section{
-	font-family: Montserrat-Arabic-Bold;
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 36px;
-	letter-spacing: 0em;
-}*/
+/*-------------------------------------------------------------
+General
+---------------------------------------------------------------*/
+
 
 .btn-main{
 	background : rgb(255,177,28);
@@ -131,6 +128,7 @@
 *************************************************/
 
 #pointer{
+	font-family: Montserrat-Arabic-Regular;
 	text-align: right;
 	clear: both;
 }
