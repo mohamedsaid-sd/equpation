@@ -194,6 +194,7 @@
 		<li> <a href="opration.php"> | خدمات التشغيل </a> </li>
 		<li> <a href="contract.php"> | خدمات المقاولة </a> </li>
 	</ul>
+  <hr/>
 </section>
 
 <div class="modal fade" id="form_modal" aria-hidden="true">

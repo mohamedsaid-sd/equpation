@@ -1,4 +1,12 @@
+@font-face{
+  font-family: Montserrat-Arabic-Regular ;
+  src : url('../../fonts/Montserrat-Arabic-Regular.ttf');
+}
 
+@font-face{
+  font-family: Montserrat-Arabic-Bold ;
+  src : url('../../fonts/Montserrat-Arabic-Bold.ttf');
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

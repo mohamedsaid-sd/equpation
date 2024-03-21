@@ -52,6 +52,7 @@
 }
 
 #header .bottom{
+	font-family: Montserrat-Arabic-Regular;
 	background-color: rgb(29,29,29);
 	color: #fff;
 	padding-top: 0px;
@@ -73,7 +74,7 @@
 	color: #fff ; 
 	float: right;
 	padding: 10px;
-	font-weight: bold;
+	
 }
 
 #header .bottom ul li a:active{
@@ -92,6 +93,7 @@
 *************************************************/
 
 #services_list{
+	font-family: Montserrat-Arabic-Regular;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -100,6 +102,7 @@
 
 #services_list ul{
 	list-style: none;
+	padding-bottom: 15px;
 }
 
 #services_list ul li{
@@ -111,7 +114,10 @@
 	color: #888;
 	font-weight: bold;
 	text-decoration: none;
-	padding: 5px;
+	padding-top : 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 #services_list ul li a:hover{
