@@ -24,6 +24,7 @@ h2{
 
 
 .btn-main{
+	font-family: Montserrat-Arabic-Regular ;
 	background : rgb(255,177,28);
 	color: #fff;
 	padding : 9px;
@@ -31,7 +32,6 @@ h2{
 	border: none;
 	border-radius: 3px;
 	text-align: center;
-	font-weight: bold;
 	font-size: 15px;
 }
 
@@ -39,6 +39,7 @@ h2{
 	background-color: gray;
 }
 
+/*---------------------------------------------------------*/
 #header{
 
 }
@@ -161,9 +162,11 @@ h2{
 #hero{
 	text-align: center;
 	color: #fff;
-	background: url('../images/hero.jpg');
+	background: url('../images/hero/hero.jpg');
 	background-size: 100%;
 	height: 500px;
+	background-position: center;
+	background-clip: content-box;
 }
 
 #hero div{
@@ -230,13 +233,14 @@ h2{
 *************************************************/
 
 #about{
+	font-family: Montserrat-Arabic-Regular;
 	background :url('../images/about-bg-ground.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 670px;
 	color: #fff;
 	text-align: right;
-	padding-top: 130px;
+	padding-top: 100px;
 	padding-left: 50px;
 }
 
@@ -252,6 +256,7 @@ h2{
 *************************************************/
 
 #services{
+	font-family: Montserrat-Arabic-Regular;
 	background-color: rgb(243,243,243);
 	padding:20px;
 	text-align: right;
@@ -291,11 +296,11 @@ h2{
 }
 
 #services .col-lg-3 h5{
+	font-family:Montserrat-Arabic-Bold;
 	color: #000;
 	font-weight: 2000;
 	padding : 5px;
 	margin: 5px;
-
 }
 
 #services .col-lg-3 p{
@@ -307,9 +312,11 @@ h2{
 }
 
 #services .col-lg-3 a{
+	font-family:Montserrat-Arabic-Bold;
 	padding : 5px;
 	margin: 5px;
-	color: rgb(135,135,135);
+	color: rgb(35,35,35);
+	font-size: 15px;
 }
 
 /*************************************************/
@@ -318,6 +325,7 @@ h2{
 *************************************************/
 
 #statics{
+	font-family:Montserrat-Arabic-Bold;
 	padding-top : 20px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -393,21 +401,23 @@ h2{
 	width: 16%;
 	height: 250px;
 	float: right;
-	margin: 4px;
+	margin: 3px;
 	border-color: rgba( 12,12,12,50 );
 }
 
 #fileds  .item img{
-	width: 200px;
+	width: 100%;
 	height: 250px;
 }
 
 #fileds  .item h5{
-	font-size: 16px;
+	font-family:Montserrat-Arabic-Bold;
+	font-size: 13px;
 	margin-bottom: 15px;
 }
 
 #fileds  .item p{
+	font-family:Montserrat-Arabic-Regular;
 	font-size: 12px;
 	font-weight: 500;
 	color: #eee;
@@ -415,6 +425,7 @@ h2{
 }
 
 #fileds  .item a{
+	font-family:Montserrat-Arabic-Regular;
 	text-decoration: none;
 	color: #eee;
 	font-size: 13px;
@@ -433,12 +444,12 @@ h2{
 	font-size: 17px;
 	color: #fff;
 	position: relative;
-	top :-80px;
+	top :-75px;
 	background:linear-gradient(to bottom , #00000020 10%, #000000cc 60%);
 }
 
 #fileds .trans:hover{
-	top :-125px;
+	/*top :-125px;*/
 }
 
 /*************************************************/
@@ -503,6 +514,7 @@ h2{
 *************************************************/
 
 #our-story{
+	font-family:Montserrat-Arabic-Regular;
 	padding: 20px;
 	text-align: right;
 	background-color: rgb(239 , 238 , 237 );
@@ -521,6 +533,9 @@ h2{
 	padding : 30px;
 }
 
+#our-story .col-lg-6 .title{
+	padding-right: 100px;
+}
 
 /*************************************************/
 
@@ -549,6 +564,7 @@ h2{
 *************************************************/
 
 #our-messages{
+	font-family : Montserrat-Arabic-Regular ;
 	background-color: rgb(239 , 238 , 237 );
 	padding: 20px;
 	text-align: right;
@@ -573,8 +589,8 @@ h2{
 	width: 60px;
 	height: 60px;
 	position: relative;
-	top: -130px;
-	right: 130px;
+	top: -65%;
+	right: 82%;
 	border: 2px solid gray;
 	border-radius: 50%;
 }
@@ -591,7 +607,7 @@ h2{
 
 #our-messages .row .col-lg-10 .row .col-lg-4 img ,
 #our-messages .row .col-lg-10 .row .col-lg-6 img{
-	width: 30px;
+	width: 40px;
 }
 
 
@@ -602,6 +618,7 @@ h2{
 *************************************************/
 
 #messter{
+	font-family: Montserrat-Arabic-Regular;
 	padding : 20px;
 	text-align: center;
 	color: #fff;
@@ -616,6 +633,7 @@ h2{
 
 #messter b{
 	font-size: 16px;
+	font-family: Montserrat-Arabic-Bold;
 }
 
 #messter i{
@@ -629,6 +647,7 @@ h2{
 *************************************************/
 
 #team{
+	font-family: Montserrat-Arabic-Regular;
 	background-color: rgb(239 , 238 , 237 );
 	text-align: right;
 	padding-top: 50px;
@@ -657,6 +676,7 @@ h2{
 *************************************************/
 
 #fildes{
+	font-family:  Montserrat-Arabic-Regular ;
 	text-align: center;
 	background-color: rgb(239 , 238 , 237 );
 	padding-bottom: 20px;
@@ -664,6 +684,10 @@ h2{
 
 #fildes h4{
 	color:  rgb(255,177,28);
+}
+
+#fildes h5{
+	font-family:  Montserrat-Arabic-Bold ;
 }
 
 #fildes h2{
@@ -719,9 +743,14 @@ h2{
 *************************************************/
 
 #news{
+	font-family: Montserrat-Arabic-Regular ;
 	padding: 20px;
 	text-align: center;
 	background-color:  rgb(239 , 238 , 237 );
+}
+
+#news p {
+	color: #777;
 }
 
 #news h4{
@@ -753,6 +782,7 @@ h2{
 #news .row h6 , #news .row h5 , p {
  	text-align: right;
  	padding: 10px;
+
 }
 
 #news .row h5{
@@ -779,6 +809,7 @@ h2{
 *************************************************/
 
 #contact{
+	font-family: Montserrat-Arabic-Regular ;
 	padding: 25px;
 	text-align: center;
 	background-color:  rgb(239 , 238 , 237 );
@@ -838,6 +869,7 @@ h2{
 *************************************************/
 
 #success{
+	font-family: Montserrat-Arabic-Regular ;
 	padding: 30px;
 	text-align: center;
 	background-color:  rgb(239 , 238 , 237 );
@@ -880,6 +912,7 @@ h2{
 /*************************************************/
 
 #service-items{
+	font-family: Montserrat-Arabic-Regular ;
 	padding: 20px;
 	background-color:  rgb(239 , 238 , 237 );
 }
@@ -968,6 +1001,12 @@ h2{
 	float: left;
 	margin: 10px;
 	direction: rtl;
+}
+
+#forms input , #forms select , #forms textarea  {
+	background-color: #eeeeee44;
+	font-size: 17px;
+	padding: 5px;
 }
 
 /*************************************************/
@@ -1088,7 +1127,7 @@ h2{
 /*************************************************/
 
 /*/////////////////////////MOBILE DESIGIN///////////////*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
 /*---------------------------------------------------------
 mobilel General
@@ -1132,8 +1171,32 @@ mobilel why
 
 #why , #about {
 	background-color: rgb(20,20,20);
-	color: #fff;
 }
+
+#why .col-lg-2{
+	padding : 10px;
+}
+
+ #why  h2{
+color: #fff;
+}
+
+#why .col-lg-2 {
+	color: #fff;
+	padding-right: 30px;
+}
+
+#why img{
+	margin-right: 15px;
+}
+
+#why p{
+	padding : 10px;
+	font-weight: normal;
+	color: #aaa;
+	font-family: Montserrat-Arabic-Regular;
+}
+
 
 /*---------------------------------------------------------
 mobilel footer
@@ -1165,12 +1228,39 @@ mobilel footer
 	font-size: 10px;
 }
 
+/*-----------------------------------------------
+mobile partener 
+-------------------------------------------------*/
+
+#partener img{ 
+width: 20%;
+margin: 2px;
+}
+
+/*------------------------------------------------*/
+
+/*--------------------------------------------------
+mobile our story
+---------------------------------------------------*/
+
+#our-story .col-lg-6{
+	padding: 20px;
+}
+
+#our-story .col-lg-6 .title{
+	padding-right: 10px;
+}
+
 #our-messages .row .col-lg-2 .icon{
 		display: none;
 	}
 
 	#header .bottom , #header #top {
 		display: none;
+	}
+
+	#services .col-lg-3 h5 , #services .col-lg-3 a {
+		font-size: 15px;
 	}
 
 	#services .col-lg-3 , #statics .col-lg-2{
@@ -1222,14 +1312,11 @@ mobilel footer
 		width: 85%;
 	}
 
-	#about{
-		background : none;
-		background-color: #222;
-		padding-top : 50px;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 40px;
-		height: auto;
+	#about {
+		padding-top: 20px;
+		background: none;
+		background-color: #000000dd;
+		height: inherit;
 	}
 
 	#fileds  .item{

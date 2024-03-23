@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
 <title> إكوبيشن > الرئيسية </title>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -116,7 +114,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام
+			<p> لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام </p>
 		</div>
 			
 		</div>
@@ -134,7 +132,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة 
+			<p> لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة </p>
 		</div>
 			
 		</div>
@@ -153,7 +151,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية 
+			<p> تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية  </p>
 		</div>
 			
 		</div>
@@ -182,12 +180,12 @@
 		<p>
 			شركة إكوبيشن للاستثمار المحدودة، تأسست في عام 2021م كشركة سودانية واعدة في مجال خدمات التعدين، حيث تقدم مجموعة شاملة ومتكاملة من الخدمات في هذا القطاع، بدأت الشركة رحلتها بتأجير وتشغيل المعدات والآليات الثقيلة، وسرعان ما تمكنت من توسيع نطاق عملها لتشمل مقاولات التعدين وتأسيس وإدارة وتشغيل المناجم في المشاريع التعدينية، 
 
-			<ul>
-				<li> نعتبر من الشركات القليلة التي تقدم خدمات النقل ضمن نطاق اعمالها </li> 
-				<li> نتميز بجودة عالية وكفاءة في تقديم هذة الخدمات </li> 
-			</ul>
-
-			<button class="btn-main"> تعرف اكثر علي منصتنا >> </button> شاهد الفيديو
+			<br/>
+				 <br/><img width="25" src="images/our-message/black-check.png"> نعتبر من الشركات القليلة التي تقدم خدمات النقل ضمن نطاق اعمالها  
+				 <br/><img width="25" src="images/our-message/black-check.png"> نتميز بجودة عالية وكفاءة في تقديم هذة الخدمات  
+			
+			<br/><br/>
+			<button class="btn-main"> تعرف اكثر علي منصتنا <i class="icon-arrow-left"></i> </button> شاهد الفيديو
 
 		</p>
 	</div>
@@ -215,7 +213,7 @@
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
 			</p>
 			<br/>
-			<a href="services.php?id=tracking"> استعراض الخدمة >> </a>
+			<a href="services.php?id=tracking"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -227,19 +225,19 @@
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
 			</p>
 			<br/>
-			<a href="services.php?id=contract"> استعراض الخدمة >> </a>
+			<a href="services.php?id=contract"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
-		<div>
+		<div> 
 			<b> <img src="images/services/3.png"> </b> <br/>
 			<h5> خدمات التشغيل </h5>
 			<p> 
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
 			</p>
 			<br/>
-			<a href="services.php?id=opration"> استعراض الخدمة >> </a>
+			<a href="services.php?id=opration"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -252,7 +250,7 @@
 				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
 			</p>
 			<br/>
-			<a href="services.php?id=rental"> استعراض الخدمة >> </a>
+			<a href="services.php?id=rental"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -393,7 +391,7 @@
 		<div class="trans">
 		<h5> المشاريع الوطنية </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -402,7 +400,7 @@
 		<div class="trans">
 		<h5> المشاريع الزراعية </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -411,7 +409,7 @@
 		<div class="trans">
 		<h5> مشاريع إستخراج المعادن </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -420,7 +418,7 @@
 		<div class="trans">
 		<h5> مشاريع استخراج الاحجار </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -429,7 +427,7 @@
 		<div class="trans">
 		<h5> مشاريع الطرق والجسور </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
@@ -438,20 +436,19 @@
 		<div class="trans">
 		<h5> مشاريع الإنشاءات </h5>
 		<p > نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل >> </a>
+		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
 		</div>
 	</div>
 
 
 <hr style="clear: both;" />
 
-<button style="clear: both;" class="btn-main"> إكتشف مجالات العمل >> </button>
+<button style="clear: both;" class="btn-main"> إكتشف مجالات العمل <i class="icon-arrow-left"></i> </button>
 
 </section>
 
-
 <section id="galary">
-
+<br/>
 <h4> معرض الصور </h4>
 <h2> جانب من الاعمال والخدمات التي قدمتها الشركة لعملائها في جميع <br/>ولايات السودان </h2>	
 <br/>
@@ -459,20 +456,20 @@
 <div class="row">
 
 <div class="col-lg-4">
-<img src="images/fileds/a5.jpeg">
-<img src="images/fileds/a6.jpeg">
-<img src="images/fileds/a5.jpeg">
+<img src="images/galary/a5.jpeg">
+<img src="images/galary/a6.jpeg">
+<img src="images/galary/a5.jpeg">
 </div>
 
 <div class="col-lg-4">
-<img class="center" src="images/fileds/a3.jpeg" style="height:380px;">
-<img class="center" src="images/fileds/a4.jpeg" style="height:380px;">	
+<img class="center" src="images/galary/a3.jpeg" style="height:380px;">
+<img class="center" src="images/galary/a4.jpeg" style="height:380px;">	
 </div>
 
 <div class="col-lg-4">
-<img src="images/fileds/a1.jpeg">
-<img src="images/fileds/a2.jpeg">
-<img src="images/fileds/a2.jpeg">
+<img src="images/galary/a1.jpeg">
+<img src="images/galary/a2.jpeg">
+<img src="images/galary/a2.jpeg">
 </div>
 	
 </div>

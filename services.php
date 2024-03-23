@@ -3,7 +3,7 @@
 <head>
 	<title> أيكوبيشن > الخدمات </title>
 			<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,18 +12,38 @@
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+<?php 
+$id = $_GET['id'];
+include 'header.php'; ?>
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> خدمة التشغيل </b>  </a>
+	/ 
+
+	<?php if($id == "contract"){ ?>
+	<a href="#"><b> خدمات المقاولة </b></a>
+	<?php } elseif ($id == "rental") { ?>
+	<a href="#"><b>  خدمات التأجير </b></a>
+	<?php } elseif ($id == "opration") { ?>
+	<a href="#"><b> خدمة التشغيل </b></a>
+	<?php } elseif ($id == "employement") { ?>
+	<a href="#"><b> خدمات التوظيف </b></a>
+	<?php } elseif ($id == "maintenance") { ?>
+	<a href="#"><b> خدمات الصيانة </b></a>
+	<?php } elseif ($id == "transport") { ?>
+	<a href="#"><b> خدمات الترحيل </b></a>
+	<?php } elseif ($id == "tracking") { ?>
+	<a href="#"><b> خدمات انظمة التتبع </b></a>
+	<?php } elseif ($id == "construct") { ?>
+	<a href="#"><b> خدمات تاسيس المواقع </b></a>
+	<?php } ?>
 </section>
 
 <section id="service-items">
 
 	<?php 
 
-	$id = $_GET['id'];
+	
 
 	?>
 	
@@ -48,7 +68,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<a href="contract.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -75,7 +95,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<a href="rental.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -102,7 +122,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="opration.php"><button class="btn-main"> تقديم طلب الحدمةd </button></a>
+			<a href="opration.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -129,7 +149,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<a href="#"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -156,7 +176,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<a href="maintenance.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -183,7 +203,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<a href="deportation.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
 			</div>
 			</div>
 		</div>
@@ -210,7 +230,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<!-- <button class="btn-main"> تقديم طلب الحدمة </button> -->
 			</div>
 			</div>
 		</div>
@@ -237,7 +257,7 @@
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<button class="btn-main"> تقديم طلب الحدمة </button>
+			<!-- <button class="btn-main"> تقديم طلب الحدمة </button> -->
 			</div>
 			</div>
 		</div>

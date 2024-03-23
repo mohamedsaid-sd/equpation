@@ -1,13 +1,13 @@
- <div id="topbar">
+<div id="topbar">
  	<div class="container d-flex justify-content-between">
  		<div class="contact-info d-flex align-items-center">
 
- 		<i class="bi bi-phone"></i> +249912322447   
+ 		<i class="bi bi-phone"></i> <img style="width: 17px;margin-bottom: 4px;" src="images/header/phone.png"/> +249912322447   
 
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">info@equpation.sd</a>
+        <img style="width: 25px;margin-bottom: -3px;" src="images/header/masseg.png"/> <a href="mailto:contact@example.com"> info@equpation.sd </a>
         
-        <a href="../English/index.php" class="linkedin" style="padding: 5px;margin: 5px;">Eng</i></i></a> 
-        <a href="../Arabic/index.php" class="linkedin" style="padding: 5px;margin: 5px;"">Ara</i></i></a>
+        <a href="#" class="linkedin" style="padding: 5px;margin: 5px;"> <img src="images/header/world.png"/> Eng </i></a> 
+        <a href="#" class="linkedin" style="padding: 5px;margin: 5px;"> Ara <img src="images/header/arabic.png"/></i></a>
 
  		</div>
  	</div>
@@ -25,16 +25,15 @@
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
               <li class="dropdown"><a href="#"><span> خدماتنا </span>  <i class="bi bi-chevron-down"></i></a>
             <ul>
-    <li> <a href="#"> خدمات تاسبس المواقع </a> </li>
-    <li> <a href="#">  خدمات انظمة التتبع </a> </li>
-    <li> <a href="#">  خدمات الترحيل </a> </li>
-    <li> <a href="#">  خدمات الصيانة </a> </li>
-    <li> <a href="#">  خدمات التوظيف </a> </li>
-    <li> <a href="#">  خدمات التأجير </a> </li>
-    <li> <a href="#">  خدمات التشغيل </a> </li>
-    <li> <a href="#">  خدمات المقاولة </a> </li>
-    <li> <a href="#">  خدمات تأسيس المواقع </a> </li>
-  </ul>
+            <li> <a href="services.php?id=construct"> خدمات تاسيس المواقع </a> </li>
+            <li> <a href="services.php?id=tracking">  خدمات انظمة التتبع </a> </li>
+            <li> <a href="services.php?id=transport">  خدمات الترحيل </a> </li>
+            <li> <a href="services.php?id=maintenance">  خدمات الصيانة </a> </li>
+            <li> <a href="services.php?id=employement">  خدمات التوظيف </a> </li>
+            <li> <a href="services.php?id=rental">  خدمات التأجير </a> </li>
+            <li> <a href="services.php?id=opration">  خدمات التشغيل </a> </li>
+            <li> <a href="services.php?id=contract">  خدمات المقاولة </a> </li>
+          </ul>
           </li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
@@ -127,23 +126,23 @@
 	<div class="row">
 
 		<div  class="col-lg-2">
-			<a href="#">info@equpation.sd</a>
+			<a href="#"> info@equpation.sd <img style="width: 25px;margin-bottom: -3px;" src="images/header/masseg.png"/></a>
 		</div>
 
 		<div  class="col-lg-2">
-			<a href="#"> 00956-247457745 </a>
+			<a href="#">  00956-247457745 <img style="width: 17px;margin-bottom: 4px;" src="images/header/phone.png"/> </a>
 		</div>
 
 		<div style="text-align: right;" class="col-lg-6">
-			7:301m - 4:30pm
+			7:301m - 4:30pm <img style="margin-bottom: 4px;" src="images/header/clock.png"/>
 		</div>
 
 		<div class="col-lg-1">
-			<a href="#"> EN </a>
+			<a href="#"> <img src="images/header/world.png"/> EN </a>
 		</div>
 
 		<div class="col-lg-1">
-			<a href="#">العربية</a>
+			<a href="#"> <img src="images/header/Arabic.png"/> العربية</a>
 		</div>
 		
 	</div>
@@ -185,14 +184,14 @@
 
 <section id="services_list">
 	<ul>
-		<li> <a href="#"> خدمات تاسبس المواقع </a> </li>
-		<li> <a href="#"> | خدمات انظمة التتبع </a> </li>
-		<li> <a href="deportation.php"> | خدمات الترحيل </a> </li>
-		<li> <a href="maintenance.php"> | خدمات الصيانة </a> </li>
-		<li> <a href="#"> | خدمات التوظيف </a> </li>
-		<li> <a href="rental.php"> | خدمات التأجير </a> </li>
-		<li> <a href="opration.php"> | خدمات التشغيل </a> </li>
-		<li> <a href="contract.php"> | خدمات المقاولة </a> </li>
+		<li> <a href="services.php?id=construct"> خدمات تاسيس المواقع </a> </li>
+		<li> <a href="services.php?id=tracking"> | خدمات انظمة التتبع </a> </li>
+		<li> <a href="services.php?id=transport"> | خدمات الترحيل </a> </li>
+		<li> <a href="services.php?id=maintenance"> | خدمات الصيانة </a> </li>
+		<li> <a href="services.php?id=employement"> | خدمات التوظيف </a> </li>
+		<li> <a href="services.php?id=rental"> | خدمات التأجير </a> </li>
+		<li> <a href="services.php?id=opration"> | خدمات التشغيل </a> </li>
+		<li> <a href="services.php?id=contract"> | خدمات المقاولة </a> </li>
 	</ul>
   <hr/>
 </section>

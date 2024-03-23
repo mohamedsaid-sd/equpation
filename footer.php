@@ -41,7 +41,13 @@
 
        <div class="col-lg-3" style="color: rgb(160,112,54);">
         <h4>  تابعنا على </h4> 
-        <p> <i class="icon-twitter-sign"> </i> <i class="icon-upload-alt"> </i> <i class="icon-camera-retro"> </i> <i class="icon-github"> </i> <i class="icon-google-plus-sign"> </i> </p>
+        <p> 
+          <a href="#"><img src="images/social/Twitter.png"/></a>
+          <a href="#"><img src="images/social/Fb.png"/></a>
+          <a href="#"><img src="images/social/Messages.png"/></a>
+          <a href="#"><img src="images/social/Whatsapp.png"/></a>
+          <a href="#"><img src="images/social/Insta.png"/></a>
+        </p>
       </div>
 
     </div>

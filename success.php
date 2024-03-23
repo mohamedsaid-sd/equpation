@@ -3,7 +3,7 @@
 <head>
 	<title> إكوبيشن > تاكيد الطلب </title>
 		<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">

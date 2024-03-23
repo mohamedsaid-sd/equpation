@@ -3,7 +3,7 @@
 <head>
 <title> أيكوبيشن > الخدمات >  خدمة التأجير </title>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
@@ -163,7 +163,7 @@
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> الخدمات </b></a> / <a href="#"><b> خدمة التأجير </b></a>
+	/ <a href="services.php?id=rental"><b> خدمة التأجير </b></a> / <a href="#"><b> تقديم طلب </b></a>
 </section>
 
 <section id="forms">
@@ -307,7 +307,7 @@
 
         <div style="text-align: left;">
 
-          <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار -> </button>
+          <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
 
         </div>
 
@@ -551,9 +551,9 @@
 
           <div style="text-align: left;">
           
-          <button class="btn btn-warning nextBtn btn-lg pull-right" type="button"> تأكيد وإستمرار -> </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-right" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
 
-          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق  </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
           </div>
         </div>
       </div>
@@ -668,9 +668,9 @@
 
       <div style="text-align: left;">
           
-          <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب </button>
+          <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب <i class="icon-check"></i> </button>
 
-          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق </button>
         </div>
         </div>
       </div>

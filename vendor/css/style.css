@@ -170,7 +170,9 @@
 .navbar {
   padding: 0;
   display: none;
+  font-family: Montserrat-Arabic-Regular;
 }
+
 
 .navbar ul {
   margin: 0;
@@ -363,6 +365,8 @@
   font-size: 15px;
   border: none;
   color: #fff;
+    font-weight: normal;
+    font-family: Montserrat-Arabic-Regular;
 }
 
 .navbar-mobile a:hover,

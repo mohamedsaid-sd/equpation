@@ -3,7 +3,7 @@
 <head>
 	<title> إكوبيشن >  من نحن </title>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,7 +19,8 @@
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ <a href="#"><b> من نحن </b></a>
 </section>
-<section id="about" style="padding-top: 40px;padding-bottom: 0px;height: 550px;">
+
+<section id="about">
 
 <div class="row">
 
@@ -28,7 +29,6 @@
 	</div>
 
 	<div class="col-lg-6">
-		<br/>
 		<h4 > لماذا نحن </h4>
 		<h2> لماذا أختار إكوبيشن؟ </h2>
 		<p>شركة إكوبيشن للاستثمار المحدودة، تأسست في عام 2021م كشركة سودانية واعدة في مجال خدمات التعدين، حيث تقدم مجموعة شاملة ومتكاملة من الخدمات في هذا القطاع، بدأت الشركة رحلتها بتأجير وتشغيل المعدات والآليات الثقيلة، وسرعان ما تمكنت من توسيع نطاق عملها لتشمل مقاولات التعدين وتأسيس وإدارة وتشغيل المناجم في المشاريع التعدينية، وتعتبر إكوبيشن من الشركات القليلة التي تقدم خدمات النقل ضمن نطاق أعمالها، وخاصة للمسافات البعيدة، وتتميز بجودة عالية وكفاءة في تقديم هذه الخدمات. بجانب ذلك، تقدم خدمات الصيانة للمعدات والآليات الثقيلة، حيث تضمن الحفاظ على أعلى مستويات الأداء والاستدامة لأصول الشركة وأصول عملائها، كما تعتمد على فريق عمل متخصص ومدرَّب بشكلٍ متطور، وتهدف دائمًا إلى توفير الموارد البشرية المتخصصة التي تلبي متطلبات الإنتاج والصناعة وتحقق أهداف العملاء بكفاءة عالية، بالإضافة إلى ذلك، تقدم الشركة خدمات توفير وتركيب ومتابعة أنظمة التتبع، وهو جانب أساسي يساهم في تعزيز كفاءة عمليات الإنتاج وضمان التحكم والأمان في المشاريع. 
@@ -46,9 +46,9 @@
 	
 	<div class="row">
 
-		<div class="col-lg-6" style="padding-right: 100px;">
+		<div class="col-lg-6">
 			
-		<div>
+		<div class="title">
 			<br/>
 			
 				
@@ -88,7 +88,7 @@
 	
 </section>
 
-<img src="images/divider.png">
+<img style="width: 100%;" src="images/divider.png">
 
 <section id="why">
 
@@ -115,7 +115,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام
+			<p>لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام</p>
 		</div>
 			
 		</div>
@@ -133,7 +133,7 @@
 		</div>
 
 		<div class="col-lg-9">
-			لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة 
+			<p>لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة </p>
 		</div>
 			
 		</div>
@@ -152,8 +152,8 @@
 		</div>
 
 		<div class="col-lg-9">
-			تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية 
-		</div>
+			<p> تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية </p>
+		</div> 
 			
 		</div>
 
@@ -173,8 +173,8 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/r.jpeg">
-		<img class="icon" src="images/services/1.png">
+		<img class="main" src="images/our-message/r.jpeg">
+		<img class="icon" src="images/our-message/1.png">
 	</div>
 
 	<div class="col-lg-10">
@@ -185,8 +185,8 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/r2.jpeg"">
-		<img class="icon" src="images/services/1.png">
+		<img class="main" src="images/our-message/r2.jpeg"">
+		<img class="icon" src="images/our-message/2.png">
 	</div>
 
 	<div class="col-lg-10">
@@ -197,8 +197,8 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/r3.jpeg"">
-		<img class="icon" src="images/services/1.png">
+		<img class="main" src="images/our-message/r3.jpeg"">
+		<img class="icon" src="images/our-message/3.png">
 	</div>
 
 	<div class="col-lg-10">
@@ -229,8 +229,8 @@
 
 <div class="row">
 	<div class="col-lg-2">
-		<img class="main" src="images/r4.jpeg">
-		<img class="icon" src="images/services/1.png">
+		<img class="main" src="images/our-message/r4.jpeg">
+		<img class="icon" src="images/our-message/4.png">
 	</div>
 
 	<div class="col-lg-10">
@@ -258,7 +258,7 @@
 	
 </section>
 
-<img src="images/divider2.png" style="width: 100%;border:none;">
+<img src="images/divider2.png" style="width: 100%;">
 
 <section id="messter">
 	

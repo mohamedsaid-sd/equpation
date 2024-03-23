@@ -3,7 +3,7 @@
 <head>
 	<title> أيكوبيشن >  إتصل بنا </title>
 		<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -66,7 +66,7 @@
 			 	</div>
 
 			 	<div class="form-group" style="text-align: left;">
-			 		<button style="width: 200px;padding: 13px;" class="btn-main"> إرسال ->  </button>
+			 		<button style="width: 200px;padding: 13px;" class="btn-main"> إرسال <i class="icon-arrow-left"></i>  </button>
 			 	</div>
 
 			 	
@@ -81,7 +81,12 @@
 			تواص معنا عبر وسائل التواصل الإجتماعي , البريد الإلكتروني , او إتصل بنا علي الارقام المخصصة نحن هنا لنستمع ونستجيب ...
 			 </p>
 			 <div class="card">
-			 <h5>	وسائل التواصل : <img style="width: 200px;" src="images/contact/social.png"> </h5>
+			 <h5>	وسائل التواصل : 
+			  <a href="#"><img src="images/social/Twitter.png"/></a>
+          <a href="#"><img src="images/social/Fb.png"/></a>
+          <a href="#"><img src="images/social/Messages.png"/></a>
+          <a href="#"><img src="images/social/Whatsapp.png"/></a>
+          <a href="#"><img src="images/social/Insta.png"/></a> </h5>
 			 </div>
 
 			 <h3> المكتب الرئيسي </h3>

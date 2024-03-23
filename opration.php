@@ -3,7 +3,7 @@
 <head>
 <title> أيكوبيشن > الخدمات >  خدمة التشغيل </title>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
@@ -163,7 +163,7 @@
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> الخدمات </b></a> / <a href="#"><b> خدمة التشغيل </b></a>
+	/ <a href="services.php?id=opration"><b> خدمة التشغيل </b></a> / <a href="#"><b> تقديم طلب </b></a>
 </section>
 
 <section id="forms">
@@ -202,7 +202,7 @@
   <br/>
   <br/>
   
-  <form role="form" action="#" method="post">
+  <form role="form" action="success.php" method="post">
     <div class="row setup-content" id="step-1">
 
       <div class=" col-lg-12 col-xs-6 col-md-offset-3">
@@ -369,7 +369,7 @@
 
         <div style="text-align: left;">
 
-          <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار -> </button>
+          <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
 
         </div>
 
@@ -450,8 +450,8 @@
       <br/>
 
           <div style="text-align: left;">
-          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار -> </button>
-          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق  </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
       
           </div>
         </div>
@@ -470,12 +470,12 @@
 
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="full_name" class="form-control" id="full_name" placeholder="   الاسم  ثلاثي" required>
+  <input type="text" name="full_name" class="form-control" id="full_name" placeholder="   الاسم  ثلاثي">
 </div>
 
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="phone_number" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000" required>
+  <input type="text" name="phone_number" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000">
 </div>
 
 </div>
@@ -484,12 +484,12 @@
   
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    رقم الواتساب  مثال 00249123000000" required>
+  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    رقم الواتساب  مثال 00249123000000">
 </div>
 
       <div class="col-md-6 form- mt-3 mt-md-0">
                   <label></label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل " required>
+                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل ">
                 </div>
 
 </div>
@@ -500,7 +500,7 @@
 
                 <div class="col-md-6 form-group">
                 <label>   نوع العلاقة بالموقع </label> 
-                <select class="form-control mr-1" name="job" id="job" onchange="" required>
+                <select class="form-control mr-1" name="job" id="job" onchange="">
                 <option value="مالك"> مالك   </option>
                 <option value="شريك"> شريك </option>
                 <option value="مدير"> مدير </option>
@@ -513,7 +513,7 @@
 
               <div class="col-md-6 form-">
                 <label> الجهة التابع لها </label> 
-                <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" required>
+                <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();">
                 <option value="company"> شركة </option>
                 <option value="individual"> فرد </option>
                 </select>  
@@ -529,16 +529,13 @@
 
               <div class="col-md-6 form- mt-3 mt-md-0">
               <label> هل  سبق لك العمل معنا </label> 
-                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" required>
+                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();">
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
 
                <input id="wwushide" type="text" class="form-control" placeholder=" في اي موقع عملت معنا " style="display: none;" />
-               <!-- required style="display:none" -->
-               
-              
-
+             
               </div>
 
 
@@ -562,9 +559,9 @@
 
       <div style="text-align: left;">
          
-          <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب </button>
+          <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب <i class="icon-check"></i> </button>
 
-           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <- السابق </button>
+           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق </button>
         </div>
         </div>
       </div>
