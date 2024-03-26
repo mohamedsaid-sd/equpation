@@ -1,3 +1,18 @@
+<?php 
+session_start();
+// set session
+if(!isset($_SESSION['lang'])){
+  // set english as default
+  $_SESSION['lang'] = 'en';
+}
+if(isset($_GET['lang'])){
+
+  if($_GET['lang'] == "ar")
+  $_SESSION['lang'] = 'ar';
+  else
+  $_SESSION['lang'] = 'en';
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -6,7 +21,12 @@
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link href="vendor/css/style.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>

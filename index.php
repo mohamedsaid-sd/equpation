@@ -1,3 +1,18 @@
+<?php 
+session_start();
+// set session
+if(!isset($_SESSION['lang'])){
+  // set english as default
+  $_SESSION['lang'] = 'en';
+}
+if(isset($_GET['lang'])){
+
+  if($_GET['lang'] == "ar")
+  $_SESSION['lang'] = 'ar';
+  else
+  $_SESSION['lang'] = 'en';
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -6,7 +21,12 @@
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link href="vendor/css/style.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
@@ -75,16 +95,20 @@
 <!-------------------------------------------------------->
 
 <section id="pointer">
+	<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 </section>
 
 <section id="hero">
 	<div>
 	
- 	<h1> مرحبا بكم في منصة <b> إكوبيشن </b> <br/> <b> الإلكترونية </b> </h1>
+ 	<h1> <?php  echo _Hero_part1; ?> <b> <?php  echo _Hero_part2; ?> </b> <br/> <b> <?php  echo _Hero_part3; ?> </b> </h1>
  	<center>
-	<p> نعمل إكوبيشن علي تنفيذ مشاريع المقاولات المدنية والبنى التحتية ومقاولات التعدين، مسلحة في ذلك بأحدث الآليات والمعدات وبفريق من المهندسين والفنيين الأكفاء المهرة، لتنفيذ المشاريع بأعلى جودة مطلوبة </p>
+	<p> <?php  echo _Hero_part4; ?>  </p>
 	</center>
 	</div>
 </section>
@@ -95,9 +119,9 @@
 
 	<div class="col-lg-5">
 		<div>
-		<h4> لماذا نحن </h4>
-		<h2> لماذا أختار إكوبيشن؟ </h2>
-		<p>إكوبيشن هي شركة خدمية تعمل على توفير أحدث وأفضل الآليات والمعدات الثقيلة للمشاريع الإنتاجية في مختلف المجالات، بدأت العمل منذ العام 2015م، وذلك بإستخدام نظم إدارية محكمة ومتطورة، وعبر كوادر ذات كفاءة عالية، وبالإستناد إلى قاعدة بيانات كبيرة ومحكمة، وبالشراكة مع عملائنا القائمين على أكبر المشاريع الإنتاجية بالبلاد</p>
+		<h4> <?php echo _why_part1; ?> </h4>
+		<h2> <?php echo _why_part2; ?> </h2>
+		<p><?php echo _why_part3;?></p>
 		</div>
 	</div>
 
@@ -110,11 +134,11 @@
 		</div>
 
 		<div class="col-lg-2">
-			أنشطتنا
+			<?php echo _why_part4;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p> لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام </p>
+			<p> <?php echo _why_part5;?> </p>
 		</div>
 			
 		</div>
@@ -128,11 +152,11 @@
 		</div>
 
 		<div class="col-lg-2">
-			مشاريعنا
+			<?php echo _why_part6;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p> لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة </p>
+			<p> <?php echo _why_part7;?></p>
 		</div>
 			
 		</div>
@@ -147,11 +171,11 @@
 		</div>
 
 		<div class="col-lg-2">
-			فريقنا
+			<?php echo _why_part8;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p> تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية  </p>
+			<p> <?php echo _why_part9;?>  </p>
 		</div>
 			
 		</div>
@@ -175,17 +199,22 @@
 	</div>
 
 	<div class="col-lg-6">
-		<h4> لماذا نحن </h4>
-		<h2> لماذا أختار إكوبيشن؟ </h2>
+		<h4> <?php echo _about_part1;?> </h4>
+		<h2> <?php echo _about_part2;?> </h2>
 		<p>
-			شركة إكوبيشن للاستثمار المحدودة، تأسست في عام 2021م كشركة سودانية واعدة في مجال خدمات التعدين، حيث تقدم مجموعة شاملة ومتكاملة من الخدمات في هذا القطاع، بدأت الشركة رحلتها بتأجير وتشغيل المعدات والآليات الثقيلة، وسرعان ما تمكنت من توسيع نطاق عملها لتشمل مقاولات التعدين وتأسيس وإدارة وتشغيل المناجم في المشاريع التعدينية، 
-
+			<?php echo _about_part3;?>
 			<br/>
-				 <br/><img width="25" src="images/our-message/black-check.png"> نعتبر من الشركات القليلة التي تقدم خدمات النقل ضمن نطاق اعمالها  
-				 <br/><img width="25" src="images/our-message/black-check.png"> نتميز بجودة عالية وكفاءة في تقديم هذة الخدمات  
+				 <br/><img width="25" src="images/our-message/black-check.png"> <?php echo _about_part4;?>  
+				 <br/><img width="25" src="images/our-message/black-check.png"> <?php echo _about_part5;?>
 			
 			<br/><br/>
-			<button class="btn-main"> تعرف اكثر علي منصتنا <i class="icon-arrow-left"></i> </button> شاهد الفيديو
+			<button class="btn-main"> <?php echo _about_part6;?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+			</button> <?php echo _about_part7;?>
 
 		</p>
 	</div>
@@ -198,8 +227,8 @@
 
 <section id="services">
 <center>
-	<h4> خدمات إكوبيشن </h4>
-	<h2> رحلة الإبداع والإحتراف في تحقيق مشاريعكم الوطنية </h2>
+	<h4> <?php echo _services_part1; ?> </h4>
+	<h2> <?php echo _services_part2; ?> </h2>
 </center>
 <br/>
 
@@ -208,36 +237,54 @@
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/1.png"> </b> <br/>
-			<h5>  انظمة التتبع </h5>
+			<h5> <?php echo _services_part3; ?> </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part4; ?>
 			</p>
 			<br/>
-			<a href="services.php?id=tracking"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
+			<a href="services.php?id=tracking"> <?php echo _services_part19; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+			</a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/2.png"> </b> <br/>
-			<h5> خدمات المقاولة </h5>
+			<h5> <?php echo _services_part5; ?> </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part6; ?>
 			</p>
 			<br/>
-			<a href="services.php?id=contract"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
+			<a href="services.php?id=contract"><?php echo _services_part19; ?>
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+			</a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
 		<div> 
 			<b> <img src="images/services/3.png"> </b> <br/>
-			<h5> خدمات التشغيل </h5>
+			<h5> <?php echo _services_part7; ?> </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part8; ?>
 			</p>
 			<br/>
-			<a href="services.php?id=opration"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
+			<a href="services.php?id=opration"> <?php echo _services_part7; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+		</a>
 		</div>
 	</div>
 
@@ -245,12 +292,18 @@
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/4.png"> </b> <br/>
-			<h5> خدمات التأجير </h5>
+			<h5> <?php echo _services_part9; ?> </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part10; ?> 
 			</p>
 			<br/>
-			<a href="services.php?id=rental"> استعراض الخدمة <i class="icon-arrow-left"></i> </a>
+			<a href="services.php?id=rental"> <?php echo _services_part19; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+			</a>
 		</div>
 	</div>
 
@@ -265,48 +318,48 @@
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/5.png"> </b> <br/>
-			<h5> خدمات التوظيف  </h5>
+			<h5> <?php echo _services_part11; ?>   </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part12; ?> 
 			</p>
 			<br/>
-			<a href="services.php?id=employement"> استعراض الخدمة >> </a>
+			<a href="services.php?id=employement"> <?php echo _services_part19; ?>  >> </a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/6.png"> </b> <br/>
-			<h5> خدمات الصيانة  </h5>
+			<h5> <?php echo _services_part13; ?>   </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part14; ?> 
 			</p>
 			<br/>
-			<a href="services.php?id=maintenance"> استعراض الخدمة >> </a>
+			<a href="services.php?id=maintenance"> <?php echo _services_part19; ?>  >> </a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/7.png"> </b> <br/>
-			<h5> خدمات الترحيل </h5>
+			<h5> <?php echo _services_part15; ?>  </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part16; ?> 
 			</p>
 			<br/>
-			<a href="services.php?id=transport"> استعراض الخدمة >> </a>
+			<a href="services.php?id=transport"> <?php echo _services_part19; ?>  >> </a>
 		</div>
 	</div>
 
 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/8.png"> </b> <br/>
-			<h5> تأسيس المواقع </h5>
+			<h5> <?php echo _services_part17; ?>  </h5>
 			<p> 
-				نقدم حلول مبتكرة ومستدامة لبناء وتشغيل المشاريع التعدينية بكفاءة عالية
+				<?php echo _services_part18; ?> 
 			</p>
 			<br/>
-			<a href="services.php?id=construct"> استعراض الخدمة >> </a>
+			<a href="services.php?id=construct"> <?php echo _services_part19; ?>  >> </a>
 		</div>
 	</div>
 	
@@ -320,8 +373,8 @@
 <section id="statics">
 	<br/>
 	
-	<h4> إحصائيات إكوبيشن </h4>
-	<h2> نكشف عن إنجازاتنا بتفاصيل رقمية تكشف قوة الإنجاز والتميز </h2>	
+	<h4> <?php echo _statics_part1; ?> </h4>
+	<h2> <?php echo _statics_part2; ?> </h2>	
 	<br/>
 
 <div class="row">
@@ -330,7 +383,7 @@
 		<div>
 		<img src="images/statics/1.png">
 		<h3> 323+ </h3>	
-		<b> إجمالى المشاريع </b>
+		<b> <?php echo _statics_part8; ?> </b>
 		</div>
 	</div>
 
@@ -338,7 +391,7 @@
 		<div>
 		<img src="images/statics/2.png">
 		<h3> 69+ </h3>	
-		<b> العملاء </b>
+		<b> <?php echo _statics_part7; ?> </b>
 		</div>
 	</div>
 
@@ -346,7 +399,7 @@
 		<div>
 		<img src="images/statics/3.png">
 		<h3> 71+ </h3>	
-		<b> ساعات عمل المعدة </b>
+		<b> <?php echo _statics_part6; ?> </b>
 		</div>
 	</div>
 
@@ -354,7 +407,7 @@
 		<div>
 		<img src="images/statics/4.png">
 		<h3> 771979+ </h3>	
-		<b> كمية العمل بالإنتاج </b>
+		<b> <?php echo _statics_part5; ?> </b>
 		</div>
 	</div>
 
@@ -362,7 +415,7 @@
 		<div>
 		<img src="images/statics/5.png">
 		<h3> 40+ </h3>	
-		<b> الآليات المشغلة </b>
+		<b> <?php echo _statics_part4; ?> </b>
 		</div>
 	</div>
 
@@ -371,7 +424,7 @@
 		<div>
 		<img src="images/statics/6.png">
 		<h3> 10000+ </h3>	
-		<b> المختصين بالقطاع </b>
+		<b> <?php echo _statics_part3; ?> </b>
 		</div>
 	</div>
 	
@@ -382,75 +435,117 @@
 <img src="images/divider.png" style="width: 100%;border:none;">
 
 <section id="fileds">
-<h4> مجالات العمل </h4>
-<h2> رحلة الإنجاز والإبداع في تحقيق مشاريعكم الوطنية </h2>	
+<h4> <?php echo _fileds_part1; ?> </h4>
+<h2> <?php echo _fileds_part2; ?> </h2>	
 <br/>
 
 	<div class="item">
 		<img src="images/fileds/1.jpg">
 		<div class="trans">
-		<h5> المشاريع الوطنية </h5>
+		<h5> <?php echo _fileds_part8; ?></h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#"> <?php echo _fileds_part10; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+		</a>
 		</div>
 	</div>
 
 	<div class="item">
 		<img src="images/fileds/3.jpg">
 		<div class="trans">
-		<h5> المشاريع الزراعية </h5>
+		<h5> <?php echo _fileds_part7; ?> </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#">  <?php echo _fileds_part10; ?>  
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?> 
+		</a>
 		</div>
 	</div>
 
 	<div class="item">
 		<img src="images/fileds/2.jpg">
 		<div class="trans">
-		<h5> مشاريع إستخراج المعادن </h5>
+		<h5> <?php echo _fileds_part6; ?> </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#"> <?php echo _fileds_part10; ?>  
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+		</a>
 		</div>
 	</div>
 
 	<div class="item">
 		<img src="images/fileds/4.jpg">
 		<div class="trans">
-		<h5> مشاريع استخراج الاحجار </h5>
+		<h5> <?php echo _fileds_part5; ?> </h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#">  <?php echo _fileds_part10; ?>  
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?> 
+		</a>
 		</div>
 	</div>
 
 	<div class="item">
 		<img src="images/fileds/5.jpg">
 		<div class="trans">
-		<h5> مشاريع الطرق والجسور </h5>
+		<h5> <?php echo _fileds_part4; ?></h5>
 		<p> نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#"> <?php echo _fileds_part10; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+		</a>
 		</div>
 	</div>
 
 	<div class="item">
 		<img src="images/fileds/6.jpg">
 		<div class="trans">
-		<h5> مشاريع الإنشاءات </h5>
+		<h5> <?php echo _fileds_part3; ?> </h5>
 		<p > نعمل في جميع مشاريع استخراج الدهب في كل مناطق السودان </p>
-		<a href="#"> مجالات العمل <i class="icon-arrow-left"></i> </a>
+		<a href="#"> <?php echo _fileds_part10; ?> 
+			<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+		</a>
 		</div>
 	</div>
 
 
 <hr style="clear: both;" />
 
-<button style="clear: both;" class="btn-main"> إكتشف مجالات العمل <i class="icon-arrow-left"></i> </button>
+<button style="clear: both;" class="btn-main"> <?php echo _fileds_part10; ?>
+<?php if($_SESSION['lang'] == "en"){ ?>
+			<i class="icon-arrow-right"></i> 
+			<?php }else{ ?>
+			<i class="icon-arrow-left"></i> 
+			<?php } ?>
+</button>
 
 </section>
 
 <section id="galary">
 <br/>
-<h4> معرض الصور </h4>
-<h2> جانب من الاعمال والخدمات التي قدمتها الشركة لعملائها في جميع <br/>ولايات السودان </h2>	
+<h4> <?php echo _galary_part1; ?>  </h4>
+<h2> <?php echo _galary_part2; ?></h2>	
 <br/>
 
 <div class="row">
@@ -477,8 +572,8 @@
 </section>
 
 <section id="partener">
-<h4> شركاء النجاح في الريادة </h4>
-<h2> معا نبني مستقبل الإبتكار ونحقق الإنجازات والتميز </h2>
+<h4> <?php echo _partener_part1; ?> </h4>
+<h2> <?php echo _partener_part2; ?> </h2>
 <br/>
 
 <img src="images/logo/logo.jpg"/>

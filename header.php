@@ -1,3 +1,12 @@
+<?php 
+
+if($_SESSION['lang'] == 'en'){
+include 'lang/en.php';  
+}else{
+include 'lang/ar.php';  
+}
+
+?>
 <div id="topbar">
  	<div class="container d-flex justify-content-between">
  		<div class="contact-info d-flex align-items-center">
@@ -6,8 +15,8 @@
 
         <img style="width: 25px;margin-bottom: -3px;" src="images/header/masseg.png"/> <a href="mailto:contact@example.com"> info@equpation.sd </a>
         
-        <a href="#" class="linkedin" style="padding: 5px;margin: 5px;"> <img src="images/header/world.png"/> Eng </i></a> 
-        <a href="#" class="linkedin" style="padding: 5px;margin: 5px;"> Ara <img src="images/header/arabic.png"/></i></a>
+        <a href="index.php?lang=en" class="linkedin" style="padding: 5px;margin: 5px;"> <img src="images/header/world.png"/> Eng </i></a> 
+        <a href="index.php?lang=ar" class="linkedin" style="padding: 5px;margin: 5px;"> Ara <img src="images/header/arabic.png"/></i></a>
 
  		</div>
  	</div>
@@ -21,7 +30,7 @@
 
 
       	  <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php">الرئيسية</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php"><?php echo _home; ?></a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
               <li class="dropdown"><a href="#"><span> خدماتنا </span>  <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -138,11 +147,11 @@
 		</div>
 
 		<div class="col-lg-1">
-			<a href="#"> <img src="images/header/world.png"/> EN </a>
+			<a href="index.php?lang=en"> <img src="images/header/world.png"/> EN </a>
 		</div>
 
 		<div class="col-lg-1">
-			<a href="#"> <img src="images/header/Arabic.png"/> العربية</a>
+			<a href="index.php?lang=ar"> <img src="images/header/Arabic.png"/> العربية</a>
 		</div>
 		
 	</div>
@@ -163,17 +172,17 @@
 
 	<div class="col-lg-8">
 		    <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php">الرئيسية</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
-              <li><i class="bx bx-chevron-right" onclick="fun();" id="service-togle"></i> <a onclick="fun();" href="#">خدماتنا</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> إتصل بنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php"><?php echo _home; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
+              <li><i class="bx bx-chevron-right" onclick="fun();" id="service-togle"></i> <a onclick="fun();" href="#"><?php echo _our_services; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"><?php echo _work_fildes; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"><?php echo _contact; ?></a></li>
             </ul>
 	</div>
 
 	<div class="col-lg-2">
-		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal"> إستعلام وإستفسار >> </button>
+		<button  type="button" class="btn-main" > إستعلام وإستفسار </button>
 	</div>
 		
 	</div>

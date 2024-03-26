@@ -3,7 +3,7 @@
     <div class="row">
 
       <div class="col-lg-6">
-        <h2>كن جزءا من عالم إكوبيشن واشترك بخدمتنا البريدية ليصلك كل جديد</h2>
+        <h2><?php echo _footer_part1; ?></h2>
       </div>
 
       <div class="col-lg-6">
@@ -13,8 +13,8 @@
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="icon-envelope-alt"> </i></div>
         </div>
-          <input type="text" class="form-control" placeholder="البريد الالكتروني" name="">  
-          <button type="subdcribe" name="send-email"> اشتراك </button>
+          <input type="text" class="form-control" placeholder="<?php echo _footer_part2; ?>" name="">  
+          <button type="subdcribe" name="send-email"> <?php echo _footer_part3; ?> </button>
       </div>
     </form>
 
@@ -25,22 +25,22 @@
     <div class="row">
 
       <div class="col-lg-3">
-        <h4> <i class="icon-map-marker"> </i>  عنواننا</h4> 
-        <p> الخرطوم - عطبرة - بورتسودان </p>
+        <h4> <i class="icon-map-marker"> </i>  <?php echo _footer_part4; ?> </h4> 
+        <p> <?php echo _footer_part5; ?> </p>
       </div>
 
       <div class="col-lg-3">
-        <h4> <i class="icon-envelope-alt"> </i> البريد الإلكتروني الرسمي</h4>
+        <h4> <i class="icon-envelope-alt"> </i><?php echo _footer_part6; ?></h4>
         <p> info@equpation.sd </p>
       </div>
 
        <div class="col-lg-3">
-        <h4> <i class="icon-phone"> </i> رقم الهاتف </h4> 
+        <h4> <i class="icon-phone"> </i> <?php echo _footer_part7; ?> </h4>
         <p> 249912322447 </p>
       </div>
 
        <div class="col-lg-3" style="color: rgb(160,112,54);">
-        <h4>  تابعنا على </h4> 
+        <h4>  <?php echo _footer_part8; ?> </h4> 
         <p> 
           <a href="#"><img src="images/social/Twitter.png"/></a>
           <a href="#"><img src="images/social/Fb.png"/></a>
@@ -57,19 +57,19 @@
     <div class="row"> 
       <div class="col-lg-9">
               <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#hero">الرئيسية</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#about">من نحن</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#departments">خدماتنا</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"> مجالات العمل </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> الأخبار</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php#cleints"> أتصل بنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php"><?php echo _home; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"><?php echo _our_services; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"><?php echo _work_fildes; ?> </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="news.php"><?php echo _news; ?></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> <?php echo _contact; ?></a></li>
 
             </ul>
       </div>
 
       <div class="col-lg-3" style="text-align: center;vertical-align: center;padding: 10px;">
       
-          جميع الحقوق محفوظة لدي إيكوبيشن@
+         <?php echo _footer_part9; ?>
 
       </div>
     </div>

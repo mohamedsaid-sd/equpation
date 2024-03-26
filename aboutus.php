@@ -1,3 +1,18 @@
+<?php 
+session_start();
+// set session
+if(!isset($_SESSION['lang'])){
+  // set english as default
+  $_SESSION['lang'] = 'en';
+}
+if(isset($_GET['lang'])){
+
+  if($_GET['lang'] == "ar")
+  $_SESSION['lang'] = 'ar';
+  else
+  $_SESSION['lang'] = 'en';
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -6,7 +21,12 @@
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link href="vendor/css/style.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
@@ -15,9 +35,13 @@
 <?php include 'header.php'; ?>
 
 <section id="pointer">
+	<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> من نحن </b></a>
+	/ <a href="#"><b> <?php echo _about; ?> </b></a>
 </section>
 
 <section id="about">
@@ -29,10 +53,10 @@
 	</div>
 
 	<div class="col-lg-6">
-		<h4 > لماذا نحن </h4>
-		<h2> لماذا أختار إكوبيشن؟ </h2>
-		<p>شركة إكوبيشن للاستثمار المحدودة، تأسست في عام 2021م كشركة سودانية واعدة في مجال خدمات التعدين، حيث تقدم مجموعة شاملة ومتكاملة من الخدمات في هذا القطاع، بدأت الشركة رحلتها بتأجير وتشغيل المعدات والآليات الثقيلة، وسرعان ما تمكنت من توسيع نطاق عملها لتشمل مقاولات التعدين وتأسيس وإدارة وتشغيل المناجم في المشاريع التعدينية، وتعتبر إكوبيشن من الشركات القليلة التي تقدم خدمات النقل ضمن نطاق أعمالها، وخاصة للمسافات البعيدة، وتتميز بجودة عالية وكفاءة في تقديم هذه الخدمات. بجانب ذلك، تقدم خدمات الصيانة للمعدات والآليات الثقيلة، حيث تضمن الحفاظ على أعلى مستويات الأداء والاستدامة لأصول الشركة وأصول عملائها، كما تعتمد على فريق عمل متخصص ومدرَّب بشكلٍ متطور، وتهدف دائمًا إلى توفير الموارد البشرية المتخصصة التي تلبي متطلبات الإنتاج والصناعة وتحقق أهداف العملاء بكفاءة عالية، بالإضافة إلى ذلك، تقدم الشركة خدمات توفير وتركيب ومتابعة أنظمة التتبع، وهو جانب أساسي يساهم في تعزيز كفاءة عمليات الإنتاج وضمان التحكم والأمان في المشاريع. 
-
+		<h4 > <?php echo _about_part1; ?> </h4>
+		<h2> <?php echo _about_part2; ?> </h2>
+		<p>
+		 <?php echo _about_part8; ?>
 		</p>
 	</div>
 	
@@ -52,8 +76,8 @@
 			<br/>
 			
 				
-				<h4> قصتنا </h4>
-				<h2> تعرف علي قصة تأسيس شركة إكوبيشن للإستثمار المحدودة </h2>
+				<h4>  <?php echo _our_story_part1; ?> </h4>
+				<h2> <?php echo _our_story_part2; ?> </h2>
 
 		</div>
 		</div>
@@ -61,9 +85,7 @@
 			<div class="col-lg-6">
 
 		<div>
-			
-			قصة تأسيس شركة إكوبيشن للاستثمار المحدودة؛ تعكس رحلة طموحة وملهمة في قطاع التعدين بالسودان، قبل عشرة أعوام، بدأت المسيرة برؤية متجددة لتقديم الدعم وتوفير الخدمات اللازمة للمشاريع الإنتاجية في ظل ضعف البنية التحتية ونقص الخدمات المتوفرة في هذا القطاع، فمنذ عام ٢٠١٤م، اتخذت الشركة مساراً ثابتاً نحو توفير المعدات الثقيلة وتنفيذ المشاريع التأسيسية والتشغيلية لدعم الأفراد والشركات في قطاع التعدين. لم توقف العوائق الجغرافية أو الصعوبات البيئية أو تحديات العمل الشاقة؛ إرادتهم من المساهمة في استخراج المعادن كمورد اقتصادي أساسي للبلاد، وفي بداية العام ٢٠٢١م، جاءت المرحلة التالية لتوطيد هذه الرؤية في شكلها المطوَّر بتأسيس شركة إكوبيشن للاستثمار المحدودة، لتفتح صفحةً جديدةً مطوَّرة بتوفير أحدث وأنسب المعدات وأفضل الكوادر وأجود الأنظمة، متسلحة بأرقى الأخلاقيات. 
-
+			<?php echo _our_story_part3; ?>
 		</div>
 		
 	</div>
@@ -78,8 +100,8 @@
 
 <section id="our-travel">
 
-		<h4> رحلتنا نحو الابداع </h4>
-		<h2> رحلة الابداع والاحتراف في تحقيق مشاريعكم الوطنية </h2>
+		<h4> <?php echo _our_travel_part1; ?> </h4>
+		<h2> <?php echo _our_travel_part2; ?> </h2>
 
 		<video width="90%" height="500" controls>
 			<source src="../" type="video/mp4">
@@ -90,15 +112,15 @@
 
 <img style="width: 100%;" src="images/divider.png">
 
-<section id="why">
+<section id="why" style="">
 
 <div class="row">
 
 	<div class="col-lg-5">
 		<div>
-		<h4> لماذا نحن </h4>
-		<h2> لماذا أختار إكوبيشن؟ </h2>
-		<p>إكوبيشن هي شركة خدمية تعمل على توفير أحدث وأفضل الآليات والمعدات الثقيلة للمشاريع الإنتاجية في مختلف المجالات، بدأت العمل منذ العام 2015م، وذلك بإستخدام نظم إدارية محكمة ومتطورة، وعبر كوادر ذات كفاءة عالية، وبالإستناد إلى قاعدة بيانات كبيرة ومحكمة، وبالشراكة مع عملائنا القائمين على أكبر المشاريع الإنتاجية بالبلاد</p>
+		<h4> <?php echo _why_part1; ?> </h4>
+		<h2> <?php echo _why_part2; ?> </h2>
+		<p><?php echo _why_part3;?></p>
 		</div>
 	</div>
 
@@ -111,11 +133,11 @@
 		</div>
 
 		<div class="col-lg-2">
-			أنشطتنا
+			<?php echo _why_part4;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p>لدى إكوبيشن الكثير من الأنشطة في أغلب ولايات السودان من إستخراج المعادن و حفر الحفائر و الآبار والبحث والإستكشاف عن مختلف أنواع الخام</p>
+			<p> <?php echo _why_part5;?> </p>
 		</div>
 			
 		</div>
@@ -129,11 +151,11 @@
 		</div>
 
 		<div class="col-lg-2">
-			مشاريعنا
+			<?php echo _why_part6;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p>لدى إكوبيشن الكثير من المشاريع الإنتاجية والخدمية الوطنية من تعبيد الطرق وعمل الجسور وحفر الآبار للقرى البعيدة والإعمار في كافة </p>
+			<p> <?php echo _why_part7;?></p>
 		</div>
 			
 		</div>
@@ -148,12 +170,12 @@
 		</div>
 
 		<div class="col-lg-2">
-			فريقنا
+			<?php echo _why_part8;?>
 		</div>
 
 		<div class="col-lg-9">
-			<p> تحتوي إكوبيشن على فريق ماهر تقني متتدرب على العمل ومعالجة أكثر المشاكل تعقيدا والتعامل مع العملاء والزبائن بمهارة وحرفية عالية </p>
-		</div> 
+			<p> <?php echo _why_part9;?>  </p>
+		</div>
 			
 		</div>
 
@@ -178,8 +200,8 @@
 	</div>
 
 	<div class="col-lg-10">
-		<h2> <img class="main" src="images/our-message/arrow.png"> رسالتنا </h2>
-		<p> تؤمن شركة إكوبيشن بأن وفرة الموارد تستوجب ثورة في عمليات الإنتاج، لذلك نسعى جاهدين لتحقيقها من خلال الإبداع في الأفكار، والابتكار في الأنظمة، والقوة في الموارد البشرية والمادية. </p>
+		<h2> <img class="main" src="images/our-message/arrow.png"> <?php echo _our_messages_part1;?>  </h2>
+		<p> <?php echo _our_messages_part2;?> </p>
 	</div>
 </div>
 
@@ -190,8 +212,9 @@
 	</div>
 
 	<div class="col-lg-10">
-		<h2> <img class="main" src="images/our-message/arrow.png"> رؤيتنا </h2>
-		<p> نطمح إلى تحقيق مكانة رائدة محليًا وعالميًا في مجال خدمات التعدين، ونتطلع إلى امتلاك حصة تبلغ 80% من سوق خدمات التعدين في السودان بحلول عام 2030م، من خلال تقديم خدمات متميزة وعالية الجودة. </p>
+		<h2> <img class="main" src="images/our-message/arrow.png"> 
+			<?php echo _our_messages_part3;?> </h2>
+		<p> <?php echo _our_messages_part4;?> </p>
 	</div>
 </div>
 
@@ -202,24 +225,24 @@
 	</div>
 
 	<div class="col-lg-10">
-		<h2> <img class="main" src="images/our-message/arrow.png"> اهدافنا </h2>
+		<h2> <img class="main" src="images/our-message/arrow.png"> <?php echo _our_messages_part5;?></h2>
 		<p> 
 		<div class="row">
 			
 			<div class="col-lg-4">
-				<img src="images/our-message/check.png"> تحقيق اعلى انتاجيه ممكنه
+				<img src="images/our-message/check.png"> <?php echo _our_messages_part6;?>
 				<br/>
-				<img src="images/our-message/check.png"> خلق بيئة إنسانية وبيئة منتجة وصحية ومستدامه
+				<img src="images/our-message/check.png"> <?php echo _our_messages_part7;?>
 			</div>
 
 			<div class="col-lg-4">
-				<img src="images/our-message/check.png"> تحقيق استقرار وإستمرار العمل
+				<img src="images/our-message/check.png"> <?php echo _our_messages_part8;?>
 				<br/>
-				<img src="images/our-message/check.png"> توفير كافة الطلبات الإنتاجية للعملاء
+				<img src="images/our-message/check.png"> <?php echo _our_messages_part9;?>
 			</div>
 
 			<div class="col-lg-4">
-				<img src="images/our-message/check.png"> المساهمة في تطوير مجال الخدمات
+				<img src="images/our-message/check.png"> <?php echo _our_messages_part10;?>
 			</div>
 
 		</div>
@@ -234,21 +257,24 @@
 	</div>
 
 	<div class="col-lg-10">
-		<h2> <img class="main" src="images/our-message/arrow.png"> قيمنا </h2>
-		<p> 
+		<h2> <img class="main" src="images/our-message/arrow.png"> <?php echo _our_messages_part11;?> </h2>
 
 		<div class="row">
 
 			<div class="col-lg-6">
-				<img src="images/our-message/check.png"> ملتزمون بتقديم خدمات عالية الجودة ونعمل بمصداقية وشفافية مع جميع العملاء والشركاء.
+				<img src="images/our-message/check.png"> 
+				<?php echo _our_messages_part12;?>
 				<br/>
-				<img src="images/our-message/check.png"> نسعى دائمًا إلى تحقيق أعلى معايير الجودة في كل ما نقدمه من خدمات ومنتجات
+				<img src="images/our-message/check.png"> 
+				<?php echo _our_messages_part13;?>
 			</div>
 
 			<div class="col-lg-6">
-				<img src="images/our-message/check.png"> نعمل دائما على الابتكار والتطور المستمر، ونسعى جاهدين لتحسين وتطوير خدماتنا.
+				<img src="images/our-message/check.png">
+				<?php echo _our_messages_part14;?>
 				<br/>
-				<img src="images/our-message/check.png"> تطلعات عملائنا وأهدافهم؛ هي أهدافنا، لذلك نحرص على كسب رضاهم التام وثقتهم الغالية 
+				<img src="images/our-message/check.png">
+				<?php echo _our_messages_part15;?> 
 			</div>
 		</div>
 </p>
@@ -262,7 +288,7 @@
 
 <section id="messter">
 	
-	<h3> كلمة رئيس مجلس الإدارة </h3>
+	<h3> <?php echo _messter_part1;?>  </h3>
 	<br/>
 
 	<div class="row">
@@ -272,12 +298,14 @@
 		</div>
 
 		<div class="col-lg-10">
-				<p> في شركة إكوبيشن للاستثمار المحدودة نؤمن بأن الجودة ليست دائماً الخيار الأغلى، بل هي الاستثمار الأكثر قيمة وفاعلية على المدى الطويل، من خلال التزامنا بتقديم أفضل الخدمات والمنتجات ذات الجودة العالية، نسعى جاهدين لتحقيق رضا عملائنا وتحقيق التميز في جميع جوانب أعمالنا، كما نؤمن بأن النجاح لا يأتي بسهولة، ولكنه يتطلب الإبداع والتفاني في تجاوز التحديات وتقديم الحلول المبتكرة التي تلبي احتياجات عملائنا بشكل فعال وموثوق.  </p>
+				<p> 
+					<?php echo _messter_part2;?>
+				 </p>
 				<br/>
 	<img src="images/master/master.jpg"><br/>
 
-	<b> محمد إدريس علي </b><br/>
-	<i> رئيس مجلس الإدارة </i>
+	<b> <?php echo _messter_part3;?> </b><br/>
+	<i> <?php echo _messter_part4;?> </i>
 		</div>
 
 		<div class="col-lg-1">
@@ -305,9 +333,11 @@
 
 		<div class="col-lg-6">
 
-			<h3> كلمة فريق إكوبيشن </h3>
+			<h3> <?php echo _team_part1;?>  </h3>
 
-			<p> فريق شركة إكوبيشن للإستثمار المحدودة هو عماد نجاحنا ومحرك تقدمنا، يتكون فريقنا من مجموعة متنوعة ومتخصصة من المهنيين والموظفين الملتزمين بتحقيق أهداف الشركة وتقديم أعلى مستويات الجودة والخدمة لعملائنا، ويتمتع أعضاء فريقنا بالخبرة والكفاءة في مجالاتهم المختلفة، مما يمكنهم من تنفيذ المشاريع بكفاءة عالية وفق أعلى المعايير المهنية. كما يتسم عمل فريقنا بالتعاون والتنسيق المستمر، حيث يعمل الجميع بروح الفريق الواحد لتحقيق الأهداف المشتركة، ويتميز بالابتكار والإبداع في التعامل مع التحديات، ويسعى دائمًا لاستخدام أحدث التقنيات لتحسين خدماتنا وتحقيق النجاح المستدام. </p>
+			<p> 
+				<?php echo _team_part2;?>
+			</p>
 			
 		</div>
 
