@@ -1,3 +1,18 @@
+<?php 
+session_start();
+// set session
+if(!isset($_SESSION['lang'])){
+  // set english as default
+  $_SESSION['lang'] = 'en';
+}
+if(isset($_GET['lang'])){
+
+  if($_GET['lang'] == "ar")
+  $_SESSION['lang'] = 'ar';
+  else
+  $_SESSION['lang'] = 'en';
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
@@ -5,7 +20,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link href="vendor/css/style.css" rel="stylesheet"/>
@@ -172,7 +192,7 @@
   
  <div class="form-head">
    <!--  <img style="width: 100%;height: 100px;" src="../images/hero.jpg"> -->
-    <h1 align="center"> طلب التشغيل </h1>
+    <h1 align="center"> <?php echo _forms_oprations_title; ?> </h1>
   </div>
 
 <div class="stepwizard col-lg-12">
@@ -182,17 +202,17 @@
     <div class="stepwizard-row setup-panel">
 
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b> بيانات المعدة</a>
+        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b> <?php echo _forms_oprations_step1; ?> </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  بيانات موقع الآلية</a>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  <?php echo _forms_oprations_step2; ?> </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  بيانات العميل</a>
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  <?php echo _forms_oprations_step3; ?> </a>
       
       </div>
 
@@ -215,10 +235,10 @@
 		<div class="row">
 
        <div class="col-md-6 form-group">
-                <label> نوع المعدة </label>
+                <label> <?php echo _forms_oprations_step1_f1; ?> </label>
                 
                   <select class="form-control mr-1" name="machine_type" id="machine_type">
-                    <option value="" disabled selected> -- اختار نوع المعدة  -- </option>
+                    <option value="" disabled selected> -- </option>
                     <option value="حفار"> حفار </option>
                     <option value="لوبد">  لوبد </option>
                     <option value="لودر">  لودر </option>
@@ -238,7 +258,7 @@
                 </div>
 
        <div class="form-group col-md-6">
-         <label>     مقاس المعدة </label>
+         <label> <?php echo _forms_oprations_step1_f2; ?> </label>
          <input type="text" class="form-control" id="inputDate" name="size_id"/></div>
 
         </div>
@@ -246,12 +266,12 @@
      <div class="row">
 
       <div class="form-group col-md-6">
-        <label>     ماركة المعدة </label>
+        <label>  <?php echo _forms_oprations_step1_f3; ?> </label>
          <input type="text" class="form-control" id="inputDate" name="brand_id"/></div>
 
     <div class="form-group col-md-6">
-        <label>      سنة الصنع </label>
-        <input type="text" class="form-control " id="year_of_manufacture_idhide" name="year_of_manufacture_idhide" placeholder="ادخل سنة الصنع" >     
+        <label> <?php echo _forms_oprations_step1_f4; ?> </label>
+        <input type="text" class="form-control " id="year_of_manufacture_idhide" name="year_of_manufacture_idhide" placeholder="" >     
       </div>
 
   	</div>
@@ -259,9 +279,9 @@
   	<div class="row">
 
      <div class="form-group col-md-6">
-            <label>  الترخيص </label>
+            <label> <?php echo _forms_oprations_step1_f5; ?> </label>
             <select class="form-control" id="" name="">
-              <option value="" disabled selected> </option>
+              <option value="" disabled selected> -- </option>
               <option value="ترخيص ساري ">  ترخيص ساري  </option>
               <option value="ترخيص منتهي ">  ترخيص منتهي  </option>
               <option value="غير مرخصة ">   غير مرخصة  </option>
@@ -270,9 +290,9 @@
       </div>
 
           <div class="form-group col-md-6">
-            <label>  التأمين </label>
+            <label> <?php echo _forms_oprations_step1_f6; ?> </label>
             <select class="form-control" id="insurance_type" name="insurance_type">
-              <option value="" disabled selected> </option>
+              <option value="" disabled selected> -- </option>
               <option value=".تأمين شامل  ">  .تأمين شامل    </option>
               <option value=".تأمين هندسي  ">   .تأمين هندسي  </option>
               <option value=".تأمين إجباري   ">   .تأمين إجباري   </option>
@@ -288,17 +308,17 @@
         <div class="row">
 
       <div class="col-md-6 form-group  mt-3 mt-md-0">  
-      <label>  إضافة أي ملحقات مع المعدة  </label>
+      <label> <?php echo _forms_oprations_step1_f7; ?> </label>
 
       <input type="text" id="description" name="description" class="form-control" placeholder="   
-إضافة أي ملحقات مع المعدة "> <font color="red">  </font> 
+ "> <font color="red">  </font> 
           </div> 
 
 
         <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label> مجال العمل </label>
+              <label> <?php echo _forms_oprations_step1_f8; ?> </label>
                   <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();">
-                    <option disabled selected>  </option>
+                    <option disabled selected> -- </option>
                     <option> التعدين </option>
                     <option>  الاسمنت </option>
                     <option>  الزراعة </option>
@@ -313,9 +333,9 @@
       	
 
           <div class="form-group col-md-6">
-          <label> مدة العقد:  </label>
+          <label> <?php echo _forms_oprations_step1_f9; ?>  </label>
           <select class="form-control" id="cotracts_id" name="cotracts_id" onchange="select_contracts();">
-            <option value="" disabled selected>  </option>
+            <option value="" disabled selected> -- </option>
             <option> لا يوجد قيد </option>
             <option> عقود طويلة (لا تقل عن 12 شهر) </option>
             <option> عقود متوسطة (لا تقل عن 3 شهور)  </option>
@@ -326,9 +346,9 @@
         </div>
 
         <div class="form-group col-md-6">
-          <label> المكان </label>
+          <label> <?php echo _forms_oprations_step1_f10; ?>  </label>
           <select class="form-control" id="state_id" name="state_id" onchange="select_state();">
-            <option value="" disabled selected>  </option>
+            <option value="" disabled selected> -- </option>
             <option> لا يوجد قيود </option>
             <option> داخل السودان فقط </option>
             <option> كل ولايات السودان عدا ... </option>
@@ -343,9 +363,9 @@
         <div class="row">
 
         <div class="form-group col-md-6">
-          <label> تعيين المشغلين  </label>
+          <label> <?php echo _forms_oprations_step1_f11; ?>  </label>
             <select class="form-control mr-1" id="hair_operator_id" name="hair_operator_id" onchange="select_hair_operator();">
-               <option value="" disabled selected>  </option>
+               <option value="" disabled selected> -- </option>
                <option> تعيين بواسطة إكوبيشن </option>
                <option> تعيين بواسطتي </option>
                <option value="hand"> إضافة قيد جديد </option>
@@ -355,9 +375,9 @@
 
 
         <div class="form-group col-md-6">
-          <label>  الجهات المفضلة في العمل: </label>
+          <label>  <?php echo _forms_oprations_step1_f12; ?> </label>
           <select class="form-control" id="category_id" name="category_id" onchange="select_catogry();">
-            <option value="" disabled selected> </option>
+            <option value="" disabled selected> -- </option>
             <option> لا قيود في العمل    </option>
             <option>  العمل مع الشركات فقط </option>
             <!-- <option  value="hand"> اضافة قيد جديد </option> -->
@@ -367,11 +387,15 @@
 
     </div>
 
+        <?php if($_SESSION['lang'] == "ar"){ ?>
         <div style="text-align: left;">
-
           <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
         </div>
+        <?php }else{ ?> 
+        <div style="float: right;">
+          <button class="btn btn-warning nextBtn btn-lg" type="button">  <i class="icon-arrow-right"></i> Confirm and continue  </button>
+        </div>
+        <?php } ?> 
 
         </div>
       </div>
@@ -390,9 +414,10 @@
         <div class="row">
 
           <div class="form-group col-md-6">
-           <label>  الولاية </label>
+           <label>  <?php echo _forms_oprations_step2_f1; ?> </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
            <select class="form-control mr-1" id="state_id" name="">
+              <option value="" disabled selected> -- </option>
                <option value="ولاية الخرطوم">ولاية الخرطوم </option>
                <option value="ولاية الجزيرة">ولاية الجزيرة</option>
                <option value="ولاية البحر الأحمر">ولاية البحر الأحمر </option>
@@ -420,7 +445,7 @@
 
          <div class="col-md-6 form- mt-3 mt-md-0">
               <br/>
-            <input type="text" class="form-control" name="address" id="address" placeholder="   اقرب مدينة    ">
+            <input type="text" class="form-control" name="address" id="address" placeholder=" <?php echo _forms_oprations_step2_f2; ?>   ">
           </div>
 
           </div>
@@ -429,14 +454,14 @@
 
           <div class="col-md-6 form- mt-3 mt-md-0">
             <br/>
-            <input type="text" class="form-control" name="nearest_road" id="nearest_road" placeholder="مسافة أقرب طريق معبَّد">
+            <input type="text" class="form-control" name="nearest_road" id="nearest_road" placeholder="<?php echo _forms_oprations_step2_f3; ?>">
           </div>
 
           <div class="col-md-6 form- mt-3 mt-md-0">
-              <label>  توفر الشبكة </label>
+              <label>  <?php echo _forms_oprations_step2_f4; ?> </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="ready" name="network">
-               <option value="" disabled selected> -- حدد نوع الشبكة -- </option>
+               <option value="" disabled selected>  -- </option>
                <option value="متاح"> متاح  </option>
                <option value="غير متاح"> غير متاح</option>
              </select>
@@ -449,11 +474,18 @@
 
       <br/>
 
+          <?php if($_SESSION['lang'] == "ar"){ ?>
           <div style="text-align: left;">
           <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
-      
           </div>
+          <?php }else{ ?>
+          <div style="float: right;">
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button">  Previous <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> Confirm & Contenue  </button>
+          </div>
+          <?php } ?>
+
         </div>
       </div>
     </div>
@@ -470,12 +502,12 @@
 
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="full_name" class="form-control" id="full_name" placeholder="   الاسم  ثلاثي">
+  <input type="text" name="full_name" class="form-control" id="full_name" placeholder="<?php echo _forms_oprations_step3_f1; ?>">
 </div>
 
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="phone_number" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000">
+  <input type="text" name="phone_number" class="form-control" id="phone" placeholder="<?php echo _forms_oprations_step3_f2; ?>">
 </div>
 
 </div>
@@ -484,12 +516,12 @@
   
 <div class="col-md-6 form-">
   <label></label>
-  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    رقم الواتساب  مثال 00249123000000">
+  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="<?php echo _forms_oprations_step3_f3; ?>">
 </div>
 
       <div class="col-md-6 form- mt-3 mt-md-0">
                   <label></label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل ">
+                  <input type="text" class="form-control" name="email" id="email" placeholder=" <?php echo _forms_oprations_step3_f4; ?> ">
                 </div>
 
 </div>
@@ -499,8 +531,9 @@
 
 
                 <div class="col-md-6 form-group">
-                <label>   نوع العلاقة بالموقع </label> 
+                <label>    <?php echo _forms_oprations_step3_f5; ?> </label> 
                 <select class="form-control mr-1" name="job" id="job" onchange="">
+                <option value="" selected disabled> -- </option>
                 <option value="مالك"> مالك   </option>
                 <option value="شريك"> شريك </option>
                 <option value="مدير"> مدير </option>
@@ -512,8 +545,9 @@
                   </div>
 
               <div class="col-md-6 form-">
-                <label> الجهة التابع لها </label> 
+                <label> <?php echo _forms_oprations_step3_f6; ?> </label> 
                 <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();">
+                  <option value="" selected disabled> -- </option>
                 <option value="company"> شركة </option>
                 <option value="individual"> فرد </option>
                 </select>  
@@ -528,8 +562,9 @@
             <div class="row">
 
               <div class="col-md-6 form- mt-3 mt-md-0">
-              <label> هل  سبق لك العمل معنا </label> 
+              <label> <?php echo _forms_oprations_step3_f7; ?> </label> 
                 <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();">
+                  <option value="" selected disabled> -- </option>
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
@@ -541,8 +576,9 @@
 
               <div class="col-md-6 form- mt-3 mt-md-0">
               <div class="form-">
-              <label for="exampleFormControlSelect2">طريقة التعرف علينا</label>
+              <label for="exampleFormControlSelect2"> <?php echo _forms_oprations_step3_f8; ?> </label>
               <select  class="form-control" name="know" id="exampleFormControlSelect2">
+                <option value="" selected disabled> -- </option>
                 <option value="media"> الفيسبوك </option>
                 <option value="media"> التويتر </option>
                 <option value="media"> الانستغرام </option>
@@ -557,12 +593,19 @@
 
       <br/><br/>
 
+      <?php if($_SESSION['lang'] == "ar"){ ?>
       <div style="text-align: left;">
-         
           <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب <i class="icon-check"></i> </button>
-
            <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق </button>
-        </div>
+      </div>
+      <?php }else{ ?>
+        <div style="text-align: left;float: right;">
+           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> Previous <i class="icon-arrow-left"></i>  </button>
+           <button class="btn btn-success btn-lg pull-right" type="submit"> Send Request <i class="icon-check"></i> </button>
+      </div>
+      <?php } ?>
+
+
         </div>
       </div>
     </form></div>

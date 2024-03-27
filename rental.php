@@ -1,3 +1,18 @@
+<?php 
+session_start();
+// set session
+if(!isset($_SESSION['lang'])){
+  // set english as default
+  $_SESSION['lang'] = 'en';
+}
+if(isset($_GET['lang'])){
+
+  if($_GET['lang'] == "ar")
+  $_SESSION['lang'] = 'ar';
+  else
+  $_SESSION['lang'] = 'en';
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl">
 <head>

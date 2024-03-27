@@ -15,6 +15,41 @@ define('_contact' , 'Contact Us');
 /*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 /*-----------------------------------------------
+services_list
+-------------------------------------------------*/
+define('_services_list_part1' , 'Establishing sites');
+define('_services_list_part111' , 'Equipation Company for Limited Investment specializes in mining site establishment, offering extensive expertise and comprehensive services to clients in this sector. Our vision is to provide innovative and sustainable solutions for efficiently building and operating mining sites, ensuring maximum value-added from natural resources, and achieving economic and environmental success. Also, we are committed to quality and professionalism in every stage of the site establishment process, striving to achieve customer satisfaction and reliable, sustainable goal attainment..');
+
+define('_services_list_part2' , 'Tracking systems');
+define('_services_list_part222' , 'We aim to provide integrated solutions that improve the management of heavy equipment and machinery and enhance the efficiency of mining operations. Our focus is on providing advanced and effective tracking systems, installing them with high precision, and efficiently monitoring and operating them to ensure optimal resource utilization and achieve maximum productivity and safety. These services are an essential part of our strategy to meet our clients aspirations and reliably meet their needs in the mining industry.');
+
+define('_services_list_part3' , 'Transportation');
+define('_services_list_part33' , 'Transportation Services');
+define('_services_list_part333' , 'Equipation Company for Limited Investment provides comprehensive transportation and haulage services in the mining sector. We offer customized and integrated transportation solutions for the efficient and safe transport of raw materials, heavy equipment, and mining products. Our services include land transportation, where we provide trucks and necessary equipment for the effective and timely transportation of materials to and from mining sites. Also, we offer sea and air transportation services for large, complex, and urgent shipments, ensuring these services are delivered with the highest standards of speed, quality, and safety. Additionally, we provide continuous internal haulage services for lifting, moving, and transferring heavy equipment and materials within mining sites and between different locations, while focusing on providing integrated and efficient solutions to fully meet our clients needs and requirements.');
+
+define('_services_list_part4' , 'Maintenance');
+define('_services_list_part44' , 'Maintenance Services');
+define('_services_list_part444' ,'Maintenance services for heavy equipment and machinery are an essential part of our commitment to providing integrated and reliable services in the mining sector, as we place great emphasis on maintaining the safety and performance of equipment at the highest levels, by including offering comprehensive maintenance programs that cover preventive, corrective, and predictive maintenance. Our specialized maintenance team works around the clock to ensure immediate response and effective resolution of maintenance issues, ensuring uninterrupted mining operations with the highest levels of safety and efficiency. Our maintenance services are a fundamental factor in achieving our vision of sustainability and success in the mining industry.');
+
+define('_services_list_part5' , 'Employment');
+define('_services_list_part55' , 'Employment services');
+define('_services_list_part555' , 'Equipation Company for Limited Investment ensures the supply of specialized and highly experienced human resources in the mining sector. We place great importance on recruiting and selecting qualified and exceptional personnel who possess the necessary experience and knowledge in various mining specialties. They contribute significantly to analyzing and accurately assessing the needs of companies, assisting them in completing specialized administrative, technical, and operational aspects to achieve their goals and aspirations. Our contribution to our clients is through providing the most suitable human resources team, supporting their success in this field. Additionally, we strive to provide a stimulating and inspiring work environment that encourages professional and personal development for employees. Also, we support training and development projects for personnel in this field, which contributes to enhancing their sense of belonging and performance.');
+
+define('_services_list_part6' , 'Rental');
+define('_services_list_part66' , 'Rental services');
+define('_services_list_part666' , 'We provide a diverse range of high-quality heavy equipment, including excavators, graders, loaders, massive trucks, and a wide range of other equipment used in mining operations, and we are committed to providing equipment in excellent condition and ready for use at any time. Also, we guarantee efficient rental services at competitive prices. Additionally, we offer continuous maintenance and technical support for rented equipment to ensure the continuity of mining operations for our clients.');
+
+define('_services_list_part7' , 'Operating');
+define('_services_list_part77' , 'Operating services');
+define('_services_list_part777' , 'We offer specialized and exceptional services in operating and managing a variety of heavy equipment and machinery used in mining operations, including large excavators, massive trucks, loaders, bulldozers, and other essential equipment. Also, we ensure the efficient operation of these equipment with the highest safety standards, providing trained and qualified work teams to handle them safely and effectively. Also, we prioritize regular maintenance and effective equipment operation to ensure the continuity of mining operations for companies and maximize the utilization of available resources.');
+
+define('_services_list_part8' , 'Contracting');
+define('_services_list_part88' , 'Contracting services');
+define('_services_list_part888' , 'We provide specialized services in mining contracting, possessing vast experience and exceptional resources in this field. Also, we offer comprehensive and integrated solutions to clients in the mining industry, ranging from planning and design to execution and project management. Our mining contracting services include mine operations management, achieving the highest levels of productivity and efficiency, in addition to adhering to the highest safety and quality standards. We strive to achieve our clients goals and provide innovative solutions that ensure maximum value-added from mining projects.');
+
+/*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+/*-----------------------------------------------
 Hero
 -------------------------------------------------*/
 
@@ -69,7 +104,7 @@ services
 
 define('_services_part1' , 'Equipation services');
 define('_services_part2' , 'A journey of creativity and professionalism in achieving your national projects');
-
+ 
 define('_services_part3' , 'Tracking systems');
 define('_services_part4' , 'We provide innovative and sustainable solutions to build and operate mining projects with high efficiency');
 
@@ -220,6 +255,42 @@ Moreover, our team works collaboratively and cohesively, with everyone operating
 /*oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 
+/*-----------------------------------------------
+Forms
+----------------------------------------------------------------*/
+//Oprations 
+define('_forms_oprations_title' , 'Operation request');
+
+define('_forms_oprations_step1' , 'Equipment Detailes');
+define('_forms_oprations_step2' , 'Site description');
+define('_forms_oprations_step3' , 'Customer data');
+
+define('_forms_oprations_step1_f1' , 'Equipment type');
+define('_forms_oprations_step1_f2' , 'Size machine');
+define('_forms_oprations_step1_f3' , 'Brand machine');
+define('_forms_oprations_step1_f4' , 'Year of manufacture');
+define('_forms_oprations_step1_f5' , 'License');
+define('_forms_oprations_step1_f6' , 'Insuarance');
+define('_forms_oprations_step1_f7' , 'Add any accessories with the equipment');
+define('_forms_oprations_step1_f8' , 'Work field');
+define('_forms_oprations_step1_f9' , 'Contracts');
+define('_forms_oprations_step1_f10' , 'State');
+define('_forms_oprations_step1_f11' , 'Maintenance');
+define('_forms_oprations_step1_f12' , 'Category');
+
+define('_forms_oprations_step2_f1' , 'states');
+define('_forms_oprations_step2_f2' , 'Nearest City');
+define('_forms_oprations_step2_f3' , 'Distance to nearest paved road');
+define('_forms_oprations_step2_f4' , 'Network availability');
+
+define('_forms_oprations_step3_f1' , 'Full name');
+define('_forms_oprations_step3_f2' , 'Phone number Ex: 0024912300000');
+define('_forms_oprations_step3_f3' , 'Whatsapp number Ex: 0024912300000');
+define('_forms_oprations_step3_f4' , 'Email');
+define('_forms_oprations_step3_f5' , 'Type of relationship to the site');
+define('_forms_oprations_step3_f6' , 'Your side is');
+define('_forms_oprations_step3_f7' , 'Have you over worked with us');
+define('_forms_oprations_step3_f8' , 'How to know us ');
 
 
 

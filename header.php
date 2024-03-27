@@ -31,22 +31,38 @@ include 'lang/ar.php';
 
       	  <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php"><?php echo _home; ?></a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php">من نحن</a></li>
-              <li class="dropdown"><a href="#"><span> خدماتنا </span>  <i class="bi bi-chevron-down"></i></a>
-            <ul>
-            <li> <a href="services.php?id=construct"> خدمات تاسيس المواقع </a> </li>
-            <li> <a href="services.php?id=tracking">  خدمات انظمة التتبع </a> </li>
-            <li> <a href="services.php?id=transport">  خدمات الترحيل </a> </li>
-            <li> <a href="services.php?id=maintenance">  خدمات الصيانة </a> </li>
-            <li> <a href="services.php?id=employement">  خدمات التوظيف </a> </li>
-            <li> <a href="services.php?id=rental">  خدمات التأجير </a> </li>
-            <li> <a href="services.php?id=opration">  خدمات التشغيل </a> </li>
-            <li> <a href="services.php?id=contract">  خدمات المقاولة </a> </li>
-          </ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
+              <li class="dropdown"><a href="#"><span> <?php echo _our_services; ?> </span>  <i class="bi bi-chevron-down"></i></a>
+          <ul>
+    <li> <a href="services.php?id=construct"> 
+      <?php echo _services_list_part1; ?></a>
+    </li>
+    <li><a href="services.php?id=tracking">
+      <?php echo _services_list_part2; ?></a> 
+    </li>
+    <li><a href="services.php?id=transport">
+      <?php echo _services_list_part3; ?></a> 
+   </li>
+   <li><a href="services.php?id=maintenance">
+      <?php echo _services_list_part4; ?></a> 
+   </li>
+    <li><a href="services.php?id=employement">
+      <?php echo _services_list_part5; ?></a> 
+   </li>
+    <li> <a href="services.php?id=rental"> 
+      <?php echo _services_list_part6; ?></a>
+    </li>
+    <li> <a href="services.php?id=opration"> 
+      <?php echo _services_list_part7; ?></a>
+    </li>
+    <li> <a href="services.php?id=contract"> 
+      <?php echo _services_list_part8; ?></a>
+    </li>
+  </ul>
           </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> مجالات العمل </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> الأخبار</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> إتصل بنا</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> <?php echo _work_fildes; ?> </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?> </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"><?php echo _contact; ?> </a></li>
               <li style="text-align: right;"><button class="btn-main"> إستعلام وإستفسار >> </button></li>
             </ul>
 
@@ -118,8 +134,11 @@ include 'lang/ar.php';
 
       </nav><!-- .navbar -->
    <div  style="background-color: #fff;padding: 0px;width: 100%;text-align: right;">
-		<img src="images/logo/logo.jpg" width="100" height="49">
-		<img src="images/h-divider.png" width="50" height="53" style="float: left;">
+		<?php if($_SESSION['lang'] == "ar"){ ?>
+    <img style="float: left;"  src="images/logo/logo-right.jpg" width="180" height="100%">
+    <?php }else{ ?>
+    <img style="float: right;" src="images/logo/logo-left.jpg" width="180" height="100%">
+    <?php } ?>
 	</div>
 
  <!--      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
@@ -166,8 +185,11 @@ include 'lang/ar.php';
 <div class="row">
 
 	<div class="col-lg-2" style="background-color: #fff;padding: 0px;">
-		<img src="images/logo/logo.jpg" width="100" height="49">
-		<img src="images/h-divider.png" width="50" height="53" style="float: left;">
+    <?php if($_SESSION['lang'] == "ar"){ ?>
+		<img src="images/logo/logo-right.jpg" width="180" height="100%">
+    <?php }else{ ?>
+    <img style="float: right;" src="images/logo/logo-left.jpg" width="180" height="100%">
+    <?php } ?>
 	</div>
 
 	<div class="col-lg-8">
@@ -193,14 +215,30 @@ include 'lang/ar.php';
 
 <section id="services_list">
 	<ul>
-		<li> <a href="services.php?id=construct"> خدمات تاسيس المواقع </a> </li>
-		<li> <a href="services.php?id=tracking"> | خدمات انظمة التتبع </a> </li>
-		<li> <a href="services.php?id=transport"> | خدمات الترحيل </a> </li>
-		<li> <a href="services.php?id=maintenance"> | خدمات الصيانة </a> </li>
-		<li> <a href="services.php?id=employement"> | خدمات التوظيف </a> </li>
-		<li> <a href="services.php?id=rental"> | خدمات التأجير </a> </li>
-		<li> <a href="services.php?id=opration"> | خدمات التشغيل </a> </li>
-		<li> <a href="services.php?id=contract"> | خدمات المقاولة </a> </li>
+		<li> <a href="services.php?id=construct"> 
+      <?php echo _services_list_part1; ?></a>
+    </li>
+		<li><a href="services.php?id=tracking">
+      | <?php echo _services_list_part2; ?></a> 
+    </li>
+		<li><a href="services.php?id=transport">
+      | <?php echo _services_list_part3; ?></a> 
+   </li>
+	 <li><a href="services.php?id=maintenance">
+      | <?php echo _services_list_part4; ?></a> 
+   </li>
+		<li><a href="services.php?id=employement">
+      | <?php echo _services_list_part5; ?></a> 
+   </li>
+		<li> <a href="services.php?id=rental"> 
+      | <?php echo _services_list_part6; ?></a>
+    </li>
+		<li> <a href="services.php?id=opration"> 
+      | <?php echo _services_list_part7; ?></a>
+    </li>
+		<li> <a href="services.php?id=contract"> 
+      | <?php echo _services_list_part8; ?></a>
+    </li>
 	</ul>
   <hr/>
 </section>

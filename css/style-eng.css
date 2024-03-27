@@ -951,12 +951,14 @@ h2{
 /*************************************************/
 
 #service-items{
+	text-align: left;
 	font-family: Montserrat-Arabic-Regular ;
 	padding: 20px;
 	background-color:  rgb(239 , 238 , 237 );
 }
 
 #service-items .row{
+	text-align: left;
 	margin: 20px;
 	padding: 10px;
 	background-color: #fff;
@@ -979,6 +981,7 @@ h2{
 
 #service-items .row .col-lg-8 div , 
 #service-items .row .col-lg-4 div {
+	text-align: left;
 	padding: 15px;
 } 
 
@@ -995,11 +998,16 @@ h2{
 	width: 95%;
 }
 
+#service-items p{
+	text-align: left;
+}
+
 /***********************forms*********************
 *************************************************/
 
 #forms{
-	text-align: right;
+	direction: ltr;
+	text-align: left;
 	background-color:  rgb(239 , 238 , 237 );
 	font-family: Montserrat-Arabic-Regular;
 	font-size: 15px;
