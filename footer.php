@@ -1,3 +1,42 @@
+
+    <div class="modal hide" id="form_modal" role="dialog" aria-hidden="true">
+    <center>
+    <br/><br/><br/>
+    <div class="modal-dialo">
+    
+    <form method="POST" action="#">
+
+    <h4> طلب إستفسار <a style="color: gray;" data-dismiss="modal" href="#"><i  class="icon-remove-circle"> </i> </a> </h4>  
+
+    <div class="form-group">
+      <label> الإسم ثلاثى </label>
+      <input class="form-control" type="text" name="name" placeholder="ادخل الإسم ثلاثى" required autofocus>
+    </div>
+
+    <div class="form-group">
+      <label> رقم الهاتف </label>
+      <input class="form-control" type="text" name="name" placeholder="ادخل رقم الهاتف ">
+    </div>
+
+    <div class="form-group">
+      <label> البريد الإلكترونى </label>
+      <input class="form-control" type="text" name="name" placeholder="ادخل البريد الإلكترونى ">
+    </div>
+
+    <div class="form-group">
+      <label> اخبرنا بطلبك وإستفسارك </label>
+      <textarea class="form-control" placeholder="اخبرنا بطلبك واستفسارك" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button style="width: 100%;" class="btn-main"> تأكيد وإرسال </button>
+    </div>
+      
+         </form>
+    </div>
+    </center>
+  </div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="row">
@@ -76,9 +115,12 @@
 
   </footer><!-- End Footer -->
 
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="vendor/purecounter/purecounter_vanilla.js"></script>

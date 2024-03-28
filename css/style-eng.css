@@ -1,4 +1,4 @@
-@font-face{
+/*@font-face{
   font-family: Montserrat-Arabic-Regular ;
   src : url('../fonts/Montserrat-Arabic-Regular.ttf');
 } 
@@ -6,7 +6,7 @@
 @font-face{
   font-family: Montserrat-Arabic-Bold ;
   src : url('../fonts/Montserrat-Arabic-Bold.ttf');
-}
+}*/
 
 /*-------------------------------------------------------------
 General
@@ -789,6 +789,7 @@ h2{
 }
 
 #news p {
+	text-align: left;
 	color: #777;
 }
 
@@ -808,6 +809,7 @@ h2{
 }
 
 #news .row .col-lg-4 div {
+	text-align: left;
 	background-color: #fff;
 	padding: 0px;
 	margin :0px;
@@ -819,14 +821,15 @@ h2{
 }
 
 #news .row h6 , #news .row h5 , p {
- 	text-align: right;
+ 	text-align: left;
  	padding: 10px;
 
-}
+}	
 
 #news .row h5{
 	font-size: 17px;
 	font-weight: 600;
+	text-align: left;
 }
 
 #news .row h5:hover{
@@ -835,11 +838,12 @@ h2{
 
 #news .row a{
 	display: block;
-	text-align: left;
+	text-align: right;
 	color: #222;
 	padding-left: 20px;
 	padding-bottom: 10px;
 	font-weight: bold;
+
 }
 
 /*************************************************/
@@ -867,13 +871,14 @@ h2{
 }
 
 #contact .col-lg-6 .div{
-	text-align: right;
+	text-align: left;
 	padding: 30px;
 	margin : 10px;
 	font-weight: bold;
 }
 
 #contact .col-lg-6 div{
+	text-align: left;
 	padding: 10px;
 	margin : 10px;
 }
@@ -882,6 +887,7 @@ h2{
 	font-size: 25px;
 	font-weight: 600;
 	padding-right: 10px;
+	text-align: left;
 }
 
 #contact .col-lg-6 h5{
@@ -900,6 +906,10 @@ h2{
 
 #contact form label b{
 	color: red;
+}
+
+#contact p{
+	text-align: left;
 }
 
 /*************************************************/
@@ -1106,6 +1116,33 @@ h2{
 
 
 /*************************************************/
+
+
+/*---------------------------------------------------------
+modal
+----------------------------------------------------------*/
+
+#form_modal{
+	text-align: center;
+
+}
+
+#form_modal .modal-dialo{
+	width: 500px;
+	background-color: #eee;
+	font-family:  Montserrat-Arabic-Regular;
+	text-align: left;
+	padding: 10px;
+}
+
+#form_modal .modal-dialo h4{
+	font-family:  Montserrat-Arabic-Bold;
+}
+
+#form_modal .modal-dialo h4 i{
+	float: right;
+}
+
 
 /***********************footer*********************
 *************************************************/

@@ -1061,6 +1061,30 @@ h2{
 
 /*************************************************/
 
+/*---------------------------------------------------------
+modal
+----------------------------------------------------------*/
+
+#form_modal{
+	text-align: center;
+}
+
+#form_modal .modal-dialo{
+	width: 500px;
+	background-color: #eee;
+	font-family:  Montserrat-Arabic-Regular;
+	text-align: right;
+	padding: 10px;
+}
+
+#form_modal .modal-dialo h4{
+	font-family:  Montserrat-Arabic-Bold;
+}
+
+#form_modal .modal-dialo h4 i{
+	float: left;
+}
+
 /***********************footer*********************
 *************************************************/
 

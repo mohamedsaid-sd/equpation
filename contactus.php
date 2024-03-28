@@ -90,9 +90,15 @@ if($_SESSION['lang'] == "ar"){ ?>
 			 		<textarea class="form-control" name="">  </textarea>
 			 	</div>
 
+			 	<?php if($_SESSION['lang'] == "ar"){ ?>
 			 	<div class="form-group" style="text-align: left;">
 			 		<button style="width: 200px;padding: 13px;" class="btn-main"> <?php echo _Connect_us_part18; ?> <i class="icon-arrow-left"></i>  </button>
 			 	</div>
+			 	<?php }else{ ?>
+			 	<div class="form-group" style="text-align: right;">
+			 		<button style="width: 200px;padding: 13px;" class="btn-main"> <?php echo _Connect_us_part18; ?> <i class="icon-arrow-right"></i>  </button>
+			 	</div>
+			 	<?php } ?>
 
 			 	
 			 </form>
