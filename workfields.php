@@ -32,17 +32,22 @@ if($_SESSION['lang'] == "ar"){ ?>
 </head>
 <body>
 
+
 <?php include 'header.php'; ?>
 <section id="pointer">
+<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> مجالات العمل </b></a>
+	/ <a href="#"><b> <?php echo _work_fildes; ?>  </b></a>
 </section>
 
 <section id="fildes">
 	<br/>
-	<h4> مجالات العمل </h4>
-	<h2> رحلة الإبداع والإحتراف في تحقيق مشاريعكم الوطنية </h2>
+	<h4>  <?php echo _work_fildes; ?>  </h4>
+	<h2><?php echo _our_travel_part2; ?>    </h2>
 	
 	<div class="row"> 
 		<div class="col-lg-3">
@@ -50,33 +55,32 @@ if($_SESSION['lang'] == "ar"){ ?>
 		</div>
 
 		<div class="col-lg-4">
-			<h5> <b> 01 </b> مشاريع إستخراج المعادن </h5>
-			<p> تعمل شركة Equiption في مشاريع إستحراج الذهب في مختلف مناطق السودان </p>
+			<h5> <b> 01 </b> <?php echo _workfields_part2; ?>  </h5>
+			<p> <?php echo _workfields_part3; ?> </p>
 		</div>
 
 		<div class="col-lg-5">
 			<ul>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين عن الذهب عن طريق المناجم المفتوحة</li>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين في مشاريع الكرته </li>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين عن مجمعات الطواحين </li>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين عن الذهب بالغرابيل المائية والذهبية </li>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين عن الكروم </li>
-			<li> <img src="images/our-message/check.png"> مشاريع التعدين عن الذهب بالاجهزة المتجولة </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part4; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part5; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part6; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part7; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part8; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part9; ?> </li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="row"> 
 		<div class="col-lg-4">
-			<h5> <b> 02 </b> مشاريع إستخراج الاحجار </h5>
-			<p> توفر Equipation الأليات اللازمة لتشغيل المحاجر وتعمل الشركة في </p>
+			<h5> <b> 02 </b> <?php echo _workfields_part10; ?> </h5>
+			<p> <?php echo _workfields_part11; ?> </p>
 		</div>
 		<div class="col-lg-5">
-			<img src="images/our-message/check.png"> <b> مشاريع محاجر الرخام </b> :<br/>
-			يتم انتاج الرخام الابيض من الحجر الجيري او الدولوميت شديد النقاء ( بنسبة سيليكات ضئيلة) والعروق المميزة لكل انواع الرخام الملون عادة ما تكون بسبب الشوائب المعدنية المختلفة مثل الطين او الطمي او الرمل او اكاسيد الحديد <br/>
-			<img src="images/our-message/check.png"> <b> مشاريع محاجر الاسمنت : </b>
-			 صنع الاسمنت من خليط من الحجر الكلسي بنسبة 75% و 25% من الطين . ويمكن إضافة خام الحديد او الرمل إذا كان الطين يحتوي علي نسبة ضعيفة من اكسيد الحديد او اكسيد السيلكون . ثم يتم تكسيرها الي حبيبات في شكل حصى
-		</div>
+			<img src="images/our-message/check.png"> <b>  <?php echo _workfields_part111; ?> </b> :<br/>
+			<?php echo _workfields_part12; ?> <br/>
+			<img src="images/our-message/check.png"> <b> <?php echo _workfields_part222; ?> </b>
+			<?php echo _workfields_part13; ?> 		</div>
 
 		<div class="col-lg-3">
 			<img src="images/fileds/2.png">
@@ -90,18 +94,18 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 		<div class="col-lg-5">
 			<br/>
-			<h5> <b> 03 </b> المشاريع الزراعية </h5>
-			<p> لعب الاليات الثقيلة دورا في تحضير الاراضى الزراعية وتسويتها . تساهم Equipation بفعالية في عدد من المشتريع الزراعية عن طريق توفير اليات ذات اداء عالي وفريق فني مختص </p>
+			<h5> <b> 03 </b> 	<?php echo _workfields_part14; ?> </h5>
+			<p>   	<?php echo _workfields_part15; ?>  </p>
 		</div>
 
 		<div class="col-lg-4">
 			<br/>
 			<ul>
-			<li> <img src="images/our-message/check.png">   حفر وتنظيف قنوات الري والترع </li>
-			<li> <img src="images/our-message/check.png"> تنفيذ وتسوية الشوارع الداخلية في المزارع </li>
-			<li> <img src="images/our-message/check.png"> تنظيف المزارع وإزالة الاشجار والحشائش الضارة </li>
-			<li> <img src="images/our-message/check.png"> تسوية وتحضير الاراضى الزراعية </li>
-			<li> <img src="images/our-message/check.png"> تنفيذ مشاريع تسوية المزارع </li>
+			<li> <img src="images/our-message/check.png">	<?php echo _workfields_part16; ?>   </li>
+			<li> <img src="images/our-message/check.png"> 	<?php echo _workfields_part17; ?> </li>
+			<li> <img src="images/our-message/check.png"> 	<?php echo _workfields_part18; ?> </li>
+			<li> <img src="images/our-message/check.png">	<?php echo _workfields_part19; ?>  </li>
+			<li> <img src="images/our-message/check.png"> 	<?php echo _workfields_part20; ?> </li>
 			
 			</ul>
 		</div>
@@ -109,15 +113,12 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 	<div class="row"> 
 		<div class="col-lg-4">
-			<h5> <b> 04 </b> مشاريع الطرق والجسور </h5>
-			<p> تعمل Equipation علي تنفيذ مشاريع الطرق والجسور ومصارف المياء مسلحة بأحدث الآليات وبواصفات عالمية </p>
+			<h5> <b> 04 </b> 	<?php echo _workfields_part21; ?> </h5>
+			<p> 	 </p>
 		</div>
 		<div class="col-lg-5">
-			<img src="images/our-message/check.png"> <b> مشاريع محاجر الرخام </b> :<br/>
-			يتم انتاج الرخام الابيض من الحجر الجيري او الدولوميت شديد النقاء ( بنسبة سيليكات ضئيلة) والعروق المميزة لكل انواع الرخام الملون عادة ما تكون بسبب الشوائب المعدنية المختلفة مثل الطين او الطمي او الرمل او اكاسيد الحديد <br/>
-			<img src="images/our-message/check.png"> <b> مشاريع محاجر الاسمنت : </b>
-			 صنع الاسمنت من خليط من الحجر الكلسي بنسبة 75% و 25% من الطين . ويمكن إضافة خام الحديد او الرمل إذا كان الطين يحتوي علي نسبة ضعيفة من اكسيد الحديد او اكسيد السيلكون . ثم يتم تكسيرها الي حبيبات في شكل حصى
-		</div>
+		<img src="images/our-message/check.png"> 	<?php echo _workfields_part22; ?> 	<br/>		<img src="images/our-message/check.png"> 
+			<?php echo _workfields_part23; ?> 		</div>
 
 		<div class="col-lg-3">
 			<img src="images/fileds/4.png">
@@ -131,17 +132,17 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 		<div class="col-lg-5">
 			<br/>
-			<h5> <b> 05 </b> مشاريع الإنشاءات </h5>
-			<p> تماشيا مع الطفرة العمرانية التي تشهدها البلاد , طورت Equipation من خدماتها في مجال الإنشاءات ووفرت مجموعة من الخدمات التي تخدم مشاريع الإنشاءات منها : </p>
+			<h5> <b> 05 </b> <?php echo _workfields_part24; ?> </h5>
+			<p>  <?php echo _workfields_part25; ?>  </p>
 		</div>
 
 		<div class="col-lg-4">
 			<br/>
 			<ul>
-			<li> <img src="images/our-message/check.png"> مشاريع صناعة الطوب بمختلف الانواع والاحجام </li>
-			<li> <img src="images/our-message/check.png"> حفر القواعد اللازمة لانشاء المبانى والعمارات </li>
-			<li> <img src="images/our-message/check.png"> إزالة المبانى القديمة ونقل الانقاض </li>
-			<li> <img src="images/our-message/check.png"> تحويل ونقل مواد البناء </li>
+			<li> <img src="images/our-message/check.png"><?php echo _workfields_part26; ?>  </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part27; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part28; ?> </li>
+			<li> <img src="images/our-message/check.png"><?php echo _workfields_part29; ?>  </li>
 			
 			</ul>
 		</div>
@@ -150,15 +151,15 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 	<div class="row"> 
 		<div class="col-lg-4">
-			<h5> <b> 06 </b> المشاريع الوطنية </h5>
-			<p> انطلاقا من مسؤوليتها تجاه البلاد والعباد نفذت Equipation عددا من المشاريع الوطنية </p>
+			<h5> <b> 06 </b> <?php echo _workfields_part30; ?> </h5>
+			<p> <?php echo _workfields_part31; ?>  </p>
 		</div>
 		<div class="col-lg-5">
 			
 			<ul>
-			<li> <img src="images/our-message/check.png"> فتح مجارى المياه في الخريف </li>
-			<li> <img src="images/our-message/check.png"> فتح وتنظيف الشوارع </li>
-			<li> <img src="images/our-message/check.png"> مشاريع الصرف الصحى ومجاري المياه </li>
+			<li> <img src="images/our-message/check.png"><?php echo _workfields_part32; ?>  </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part33; ?> </li>
+			<li> <img src="images/our-message/check.png"> <?php echo _workfields_part34; ?> </li>
 			
 			</ul>
 

@@ -419,17 +419,17 @@ if(isset($_GET['lang'])){
 
                 <div class="col-md-4 form-">
                   <label></label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="   الاسم  ثلاثي" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder=" <?php echo _forms_oprations_step3_f1; ?>     " required>
                 </div>
 
                 <div class="col-md-4 form-">
                   <label></label>
-                  <input type="text" name="phone" class="form-control" id="phone" placeholder="   رقم الهاتف  مثال 00249123000000" required>
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="   <?php echo _forms_oprations_step3_f2; ?>    " required>
                 </div>
 
                 <div class="col-md-4 form-">
                   <label></label>
-                  <input type="text" name="whatsapp_num" class="form-control" id="phone" placeholder="    رقم الواتساب  مثال 00249123000000" required>
+                  <input type="text" name="whatsapp_num" class="form-control" id="phone" placeholder="  <?php echo _forms_oprations_step3_f3; ?>     " required>
                 </div>
 
               </div>
@@ -439,13 +439,13 @@ if(isset($_GET['lang'])){
 
                 <div class="col-md-4 form- mt-3 mt-md-0">
                   <label></label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder=" الايميل " required>
+                  <input type="text" class="form-control" name="email" id="email" placeholder=" <?php echo _forms_oprations_step3_f4; ?>  " required>
                 </div>
 
                 <div class="col-md-4 form- mt-3 mt-md-0">
-                <label>   نوع العلاقة بالموقع </label> 
+                <label> <?php echo _forms_oprations_step3_f5; ?>  </label> 
                 <select class="form-control mr-1" name="job" id="job" onchange="" required>
-                <option value="" disabled selected> -- اختار  -- </option>
+                <option value="" disabled selected>  </option>
                 <option value="مالك"> مالك   </option>
                 <option value="شريك"> شريك </option>
                 <option value="مدير"> مدير </option>
@@ -457,9 +457,9 @@ if(isset($_GET['lang'])){
                   </div>
 
               <div class="col-md-4 form-">
-                <label> الجةة التابع لها </label> 
+                <label> <?php echo _forms_oprations_step3_f6; ?></label> 
                 <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" required>
-                <option value="" disabled selected> -- اختار  -- </option>
+                <option value="" disabled selected> </option>
                 <option value="company"> شركة </option>
                 <option value="individual"> فرد </option>
                 </select>  
@@ -467,9 +467,9 @@ if(isset($_GET['lang'])){
               </div>
 
               <div class="col-md-4 form- mt-3 mt-md-0">
-              <label> هل  سبق لك العمل معنا </label> 
+              <label>  <?php echo _forms_oprations_step3_f7; ?></label> 
                 <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" required>
-                <option value="" disabled selected> -- اختار الاجابة -- </option>
+                <option value="" disabled selected>  </option>
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
@@ -483,7 +483,7 @@ if(isset($_GET['lang'])){
 
               <div class="col-md-4 form- mt-3 mt-md-0">
               <div class="form-">
-              <label for="exampleFormControlSelect2">طريقة التعرف علينا</label>
+              <label for="exampleFormControlSelect2"><?php echo _forms_oprations_step3_f8; ?></label>
               <select  class="form-control" name="know" id="exampleFormControlSelect2">
                 <option value="media"> الفيسبوك </option>
                 <option value="media"> التويتر </option>

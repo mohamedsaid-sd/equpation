@@ -311,6 +311,86 @@ define('_footer_part9' , 'All rights reserved to Equipation@');
 
 /*oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
+
+
+/*-----------------------------------------------
+Connect_us
+----------------------------------------------------------------*/
+
+define('_Connect_us_part1' , 'Stay in touch');
+define('_Connect_us_part2' , 'To ensure prompt communication with your comment or request, please write a detailed explanation so that we can serve you effectively');
+define('_Connect_us_part3' , 'The name');
+define('_Connect_us_part4' , ' phone number ');
+define('_Connect_us_part5' , ' E-mail ');
+define('_Connect_us_part6' , 'the topic');
+define('_Connect_us_part7' , 'the message');
+define('_Connect_us_part8' , ' Contact Information');
+define('_Connect_us_part9' , 'Contact us via social media, email, or call us on the designated numbers. We are here to listen and respond.');
+define('_Connect_us_part10' , 'Means of communication');
+define('_Connect_us_part11' , 'Head office');
+define('_Connect_us_part12' , 'Qatar Doha - Lusail');
+define('_Connect_us_part13' , 'Khartoum ');
+define('_Connect_us_part14' , ' Atbara');
+define('_Connect_us_part15' , 'Port Sudan ');
+define('_Connect_us_part16' , ' Sudan offices');
+define('_Connect_us_part17' , ' Khartoum - Atbara - Port Sudan');
+
+define('_Connect_us_part18' , ' send ');
+
+
+/*-----------------------------------------------
+workfields
+----------------------------------------------------------------*/
+
+define('_workfields_part1' , 'Equipation has worked in all states of sudan .');
+define('_workfields_part2' , 'Mineral extraction projects ');
+define('_workfields_part3' , 'Equpation works in gold extraction projects in various regions of Sudan ');
+define('_workfields_part4' , 'Gold mining projects through open mines ');
+define('_workfields_part5' , 'Gold mining projects, that use water and pneumatic sieves');
+define('_workfields_part6' , 'Gold mining projects, that use mobile machines ');
+define('_workfields_part7' , 'Mining projects in mill complexes ');
+define('_workfields_part8' , 'Mining projects in Alkarrta projects ');
+define('_workfields_part9' , 'Mining projects for chrome ');
+
+
+define('_workfields_part10' , 'Stone extraction projects ');
+define('_workfields_part11' , 'Equipation provides the necessary mechanisms to operate the quarries . The Company operates in : ');
+define('_workfields_part12' , ' Cement is made of a mixture of limestone 75% and clay 25% . Iron ore or sand can be added if the clay contains a weak percrntage of iron oxide or silicon oxide . Then it is crushed into granules in the form of pebbles .');
+define('_workfields_part13' , ' White marble is produced from ultra-pure limestone or dolomite (with a low silicate content). Unique veins of many types of colored marbles are usually caused by different mineral impurities such as clay , silt , sand, or iron oxides ');
+define('_workfields_part111' , 'Cement quarrying projects');
+define('_workfields_part222' , 'Marble quarring projects');
+
+
+define('_workfields_part14' , 'Agricultural projects ');
+define('_workfields_part15' , 'Heavy machinery plays a vital role in preparing and leveling agricultural lands . Equipation actively contributes to number of agricultural projects by providing hight-performance machinery and a specialized technical team
+Equipation performs the following operations ');
+define('_workfields_part16' , 'Digging and cleaning irrigation canals ');
+define('_workfields_part17' , 'Execution and settlement of internal streets on farms ');
+define('_workfields_part18' , 'Cleaning farms and removing trees and weeds ');
+define('_workfields_part19' , 'Settlement and preparation of agricultural lands ');
+define('_workfields_part20' , 'Executing farm fencing projects ');
+
+
+define('_workfields_part21' , 'Roads and bridges projects ');
+define('_workfields_part22' , 'Equipation works on implementing road, bridge, and water drainage projects, armed with the latest machinery');
+define('_workfields_part23' , 'And equipment and a team of skilled engineers and technicians to implement road and bridge projects with international specifications');
+
+
+
+define('_workfields_part24' , 'construction projects ');
+define('_workfields_part25' , 'In line with the construction boom in the country , Equipation has developed it is services in the field of construction and provided a wide range of services that serve construction projects, including : ');
+define('_workfields_part26' , 'Digging the necessary infrastructure for constructing buildings ');
+define('_workfields_part27' , 'Removing old buildings and moving debris ');
+define('_workfields_part28' , 'Bricks making projects , of various types and sizes ');
+define('_workfields_part29' , 'Packing and transporting building materials ');
+
+define('_workfields_part30' , 'National projects ');
+define('_workfields_part31' , 'Based on our responsibilities towards sudan and the sudanese , Equipation has implemented a number of national projects such as : ');
+define('_workfields_part32' , 'Opening waterways at fall ');
+define('_workfields_part33' , 'Opening and cleaning streets ');
+define('_workfields_part34' , 'implementation of sanitation and water canals projects ');
+
+
 // aliginment 
 define('_LANGMENT' , 'I');
 
