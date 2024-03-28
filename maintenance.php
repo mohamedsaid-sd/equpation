@@ -187,27 +187,26 @@ if(isset($_GET['lang'])){
   
  <div class="form-head">
    <!--  <img style="width: 100%;height: 100px;" src="../images/hero.jpg"> -->
-    <h1 align="center"> طلب الصيانة </h1>
+    <h1 align="center"> <?php echo _forms_maintenance_title; ?></h1>
   </div>
-
+  
 <div class="stepwizard col-lg-12">
-
 
 
     <div class="stepwizard-row setup-panel">
 
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b>  بيانات المعدة  </a>
+        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b>   <?php echo _forms_oprations_step1; ?>  </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  بيانات موقع الآلية</a>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>   <?php echo _forms_oprations_step2; ?> </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  بيانات العميل</a>
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>   <?php echo _forms_oprations_step3; ?></a>
       
       </div>
 
@@ -224,7 +223,8 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
            
         <div class="alert alert-warning" role="alert">
-  		يرجي ملئ جميع بياات ومواصفات المعدة بشكل صحيح ...
+        <?php echo _forms_massage; ?>
+        
 		</div>
 
 
@@ -233,17 +233,17 @@ if(isset($_GET['lang'])){
 
                 <div class="col-md-4 form-group">
                   <label></label>
-                  <input type="text" name="Type" class="form-control" id="Type" placeholder="نوع الالية " required>
+                  <input type="text" name="Type" class="form-control" id="Type" placeholder="<?php echo _forms_maintenance_step1; ?>" required>
                 </div>
 
                 <div class="col-md-4 form- mt-3 mt-md-0">
                   <label></label>
-                  <input type="text" class="form-control" name="model" id="model" placeholder=" موديل الالية   " required>
+                  <input type="text" class="form-control" name="model" id="model" placeholder="<?php echo _forms_maintenance_step2; ?> " required>
                 </div>
 
                 <div class="col-md-4 form- mt-3 mt-md-0">
                   <label></label>
-                    <input type="text" class="form-control" name="chassis" id="Sashinumber" placeholder="رقم الشاسي  " required>
+                    <input type="text" class="form-control" name="chassis" id="Sashinumber" placeholder="<?php echo _forms_maintenance_step4; ?> " required>
                   </div>
 
                 </div>
@@ -254,14 +254,18 @@ if(isset($_GET['lang'])){
 
     <div class="col-md-4 form- mt-3 mt-md-0">
       <label></label>
-    <input type="text" class="form-control" name="engine" id="engine" placeholder="رقم المحرك  " required>
+    <input type="text" class="form-control" name="engine" id="engine" placeholder="<?php echo _forms_maintenance_step3; ?> " required>
     </div>
 
 
      <div class="form- col-md-4">
       <label></label>   
-    <input type="text" class="form-control" name="km_read" id="km_read" placeholder="    عداد الساعات /الكيلومترات    " required>
+    <input type="text" class="form-control" name="km_read" id="km_read" placeholder="   <?php echo _forms_maintenance_step5; ?>   " required>
       </div>
+
+
+
+        <?php if($_SESSION['lang'] == "ar"){ ?>
 
       <div class="form- col-md-4">
         <label>  نوع الاصلاح المطلوب </label>
@@ -275,7 +279,31 @@ if(isset($_GET['lang'])){
             <option value="ةيدروليك">ةيدروليك</option>
           </select>
         </div>
-      </div>     
+      </div>  
+
+  <?php }else{ ?>
+          <div class="form-group col-md-4">
+        <label>  Type of repaire </label>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <select class="form-control mr-1" id="typeoffix" name="main_type" required>
+            <option value="" disabled selected>  </option>
+            <option value="Mechanics"> Mechanics </option>
+            <option value="Electricity"> Electricity </option>
+            <option value="Metalworks"> Metalworks </option>
+            <option value="Adaptation"> Adaptation </option>
+            <option value="Hydraulic"> Hydraulic </option>
+
+
+          </select>
+        
+        </div>
+      </div>
+
+
+
+  <?php } ?>
+
+
 
       </div>
 
@@ -284,10 +312,13 @@ if(isset($_GET['lang'])){
         
 
         <div class="form- col-md-4">
-            <label for="inputDate">سنة الصنع</label>
+            <label for="inputDate">"<?php echo _forms_maintenance_step6; ?></label>
             <input type="date" class="form-control" id="inputDate" name="date" required />
           </div>
 
+
+            <?php if($_SESSION['lang'] == "ar"){ ?>
+ 
           <div class="form- col-md-4">
         <label>    طبيعة عمل الآلية </label>
         <div class="d-flex flex-row justify-content-between align-items-center">
@@ -299,8 +330,27 @@ if(isset($_GET['lang'])){
         </div>
       </div>
 
+
+  <?php }else{ ?>
+       <div class="form-group col-md-4">
+        <label>   The nature of the mechanism's work </label>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <select class="form-control mr-1" id="fleet_operating_type" name="fleet_operating_type" required>
+            <option value="" disabled selected> -- Choose   -- </option>
+            <option value=" Bucket"> Bucket</option>
+            <option value=" Jack Hammer"> Jack Hammer</option>
+          </select>
+        </div>
+
+      </div>
+
+  <?php } ?>
+
+
+
+
        <div class="col-md-4 form- mt-3">
-        <textarea class="form-control" name="issue_description" rows="5" placeholder="وصف المشكلة " required></textarea>
+        <textarea class="form-control" name="issue_description" rows="5" placeholder="<?php echo _forms_maintenance_step7; ?>  " required></textarea>
       </div>
 
       </div>
@@ -323,11 +373,15 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
 
        <div class="alert alert-warning" role="alert">
-      يرجي ملئ جميع بياات موقع الآلية بشكل صحيح ...
+       <?php echo _forms_massage; ?>
     </div>
 
       <div class="row">
-        <div class="col-md-4 form- mt-3 mt-md-0">
+
+
+
+          <?php if($_SESSION['lang'] == "ar"){ ?>
+               <div class="col-md-4 form- mt-3 mt-md-0">
             <label>    الولاية </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="state_id" name="state_id" required>
@@ -349,13 +403,13 @@ if(isset($_GET['lang'])){
                <option value="ولاية جنوب دارفور">ولاية جنوب دارفور </option>
                <option value="ولاية شرق دارفور">ولاية شرق دارفور </option>
                <option value="ولاية وسط دارفور">ولاية وسط دارفور </option>
-
-
              </select>
            </div>
 
           </div>
-        <div class="form- col-md-4">
+
+
+                 <div class="form- col-md-4">
            <label>  طبيعة الموقع </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="ready" name="site_nature" required>
@@ -368,17 +422,71 @@ if(isset($_GET['lang'])){
              </select>
            </div>
          </div>
+
+
+  <?php }else{ ?>
+
+  <div class="form-group col-md-4">
+           <label>  states  </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="state_id" name="state_id" required>
+               <option value="" disabled selected> -- Choose -- </option>
+               <option value="Khartoum"> Khartoum </option>
+               <option value=" North Kordofan"> North Kordofan </option>
+               <option value="Northern"> Northern </option>
+               <option value="Kassala"> Kassala </option>
+               <option value="Blue Nile"> Blue Nile </option>
+               <option value="North Darfur "> North Darfur  </option>
+               <option value="South Darfur "> South Darfur  </option>
+               <option value="South Kordofan "> South Kordofan  </option>
+               <option value="Gezira"> Gezira </option>
+               <option value="White Nile "> White Nile  </option>
+               <option value="River Nile "> River Nile  </option>
+               <option value="Red Sea"> Red Sea </option>
+               <option value="Al Qadarif "> Al Qadarif  </option>
+               <option value="Sennar"> Sennar </option>
+               <option value="West Darfur "> West Darfur  </option>
+               <option value="Central Darfur "> Central Darfur  </option>
+               <option value="East Darfur "> East Darfur  </option>
+               <option value="West Kordofan"> West Kordofan </option>
+             </select>
+           </div>
+         </div>
+
+              <div class="form-group col-md-4">
+           <label>  The nature of the site </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="ready" name="site_nature" required>
+               <option value="" disabled selected> -- Choose -- </option>
+               <option value="Mountains"> Mountains </option>
+               <option value=" Wells"> Wells </option>
+               <option value="Farm"> Farm </option>
+               <option value="Mine"> Mine </option>
+               <option value="Open sites"> Open sites </option>
+             </select>
+           </div>
+         </div>
+   
+  <?php } ?>
+
+     
+
+
+ 
    
          <div class="col-md-4 form- mt-3 mt-md-0">
               <br/>
-            <input type="text" class="form-control" name="city" id="site_location" placeholder="   اقرب مدينة    " required>
+            <input type="text" class="form-control" name="city" id="site_location" placeholder="  <?php echo _forms_maintenance_step9; ?>     " required>
           </div>
 
           <div class="col-md-4 form- mt-3 mt-md-0">
             <br/>
-            <input type="text" class="form-control" name="Nearest_market" id="Nearest_market" placeholder="    مسافة أقرب طريق معبَّد    " required>
+            <input type="text" class="form-control" name="Nearest_market" id="Nearest_market" placeholder="    <?php echo _forms_maintenance_step10; ?>    " required>
           </div>
-          <div class="col-md-4 form- mt-3 mt-md-0">
+
+            <?php if($_SESSION['lang'] == "ar"){ ?>
+
+                <div class="col-md-4 form- mt-3 mt-md-0">
               <label>  توفر الشبكة </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="ready" name="network" required>
@@ -386,10 +494,21 @@ if(isset($_GET['lang'])){
                <option value="متاح"> متاح  </option>
                <option value="غير متاح"> غير متاح</option>
              </select>
-           
            </div>
-
           </div>
+  <?php }else{ ?>
+       <div class="col-md-4 form-group mt-3 mt-md-0">
+              <label>  Network availability </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="ready" name="network" required>
+               <option value="" disabled selected> -- Choose -- </option>
+               <option value="available"> Available  </option>
+               <option value="not_available"> Not Available </option>
+             </select>
+           </div>
+          </div>
+  <?php } ?>
+        
 
               </div>
 

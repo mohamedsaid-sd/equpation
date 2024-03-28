@@ -295,6 +295,39 @@ define('_forms_oprations_step3_f8' , 'How to know us ');
 
 
 
+
+/*-----------------------------------------------
+Forms
+----------------------------------------------------------------*/
+//maintenance 
+define('_forms_maintenance_title' , 'Maintenance Request ');
+
+define('_forms_maintenance_step1' , 'type of Machine '); 
+define('_forms_maintenance_step2' , 'Machine model');
+define('_forms_maintenance_step3' , 'Engine serial number');
+define('_forms_maintenance_step4' , ' Chaassis number ');
+define('_forms_maintenance_step5' , 'km_read ');
+define('_forms_maintenance_step6' , 'Date of manufacture ');
+define('_forms_maintenance_step7' , 'Discription of the problem');
+define('_forms_massage' , 'Please provide all correct data and specifications...');
+define('_forms_maintenance_step9' , 'Nearest city ');
+define('_forms_maintenance_step10' , 'The nearest road');
+// define('_forms_maintenance_step11' , '');define('_forms_maintenance_step1' , '');
+
+// define('_forms_maintenance_step17' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step18' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step19' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step20' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step21' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step22' , '');define('_forms_maintenance_step1' , '');
+// define('_forms_maintenance_step23' , '');define('_forms_maintenance_step1' , '');
+
+
+
+
+
+
+
 /*-----------------------------------------------
 footer
 ----------------------------------------------------------------*/

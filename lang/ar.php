@@ -302,6 +302,23 @@ define('_forms_oprations_step3_f7' , 'هل سبق لك العمل معنا');
 define('_forms_oprations_step3_f8' , 'طريقة التعرف علينا');
 
 
+
+//maintenance 
+define('_forms_maintenance_title' , 'طلب الصيانة ');
+
+define('_forms_maintenance_step1' , 'نوع الالية ');
+define('_forms_maintenance_step2' , 'موديل الالية  ');
+define('_forms_maintenance_step3' , 'رقم المحرك ');
+define('_forms_maintenance_step4' , 'رقم الشاسي ');
+define('_forms_maintenance_step5' , 'عداد الساعات /الكيلومترات ');
+define('_forms_maintenance_step6' , 'سنة الصنع');
+define('_forms_maintenance_step7' , 'وصف المشكلة ');
+define('_forms_massage' , '	يرجي ملئ جميع بياات ومواصفات المعدة بشكل صحيح ...');
+define('_forms_maintenance_step9' , 'اقرب مدينة ');
+define('_forms_maintenance_step10' , 'مسافة أقرب طريق معبَّد ');
+// define('_forms_maintenance_step11' , '');define('_forms_maintenance_step1' , '');
+
+
 /*-----------------------------------------------
 footer
 ----------------------------------------------------------------*/
