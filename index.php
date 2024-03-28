@@ -19,7 +19,11 @@ if(isset($_GET['lang'])){
 <title> إكوبيشن > الرئيسية </title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <?php
 if($_SESSION['lang'] == "ar"){ ?>
@@ -31,68 +35,17 @@ if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
-
+<script type="text/javascript">
+$('#form_modal').on('shown' , function () {
+	alert("gooo");
+	// $(document).off('focusin.modal');
+})
+</script>
 <?php include 'header.php'; ?>
 
 
-<!--------------------------ADDING NEW CUSTOMER---------->
-	<div class="modal fade" id="form_modal" aria-hidden="true">
-		<div class="modal-dialog">
-		
-		<form method="POST" action="customers.php?invoice_number=<?php echo $_GET['invoice_number']; ?>">
 
-		<h3 align="center"> إضافة عميل جديد </h3>	
-  	  	  <table id="table" style="width: 400px; margin: auto;overflow-x:auto; overflow-y: auto;">
-  	  	 <tr>
 
-         <td> أسم العميل:</td>
-         <td><input type="text" name="c_name" size="10" placeholder=" أسم العميل" required></td>
-          </tr>
-          <tr id="row1">
-         <td> رقم الهاتف :</td>
-         <td><input type="text" name="c_phone"  size="10" placeholder="رقم الهاتف" required ></td>
-        </tr>
-        <tr>
-        <td> العنوان :</td>
-          <td><input type="text" name="c_address" size="10" placeholder="العنوان العميل "  required></td>
-        </tr>
-
-        <td> رقم بطاقة التامين :</td>
-          <td><input type="number" name="card" size="10" placeholder="Card  0123456789"><br/>
-          	<font color="red"> * حقل اختياري </font></td>
-        </tr>
-
-        <tr>
-        	<td> شركة التامين :</td>
-          <td>
-          	<select name="company">
-          		<option value=""> -- اختار شركة التامين -- </option>
-          		<option value="0"> -- خارج التامين -- </option>
-          		<?php
-
-          		$select_company = mysqli_query( $con , "SELECT * FROM `company`");
-          		while ($row = mysqli_fetch_array($select_company )) {
-          			echo "<option>". $row['name'] ."</option>";
-          		}
-
-          		?> 
-          	</select><br/>
-          	<font color="red"> * حقل اختياري </font></td>
-          </td>
-        </tr>
-        </tr>
-  
-        <tr>
-          <td><button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> إغلاق </button></td>
-          <td> <input type="submit" name="insert_customer" class="btn btn-success btn-large" style="width: 225px" value=" حفظ "> </td>
-        </tr>
-
-  	  	 </table> 
-        <br>
-  	  	 </form>
-		</div>
-	</div>
-<!-------------------------------------------------------->
 
 <section id="pointer">
 	<?php if($_SESSION['lang'] == "ar"){ ?>
