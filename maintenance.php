@@ -20,7 +20,12 @@ if(isset($_GET['lang'])){
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link href="vendor/css/style.css" rel="stylesheet"/>
@@ -178,7 +183,7 @@ if(isset($_GET['lang'])){
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="services.php?id=maintenance"><b> خدمة الصيانة </b></a> / <a href="#"><b> تقديم طلب </b></a>
+	/ <a href="services.php?id=maintenance"><b> <?php echo _forms_maintenance_title; ?> </b></a> / <a href="#"><b> تقديم طلب </b></a>
 </section>
 
 <section id="forms">
@@ -356,11 +361,15 @@ if(isset($_GET['lang'])){
       </div>
       
 
+        <?php if($_SESSION['lang'] == "ar"){ ?>
         <div style="text-align: left;">
-
           <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
         </div>
+        <?php }else{ ?> 
+        <div style="float: right;">
+          <button class="btn btn-warning nextBtn btn-lg" type="button">  <i class="icon-arrow-right"></i> Confirm and continue  </button>
+        </div>
+         <?php } ?> 
 
         </div>
       </div>
@@ -515,12 +524,18 @@ if(isset($_GET['lang'])){
 
       <br/>
 
+             <?php if($_SESSION['lang'] == "ar"){ ?>
           <div style="text-align: left;">
-         
-          <button class="btn btn-warning nextBtn btn-lg pull-right" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
-           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
           </div>
+          <?php }else{ ?>
+          <div style="float: right;">
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button">  Previous <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> Confirm & Contenue  </button>
+          </div>
+          <?php } ?>
+
         </div>
       </div>
     </div>
@@ -618,12 +633,18 @@ if(isset($_GET['lang'])){
 
       <br/><br/>
 
+            <?php if($_SESSION['lang'] == "ar"){ ?>
       <div style="text-align: left;">
-       
           <button class="btn btn-success btn-lg pull-right" type="submit"> تأكيد إرسال الطلب <i class="icon-check"></i> </button>
+           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق </button>
+      </div>
+      <?php }else{ ?>
+        <div style="text-align: left;float: right;">
+           <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> Previous <i class="icon-arrow-left"></i>  </button>
+           <button class="btn btn-success btn-lg pull-right" type="submit"> Send Request <i class="icon-check"></i> </button>
+      </div>
+      <?php } ?>
 
-             <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق </button>
-        </div>
         </div>
       </div>
     </form></div>
