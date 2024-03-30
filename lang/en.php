@@ -324,7 +324,24 @@ define('_forms_maintenance_step10' , 'The nearest road');
 
 
 
+/*-----------------------------------------------
+Forms
+----------------------------------------------------------------*/
+//rental 
+define('_forms_rental_title' , ' Rental Request  ');
 
+define('_forms_rental_step1' , ' Rental Requirement '); 
+define('_forms_rental_step2' , 'SITE DESCRIPTION:  '); 
+define('_forms_rental_step3' , ' Customer data');
+define('_forms_rental_step4' , ' quantity'); 
+define('_forms_rental_step5' , 'size machine '); 
+define('_forms_rental_step6' , ' EXPECTED WORK START ');
+// define('_forms_rental_step7' , ' '); 
+// define('_forms_rental_step8' , ' '); 
+// define('_forms_rental_step9' , ' ');
+// define('_forms_rental_step10' , ' '); 
+// define('_forms_rental_step11' , ' '); 
+// define('_forms_rental_step12' , ' ');
 
 
 

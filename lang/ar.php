@@ -318,6 +318,21 @@ define('_forms_maintenance_step9' , 'اقرب مدينة ');
 define('_forms_maintenance_step10' , 'مسافة أقرب طريق معبَّد ');
 // define('_forms_maintenance_step11' , '');define('_forms_maintenance_step1' , '');
 
+//rental 
+define('_forms_rental_title' , ' طلب التأجير  ');
+
+define('_forms_rental_step1' , ' مطلوبات التأجير'); 
+define('_forms_rental_step2' , 'بيانات الموقع '); 
+define('_forms_rental_step3' , ' بيانات العميل ');
+define('_forms_rental_step4' , ' العدد المطلوب '); 
+define('_forms_rental_step5' , ' مقاس المعدة '); 
+define('_forms_rental_step6' , 'بداية العمل المتوقعة  ');
+// define('_forms_rental_step7' , ' '); 
+// define('_forms_rental_step8' , ' '); 
+// define('_forms_rental_step9' , ' ');
+// define('_forms_rental_step1' , ' '); 
+// define('_forms_rental_step1' , ' '); 
+// define('_forms_rental_step1' , ' ');
 
 /*-----------------------------------------------
 footer
