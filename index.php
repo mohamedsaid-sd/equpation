@@ -187,7 +187,7 @@ $('#form_modal').on('shown' , function () {
 
 <div class="row">
 
-	<div class="col-lg-3">
+<!-- 	<div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/1.png"> </b> <br/>
 			<h5> <?php echo _services_part3; ?> </h5>
@@ -203,9 +203,9 @@ $('#form_modal').on('shown' , function () {
 			<?php } ?>
 			</a>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="col-lg-3">
+	<div class="col-lg-4">
 		<div>
 			<b> <img src="images/services/2.png"> </b> <br/>
 			<h5> <?php echo _services_part5; ?> </h5>
@@ -223,7 +223,7 @@ $('#form_modal').on('shown' , function () {
 		</div>
 	</div>
 
-	<div class="col-lg-3">
+	<div class="col-lg-4">
 		<div> 
 			<b> <img src="images/services/3.png"> </b> <br/>
 			<h5> <?php echo _services_part7; ?> </h5>
@@ -242,7 +242,7 @@ $('#form_modal').on('shown' , function () {
 	</div>
 
 
-	<div class="col-lg-3">
+	<div class="col-lg-4">
 		<div>
 			<b> <img src="images/services/4.png"> </b> <br/>
 			<h5> <?php echo _services_part9; ?> </h5>
@@ -268,31 +268,7 @@ $('#form_modal').on('shown' , function () {
 
 
 
-	<div class="col-lg-3">
-		<div>
-			<b> <img src="images/services/5.png"> </b> <br/>
-			<h5> <?php echo _services_part11; ?>   </h5>
-			<p> 
-				<?php echo _services_part12; ?> 
-			</p>
-			<br/>
-			<a href="services.php?id=employement"> <?php echo _services_part19; ?>  >> </a>
-		</div>
-	</div>
-
-	<div class="col-lg-3">
-		<div>
-			<b> <img src="images/services/6.png"> </b> <br/>
-			<h5> <?php echo _services_part13; ?>   </h5>
-			<p> 
-				<?php echo _services_part14; ?> 
-			</p>
-			<br/>
-			<a href="services.php?id=maintenance"> <?php echo _services_part19; ?>  >> </a>
-		</div>
-	</div>
-
-	<div class="col-lg-3">
+		<div class="col-lg-4">
 		<div>
 			<b> <img src="images/services/7.png"> </b> <br/>
 			<h5> <?php echo _services_part15; ?>  </h5>
@@ -304,7 +280,31 @@ $('#form_modal').on('shown' , function () {
 		</div>
 	</div>
 
-	<div class="col-lg-3">
+	<div class="col-lg-4">
+		<div>
+			<b> <img src="images/services/6.png"> </b> <br/>
+			<h5> <?php echo _services_part13; ?>   </h5>
+			<p> 
+				<?php echo _services_part14; ?> 
+			</p>
+			<br/>
+			<a href="services.php?id=maintenance"> <?php echo _services_part19; ?>  >> </a>
+		</div>
+	</div>
+
+	<div class="col-lg-4">
+		<div>
+			<b> <img src="images/services/5.png"> </b> <br/>
+			<h5> <?php echo _services_part11; ?>   </h5>
+			<p> 
+				<?php echo _services_part12; ?> 
+			</p>
+			<br/>
+			<a href="services.php?id=employement"> <?php echo _services_part19; ?>  >> </a>
+		</div>
+	</div>
+
+	<!-- <div class="col-lg-3">
 		<div>
 			<b> <img src="images/services/8.png"> </b> <br/>
 			<h5> <?php echo _services_part17; ?>  </h5>
@@ -314,7 +314,7 @@ $('#form_modal').on('shown' , function () {
 			<br/>
 			<a href="services.php?id=construct"> <?php echo _services_part19; ?>  >> </a>
 		</div>
-	</div>
+	</div> -->
 	
 </div>
 

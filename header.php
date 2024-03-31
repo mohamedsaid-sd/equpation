@@ -34,11 +34,20 @@ include 'lang/ar.php';
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
               <li class="dropdown"><a href="#"><span> <?php echo _our_services; ?> </span>  <i class="bi bi-chevron-down"></i></a>
           <ul>
-    <li> <a href="services.php?id=construct"> 
+    <!-- <li> <a href="services.php?id=construct"> 
       <?php echo _services_list_part1; ?></a>
-    </li>
-    <li><a href="services.php?id=tracking">
+    </li> -->
+    <!-- <li><a href="services.php?id=tracking">
       <?php echo _services_list_part2; ?></a> 
+    </li> -->
+    <li> <a href="services.php?id=contract"> 
+      <?php echo _services_list_part8; ?></a>
+    </li>
+    <li> <a href="services.php?id=opration"> 
+      <?php echo _services_list_part7; ?></a>
+    </li>
+      <li> <a href="services.php?id=rental"> 
+      <?php echo _services_list_part6; ?></a>
     </li>
     <li><a href="services.php?id=transport">
       <?php echo _services_list_part3; ?></a> 
@@ -49,15 +58,9 @@ include 'lang/ar.php';
     <li><a href="services.php?id=employement">
       <?php echo _services_list_part5; ?></a> 
    </li>
-    <li> <a href="services.php?id=rental"> 
-      <?php echo _services_list_part6; ?></a>
-    </li>
-    <li> <a href="services.php?id=opration"> 
-      <?php echo _services_list_part7; ?></a>
-    </li>
-    <li> <a href="services.php?id=contract"> 
-      <?php echo _services_list_part8; ?></a>
-    </li>
+  
+    
+    
   </ul>
           </li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> <?php echo _work_fildes; ?> </a></li>
@@ -215,11 +218,20 @@ include 'lang/ar.php';
 
 <section id="services_list">
 	<ul>
-		<li> <a href="services.php?id=construct"> 
+		<!-- <li> <a href="services.php?id=construct"> 
       <?php echo _services_list_part1; ?></a>
-    </li>
-		<li><a href="services.php?id=tracking">
+    </li> -->
+		<!-- <li><a href="services.php?id=tracking">
       | <?php echo _services_list_part2; ?></a> 
+    </li> -->
+    <li> <a href="services.php?id=contract"> 
+       <?php echo _services_list_part8; ?></a>
+    </li>
+    <li> <a href="services.php?id=opration"> 
+      | <?php echo _services_list_part7; ?></a>
+    </li>
+    <li> <a href="services.php?id=rental"> 
+      | <?php echo _services_list_part6; ?></a>
     </li>
 		<li><a href="services.php?id=transport">
       | <?php echo _services_list_part3; ?></a> 
@@ -230,15 +242,9 @@ include 'lang/ar.php';
 		<li><a href="services.php?id=employement">
       | <?php echo _services_list_part5; ?></a> 
    </li>
-		<li> <a href="services.php?id=rental"> 
-      | <?php echo _services_list_part6; ?></a>
-    </li>
-		<li> <a href="services.php?id=opration"> 
-      | <?php echo _services_list_part7; ?></a>
-    </li>
-		<li> <a href="services.php?id=contract"> 
-      | <?php echo _services_list_part8; ?></a>
-    </li>
+		
+		
+		
 	</ul>
   <hr/>
 </section>
