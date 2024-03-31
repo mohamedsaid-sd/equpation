@@ -235,9 +235,9 @@ if($_SESSION['lang'] == "ar"){ ?>
 		<div class="row">
 
        <div class="col-md-6 form-group">
-                <label> <?php echo _forms_oprations_step1_f1; ?> </label>
+                <label> <?php echo _forms_oprations_step1_f1."TTT"; ?> </label>
                 
-                  <select class="form-control mr-1" name="machine_type" id="machine_type">
+                  <select class="form-control mr-1" name="machine_type" id="machine_type" required>
                     <option value="" disabled selected> -- </option>
                     <option value="حفار"> حفار </option>
                     <option value="لوبد">  لوبد </option>
@@ -259,7 +259,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
        <div class="form-group col-md-6">
          <label> <?php echo _forms_oprations_step1_f2; ?> </label>
-         <input type="text" class="form-control" id="inputDate" name="size_id"/></div>
+         <input type="text" class="form-control" id="inputDate" name="size_id" required /></div>
 
         </div>
 

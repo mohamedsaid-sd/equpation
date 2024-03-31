@@ -32,148 +32,83 @@ if($_SESSION['lang'] == "ar"){ ?>
 </head>
 <script type="text/javascript">
       // deal with period  
-   function select_brand(){
-     var type = document.getElementById("brand_id").value;
+     function select_period(){
+     var type = document.getElementById("duration").value;
       if(type == "hand"){
-      document.getElementById("brand_idhide").style.display = "block";
+      document.getElementById("durationhide").style.display = "block";
       }else{
-      document.getElementById("brand_idhide").value = "";
-      document.getElementById("brand_idhide").style.display = "none";
+      document.getElementById("durationhide").value = "";
+      document.getElementById("durationhide").style.display = "none";
       }
    }
 
-    function select_size(){
-     var type = document.getElementById("size_id").value;
-      if(type == "hand"){
-      document.getElementById("size_idhide").style.display = "block";
+   //deal with hour
+   function select_hour(){
+     var type = document.getElementById("month_rent").value;
+      if(type == "false"){
+      document.getElementById("hour_num").style.display = "block";
       }else{
-      document.getElementById("size_idhide").value = "";
-      document.getElementById("size_idhide").style.display = "none";
+      document.getElementById("hour_num").value = "0";
+      document.getElementById("hour_num").style.display = "none";
       }
    }
 
-   function select_model(){
-     var type = document.getElementById("model_id").value;
+  //deal with hour of day
+   function select_hourday(){
+     var type = document.getElementById("work_hours").value;
       if(type == "hand"){
-      document.getElementById("model_idhide").style.display = "block";
+      document.getElementById("work_hourshide").style.display = "block";
       }else{
-      document.getElementById("model_idhide").value = "";
-      document.getElementById("model_idhide").style.display = "none";
+      document.getElementById("work_hourshide").value = "";
+      document.getElementById("work_hourshide").style.display = "none";
       }
    }
 
-  function select_year(){
-     var type = document.getElementById("year_of_manufacture_id").value;
+
+  // deal with filed
+    function select_work_field(){
+     var type = document.getElementById("work_field").value;
       if(type == "hand"){
-      document.getElementById("year_of_manufacture_idhide").style.display = "block";
+      document.getElementById("work_fieldhide").style.display = "block";
       }else{
-      document.getElementById("year_of_manufacture_idhide").value = "";
-      document.getElementById("year_of_manufacture_idhide").style.display = "none";
+      document.getElementById("work_fieldhide").value = "";
+      document.getElementById("work_fieldhide").style.display = "none";
       }
    }
 
-   function select_condition(){
-     var type = document.getElementById("condition_id").value;
-      if(type == "hand"){
-      document.getElementById("condition_idhide").style.display = "block";
+
+    // deal with old
+    function select_old(){
+     var type = document.getElementById("site_age").value;
+      if(type == "old"){
+      document.getElementById("oldhide").style.display = "block";
       }else{
-      document.getElementById("condition_idhide").value = "";
-      document.getElementById("condition_idhide").style.display = "none";
+      document.getElementById("start_date").value = "";
+      document.getElementById("oldhide").style.display = "none";
       }
    }
 
-  function select_state(){
-     var type = document.getElementById("state_id").value;
-      if(type == "hand"){
-      document.getElementById("state_idhide").style.display = "block";
+
+      // deal with location side
+   function select_side(){
+     var type = document.getElementById("categ").value;
+      if(type == "company"){
+      document.getElementById("company").style.display = "block";
       }else{
-      document.getElementById("state_idhide").value = "";
-      document.getElementById("state_idhide").style.display = "none";
+      document.getElementById("company").value = "";
+      document.getElementById("company").style.display = "none";
       }
    }
 
-   function select_advance(){
-     var type = document.getElementById("advance_id").value;
-      if(type == "hand"){
-      document.getElementById("advance_idhide").style.display = "block";
+   // deal with work with us 
+   function select_wwus(){
+     var type = document.getElementById("wwus").value;
+      if(type == "yes"){
+      document.getElementById("wwushide").style.display = "block";
       }else{
-      document.getElementById("advance_idhide").value = "";
-      document.getElementById("advance_idhide").style.display = "none";
+      document.getElementById("wwushide").value = "";
+      document.getElementById("wwushide").style.display = "none";
       }
-   }
-
-   function select_catogry(){
-     var type = document.getElementById("category_id").value;
-      if(type == "hand"){
-      document.getElementById("category_idhide").style.display = "block";
-      }else{
-      document.getElementById("category_idhide").value = "";
-      document.getElementById("category_idhide").style.display = "none";
-      }
-   }
-
-   function select_hourly_work(){
-    var variable = document.getElementById("hourly_work_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("hourly_work_idhide").style.display = "block";
-    }else{
-      document.getElementById("hourly_work_idhide").value = "";
-      document.getElementById("hourly_work_idhide").style.display = "none";
-    }
-   }
-
-   function select_gorvernment_fees(){
-    var variable = document.getElementById("gorvernment_fees_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("gorvernment_fees_idhide").style.display = "block";
-    }else{
-      document.getElementById("gorvernment_fees_idhide").value = "";
-      document.getElementById("gorvernment_fees_idhide").style.display = "none";
-    }
-   }
-
-   function select_availablity(){
-    var variable = document.getElementById("availability_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("availability_idhide").style.display = "block";
-    }else{
-      document.getElementById("availability_idhide").value = "";
-      document.getElementById("availability_idhide").style.display = "none";
-    }
-   }
-
-   function select_hair_operator(){
-    var variable = document.getElementById("hair_operator_id").value;
-    if(variable == "hand"){
-      document.getElementById("hair_operator_idhide").style.display = "block";
-    }else{
-      document.getElementById("hair_operator_idhide").value = "";
-      document.getElementById("hair_operator_idhide").style.display = "none";
-    }
-   }
-
-   function select_maintenance(){
-    var variable = document.getElementById("maintenance_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("maintenance_idhide").style.display = "block";
-    }else{
-      document.getElementById("maintenance_idhide").value = "";
-      document.getElementById("maintenance_idhide").style.display = "none";
-    }
-   }
-
-   function select_contracts(){
-    var variable = document.getElementById("cotracts_id").value;
-    if(variable == "hand"){
-      document.getElementById("cotracts_idhide").style.display = "block";
-    }else{
-      document.getElementById("cotracts_idhide").value = "";
-      document.getElementById("cotracts_idhide").style.display = "none";
-    }
-   }
-
-   function select_clearences(){
-    document.getElementById("clearances_idhide").style.display = "block";
    }
 </script>
 <body>
