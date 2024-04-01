@@ -156,7 +156,7 @@ if($_SESSION['lang'] == "ar"){ ?>
   <br/>
   <br/>
   
-  <form role="form" action="#" method="post">
+  <form role="form" action="success.php" method="post">
     <div class="row setup-content" id="step-1">
 
       <div class=" col-lg-12 col-xs-6 col-md-offset-3">
@@ -174,7 +174,7 @@ if($_SESSION['lang'] == "ar"){ ?>
    <div class="col-md-4 form-group">
                <label> نوع المعدة </label>
                   <select class="form-control mr-1" name="machine_type" id="machine_type" >
-                    <option value="" disabled selected> -- اختار نوع المعدة  -- </option>
+                    <option value="" disabled selected> -- </option>
                     <option value="حفار"> حفار </option>
                     <option value="لوبد">  لوبد </option>
                     <option value="لودر">  لودر </option>
@@ -195,7 +195,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                 Equipment type:  <br/>
                 
                   <select class="form-control mr-1" name="machine_type" id="machine_type" >
-                    <option value="" disabled selected> --   Choose  -- </option>
+                    <option value="" disabled selected>   -- </option>
                     <option value="Digger"> Digger </option>
                     <option value="LOBID">  LOBID </option>
                     <option value="Loader">  Loader </option>
@@ -241,8 +241,8 @@ if($_SESSION['lang'] == "ar"){ ?>
            <?php if($_SESSION['lang'] == "ar"){ ?>
    <div class="col-md-3 form-group mt-3 mt-md-0">
                 <label>مدة العمل الكلية</label>
-                  <select class="form-control mr-1" name="duration" id="duration" onchange="select_period();" required>
-                    <option value="" disabled selected> --  اختار   -- </option>
+                  <select class="form-control mr-1" name="duration" id="duration" onchange="select_period();"/>
+                    <option value="" disabled selected> -- </option>
                     <option value="month"> شهر </option>
                     <option value="3month"> 3 شهور  </option>
                     <option value="year"> سنه </option>
@@ -256,8 +256,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                     <div class="col-md-3 form-group mt-3 mt-md-0">
                  <label>نوع العقد:</label>
-                  <select class="form-control mr-1" name="type_contract" id="month_rent" onchange="select_hour();"  required>
-                    <option value="" disabled selected> -- اختار   -- </option>
+                  <select class="form-control mr-1" name="type_contract" id="month_rent" onchange="select_hour();"/>
+                    <option value="" disabled selected> -- </option>
                     <option value="عقد بالساعات ">  عقد بالساعات  </option>
                     <option value="عقد بالإنتاج">  عقد بالإنتاج </option>
                   </select>
@@ -268,8 +268,8 @@ if($_SESSION['lang'] == "ar"){ ?>
      <div class="form-group col-md-3">
         <label>ساعات العمل اليومية </label>
 
-          <select class="form-control mr-1" id="work_hours" name="work_hours" onchange="select_hourday();"  required >
-            <option value="" disabled selected> --اختار  -- </option>
+          <select class="form-control mr-1" id="work_hours" name="work_hours" onchange="select_hourday();"/>
+            <option value="" disabled selected> -- </option>
             <option value="10">10</option>
             <option value="12">12</option>
             <option value="15">15</option>
@@ -286,8 +286,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
          <div class="col-md-3 form-group mt-3 mt-md-0">
                 DURATION <br/>
-                  <select class="form-control mr-1" name="duration" id="duration" onchange="select_period();" required>
-                    <option value="" disabled selected> --  Choose the duration  -- </option>
+                  <select class="form-control mr-1" name="duration" id="duration" onchange="select_period();"/>
+                    <option value="" disabled selected> -- </option>
                     <option value="month"> month </option>
                     <option value="3month"> 3 month  </option>
                     <option value="year"> year </option>
@@ -300,8 +300,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                     <div class="col-md-3 form-group mt-3 mt-md-0">
                 Type of Contract: <br/>
-                  <select class="form-control mr-1" name="type_contract" id="month_rent" onchange="select_hour();"  required>
-                    <option value="" disabled selected> -- Choose   -- </option>
+                  <select class="form-control mr-1" name="type_contract" id="month_rent" onchange="select_hour();"/>
+                    <option value="" disabled selected>  -- </option>
                     <option value=" Hourly contract "> Hourly contract </option>
                     <option value=" Production contract"> Production contract </option>
                   </select>
@@ -310,8 +310,8 @@ if($_SESSION['lang'] == "ar"){ ?>
                 </div>
            <div class="form-group col-md-3">
         <label>DAILY WORK HOURS   </label>
-          <select class="form-control mr-1" id="work_hours" name="work_hours" onchange="select_hourday();" required>
-            <option value="" disabled selected> -- Choose  -- </option>
+          <select class="form-control mr-1" id="work_hours" name="work_hours" onchange="select_hourday();"/>
+            <option value="" disabled selected> -- </option>
             <option value="10">10</option>
             <option value="12">12</option>
             <option value="15">15</option>
@@ -333,7 +333,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
       <div class="form-group col-md-3">
         <label>  <?php echo _forms_rental_step6; ?></label>
-         <input type="date" class="form-control" id="inputDate" name="work_date"  required />
+         <input type="date" class="form-control" id="inputDate" name="work_date"/>
          
       </div>
       </div>
@@ -370,8 +370,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
           <label>   الولاية </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="state" name="state" required>
-               <option value="" disabled selected> -- حدد  الولاية -- </option>
+             <select class="form-control mr-1" id="state" name="state">
+               <option value="" disabled selected> -- </option>
                <option value="ولاية الخرطوم">ولاية الخرطوم </option>
                <option value="ولاية الجزيرة">ولاية الجزيرة</option>
                <option value="ولاية البحر الأحمر">ولاية البحر الأحمر </option>
@@ -396,12 +396,12 @@ if($_SESSION['lang'] == "ar"){ ?>
         </div>
         <div class="col-md-4 form-group mt-3 mt-md-0">
           <br/>
-          <input type="text" class="form-control" name="region" id="region" placeholder="   ادخل اقرب مدينة" "  required>
+          <input type="text" class="form-control" name="region" id="region" placeholder="   ادخل اقرب مدينة">
         </div>
 
         <div class="form-group col-md-4">
           <br/>
-            <input type="text" class="form-control" name="distance" id="distance" placeholder="     مسافة أقرب طريق معبَّد  "  required>
+            <input type="text" class="form-control" name="distance" id="distance" placeholder="     مسافة أقرب طريق معبَّد  ">
           </div>
       </div>
 
@@ -409,8 +409,8 @@ if($_SESSION['lang'] == "ar"){ ?>
        
         <div class="col-md-4 form-group mt-3 mt-md-0">
              ,<label>مجال العمل </label>
-                  <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();"  required>
-                    <option disabled selected> -- اختار المدة  -- </option>
+                  <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();">
+                    <option disabled selected> -- </option>
                     <option> التعدين </option>
                     <option>  الاسمنت </option>
                     <option>  الزراعة </option>
@@ -424,8 +424,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
          <div class="form-group col-md-4">
            <label>  عمر الموقع </label>
-             <select class="form-control mr-1" id="site_age" name="site_age" onchange="select_old();" required >
-               <option value="" disabled selected> -- اختار عمر الموقع -- </option>
+             <select class="form-control mr-1" id="site_age" name="site_age" onchange="select_old();">
+               <option value="" disabled selected> -- </option>
                <option value="new"> جديد </option>
                <option value="old"> قديم </option>
              </select>
@@ -444,8 +444,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> يتوفر السكن في الموقع بجودة  </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_a" name="site_a" required >
-               <option value="" disabled selected> -- حدد   -- </option>
+             <select class="form-control mr-1" id="site_a" name="site_a">
+               <option value="" disabled selected> -- </option>
                <option value="السكن ممتاز "> ممتازة </option>
                <option value="السكن عادية"> عادية </option>
                <option value="السكن سيئة"> سيئة </option>
@@ -459,8 +459,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> تتوفر الإعاشه في الموقع بجودة </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_b" name="site_b" required >
-               <option value="" disabled selected> -- حدد مستوي الاعاشة -- </option>
+             <select class="form-control mr-1" id="site_b" name="site_b">
+               <option value="" disabled selected> -- </option>
                <option value="الإعاشه ممتازة"> ممتازة </option>
                <option value="الإعاشه عادية"> عادية </option>
                <option value="الإعاشه سيئة"> سيئة </option>
@@ -473,8 +473,8 @@ if($_SESSION['lang'] == "ar"){ ?>
                  <div class="form-group col-md-4">
            <label> مدي توفر شبكه الاتصالات في الموقع  </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_d" name="site_d"  required>
-               <option value="" disabled selected> -- حدد   -- </option>
+             <select class="form-control mr-1" id="site_d" name="site_d">
+               <option value="" disabled selected> -- </option>
                <option value="  تتوفر في الموقع "> تتوفر في الموقع </option>
                <option value="   لا تتوفر في الموقع ">  لا تتوفر في الموقع </option>
 
@@ -496,8 +496,8 @@ if($_SESSION['lang'] == "ar"){ ?>
          <div class="form-group col-md-4">
            <label> الانترنت </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_c" name="site_c" required >
-               <option value="" disabled selected> -- حدد توفر الانترنت -- </option>
+             <select class="form-control mr-1" id="site_c" name="site_c">
+               <option value="" disabled selected> -- </option>
                <option value="الانترنت متوفر"> متوفر </option>
                <option value="الانترنت غير متوفر"> غير متوفر </option>
              </select>
@@ -509,8 +509,8 @@ if($_SESSION['lang'] == "ar"){ ?>
          <div class="col-md-4 form-group mt-3 mt-md-0">
               <label>    نوع الشبكه المتوفره </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="ready" name="network" required>
-               <option value="" disabled selected> -- حدد   -- </option>
+             <select class="form-control mr-1" id="ready" name="network">
+               <option value="" disabled selected> -- </option>
                <option value="زين"> زين  </option>
                <option value=" سوداني">  سوداني</option>
                <option value=" ام تي إن">  ام تي إن</option>
@@ -524,8 +524,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label>  الورشة </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_e" name="site_e"  required>
-               <option value="" disabled selected> -- حدد توفر الورشة -- </option>
+             <select class="form-control mr-1" id="site_e" name="site_e">
+               <option value="" disabled selected> -- </option>
                <option value="الورشة متوفرة"> متوفرة </option>
                <option value="الورشة غير متوفرة"> غير متوفرة </option>
              </select>
@@ -540,8 +540,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> الكمبرسون </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_f" name="site_f" required >
-               <option value="" disabled selected> -- هل يوجد كمبرسون -- </option>
+             <select class="form-control mr-1" id="site_f" name="site_f">
+               <option value="" disabled selected> -- </option>
                <option value="يوجد الكمبرسون"> يوجد </option>
                <option value="لا يوجد الكمبرسون"> لا يوجد </option>
              </select>
@@ -551,8 +551,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> الجاز </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_g" name="site_g" required >
-               <option value="" disabled selected> -- حدد توفر الجاز -- </option>
+             <select class="form-control mr-1" id="site_g" name="site_g">
+               <option value="" disabled selected> -- </option>
                <option value="الجاز متوفر"> متوفر </option>
                <option value="الجاز غير متوفر"> غير متوفر </option>
              </select>
@@ -563,8 +563,8 @@ if($_SESSION['lang'] == "ar"){ ?>
            <div class="form-group col-md-4">
            <label> المياة </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_h" name="site_h" required >
-               <option value="" disabled selected> -- حدد توفر المياة   -- </option>
+             <select class="form-control mr-1" id="site_h" name="site_h">
+               <option value="" disabled selected> -- </option>
                <option value="المياة متوفرة"> متوفرة </option>
                <option value="المياة غير متوفرة "> غير متوفرة  </option>
              </select>
@@ -575,7 +575,7 @@ if($_SESSION['lang'] == "ar"){ ?>
            <label> الكهرباء </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="site_i" name="site_i"  >
-               <option value="" disabled selected> -- حدد توفر الكهرباء -- </option>
+               <option value="" disabled selected> -- </option>
                <option value="الكهرباء متوفرة"> متوفرة </option>
                <option value="الكهرباء غير متوفرة"> غير متوفرة  </option>
              </select>
@@ -593,8 +593,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
         <label>  states  </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="state" name="state" required>
-               <option value="" disabled selected> -- Choose -- </option>
+             <select class="form-control mr-1" id="state" name="state">
+               <option value="" disabled selected>  -- </option>
                <option value="Khartoum"> Khartoum </option>
                <option value=" North Kordofan"> North Kordofan </option>
                <option value="Northern"> Northern </option>
@@ -618,12 +618,12 @@ if($_SESSION['lang'] == "ar"){ ?>
         </div>
         <div class="col-md-4 form-group mt-3 mt-md-0">
           <br/>
-          <input type="text" class="form-control" name="region" id="region" placeholder="Enter the nearest city" required>
+          <input type="text" class="form-control" name="region" id="region" placeholder="Enter the nearest city">
         </div>
 
         <div class="form-group col-md-4">
           <br/>
-       <input type="text" class="form-control" name="distance" id="distance" placeholder=" Distance to nearest paved road " required>
+       <input type="text" class="form-control" name="distance" id="distance" placeholder=" Distance to nearest paved road ">
           </div>
       </div>
 
@@ -631,8 +631,8 @@ if($_SESSION['lang'] == "ar"){ ?>
        
         <div class="col-md-4 form-group mt-3 mt-md-0">
         WORK FIELD <br/>
-                  <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();" required>
-                    <option disabled selected> -- Choose   -- </option>
+                  <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();">
+                    <option disabled selected>    -- </option>
                     <option> mining </option>
                     <option>  cement </option>
                     <option>  agricultural </option>
@@ -645,8 +645,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
          <div class="form-group col-md-4">
            <label>   SITE AGE </label>
-             <select class="form-control mr-1" id="site_age" name="site_age" onchange="select_old();" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_age" name="site_age" onchange="select_old();">
+               <option value="" disabled selected>  -- </option>
                <option value="new"> new </option>
                <option value="old"> old </option>
              </select>
@@ -660,8 +660,8 @@ if($_SESSION['lang'] == "ar"){ ?>
   <div class="form-group col-md-4">
            <label> living </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_a" name="site_a" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_a" name="site_a">
+               <option value="" disabled selected>  -- </option>
                <option value="living is excellent"> excellent </option>
                <option value="living is Standard"> Standard </option>
                <option value="living is Bad "> Bad  </option>
@@ -683,8 +683,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> subsistence </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_b" name="site_b" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_b" name="site_b">
+               <option value="" disabled selected>  -- </option>
                <option value="subsistence is excellent"> excellent </option>
                <option value="subsistence is Standard"> Standard </option>
                <option value="subsistence is Bad"> Bad </option>
@@ -697,8 +697,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> internet </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_c" name="site_c" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_c" name="site_c">
+               <option value="" disabled selected>  -- </option>
                <option value="internet is available"> available </option>
                <option value="internet is not available"> not available </option>
              </select>
@@ -707,8 +707,8 @@ if($_SESSION['lang'] == "ar"){ ?>
            <div class="form-group col-md-4">
            <label>   network    </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_d" name="site_d" required>
-               <option value="" disabled selected> --  Choose  -- </option>
+             <select class="form-control mr-1" id="site_d" name="site_d">
+               <option value="" disabled selected>   -- </option>
                <option value="communication is available"> available </option>
                <option value="communication is not available">  not available </option>
                <option value="communication is Available within walking distance">  Available within walking distance </option>
@@ -729,8 +729,8 @@ if($_SESSION['lang'] == "ar"){ ?>
          <div class="col-md-4 form-group mt-3 mt-md-0">
               <label>  Network type </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="ready" name="network" required>
-               <option value="" disabled selected> -- Choose -- </option>
+             <select class="form-control mr-1" id="ready" name="network">
+               <option value="" disabled selected>  -- </option>
                <option value="Zain"> Zain  </option>
                <option value="MTN"> MTN  </option>
                <option value="Sudanese"> Sudanese  </option>
@@ -747,8 +747,8 @@ if($_SESSION['lang'] == "ar"){ ?>
          <div class="form-group col-md-4">
            <label>  workshop </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_e" name="site_e" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_e" name="site_e">
+               <option value="" disabled selected>  -- </option>
                <option value="workshop is available"> available </option>
                <option value="workshop is not available">   not available </option>
              </select>
@@ -758,8 +758,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> compressor </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_f" name="site_f" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_f" name="site_f">
+               <option value="" disabled selected>  -- </option>
                <option value="compressor is available"> available </option>
                <option value="compressor is not available"> not available  </option>
              </select>
@@ -773,8 +773,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> fuel </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_g" name="site_g" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_g" name="site_g">
+               <option value="" disabled selected>  -- </option>
                <option value="fuel is available"> available </option>
                <option value="fuel is not available"> not available </option>
              </select>
@@ -785,8 +785,8 @@ if($_SESSION['lang'] == "ar"){ ?>
            <div class="form-group col-md-4">
            <label> water </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_h" name="site_h" required>
-               <option value="" disabled selected> --   Choose   -- </option>
+             <select class="form-control mr-1" id="site_h" name="site_h">
+               <option value="" disabled selected>    -- </option>
                <option value="water is available"> available </option>
                <option value="water is not available "> not available   </option>
              </select>
@@ -796,8 +796,8 @@ if($_SESSION['lang'] == "ar"){ ?>
           <div class="form-group col-md-4">
            <label> electricity </label>
            <div class="d-flex flex-row justify-content-between align-items-center">
-             <select class="form-control mr-1" id="site_i" name="site_i" required>
-               <option value="" disabled selected> --   Choose -- </option>
+             <select class="form-control mr-1" id="site_i" name="site_i">
+               <option value="" disabled selected>  -- </option>
                <option value="electricity is available"> available </option>
                <option value="electricity is not available">  not available  </option>
              </select>
@@ -848,15 +848,15 @@ if($_SESSION['lang'] == "ar"){ ?>
       <div class="row">
 
                 <div class="col-md-4 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="  <?php echo _forms_oprations_step3_f1; ?>      " required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="  <?php echo _forms_oprations_step3_f1; ?>">
                 </div>
 
                 <div class="col-md-4 form-group">
-                  <input type="text" name="phone" class="form-control" id="phone" placeholder="    <?php echo _forms_oprations_step3_f2; ?>      " required>
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="    <?php echo _forms_oprations_step3_f2; ?>">
                 </div>
 
                 <div class="col-md-4 form-group">
-                  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    <?php echo _forms_oprations_step3_f3; ?>    " required>
+                  <input type="text" name="whatsapp_num" class="form-control" id="whatsapp_num" placeholder="    <?php echo _forms_oprations_step3_f3; ?>"/>
                 </div>
 
               </div>
@@ -868,15 +868,15 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                 <div class="col-md-4 form-group mt-3 mt-md-0">
                   <label></label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder=" <?php echo _forms_oprations_step3_f4; ?>  " required >
+                  <input type="text" class="form-control" name="email" id="email" placeholder=" <?php echo _forms_oprations_step3_f4; ?>"/>
                 </div>
 
 
 
                 <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label>نوع العلاقه بالموقع</label>
-                <select class="form-control mr-1" name="job" id="job" onchange="" required>
-                <option value="" disabled selected> -- اختار  -- </option>
+                <select class="form-control mr-1" name="job" id="job" onchange=""/>
+                <option value="" disabled selected> -- </option>
                 <option value="مالك"> مالك   </option>
                 <option value="شريك"> شريك </option>
                 <option value="مدير"> مدير </option>
@@ -889,8 +889,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
               <div class="col-md-4 form-group">
                 <label> الجهة التابع لها </label> 
-                <select class="form-control mr-1" name="categ" id="categ" onchange="select_side();"  required>
-                <option value="" disabled selected> -- اختار  -- </option>
+                <select class="form-control mr-1" name="categ" id="categ" onchange="select_side();"/>
+                <option value="" disabled selected> -- </option>
                 <option value="company"> شركة </option>
                 <option value="personal"> فرد </option>
                 </select>  
@@ -905,8 +905,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
               <div class="col-md-4 form-group mt-3 mt-md-0">
               <label> هل  سبق لك العمل معنا </label> 
-                <select class="form-control mr-1" name="work" id="work" onchange="select_wwus();" required >
-                <option value="" disabled selected> -- اختار الاجابة -- </option>
+                <select class="form-control mr-1" name="work" id="work" onchange="select_wwus();"/>
+                <option value="" disabled selected> --  </option>
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
@@ -941,13 +941,13 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                 <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label>   </label> 
-                  <input type="email" class="form-control" name="email" id="email" placeholder=" EMAIL " required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder=" EMAIL "/>
                 </div>
 
                 <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label>     Type of relationship to the site </label> 
-                <select class="form-control mr-1" name="job" id="job" onchange="" required>
-                <option value="" disabled selected> --  Choose -- </option>
+                <select class="form-control mr-1" name="job" id="job" onchange="">
+                <option value="" disabled selected>  -- </option>
                 <option value="Owner"> Owner   </option>
                 <option value="Partner"> Partner </option>
                 <option value="Manager"> Manager </option>
@@ -960,8 +960,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                        <div class="col-md-4 form-group">
                 <label>   Your side is </label> 
-                <select class="form-control mr-1" name="categ" id="categ" onchange="select_side();" required>
-                <option value="" disabled selected> --  Choose -- </option>
+                <select class="form-control mr-1" name="categ" id="categ" onchange="select_side();">
+                <option value="" disabled selected>  -- </option>
                 <option value="company"> company </option>
                 <option value="personal"> personal </option>
                 </select>  
@@ -976,8 +976,8 @@ if($_SESSION['lang'] == "ar"){ ?>
 
               <div class="col-md-4 form-group mt-3 mt-md-0">
               <label>  Have you over worked with us :  </label> 
-                <select class="form-control mr-1" name="work" id="work" onchange="select_wwus();" required>
-                <option value="" disabled selected> --  Choose -- </option>
+                <select class="form-control mr-1" name="work" id="work" onchange="select_wwus();">
+                <option value="" disabled selected>  -- </option>
                 <option value="yes"> YES </option>
                 <option value="no"> NO </option>
                 </select>
@@ -989,7 +989,7 @@ if($_SESSION['lang'] == "ar"){ ?>
               <div class="col-md-4 form-group mt-3 mt-md-0">
               <div class="form-group">
               <label for="exampleFormControlSelect2">  How to know us : </label>
-             <select  class="form-control" id="exampleFormControlSelect2" name="know" required>
+             <select  class="form-control" id="exampleFormControlSelect2" name="know"/>
                 <option value="friend">friend</option>
                 <option value="social">social</option>
                 <option value="tv">tv</option>

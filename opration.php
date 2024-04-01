@@ -181,13 +181,13 @@ if($_SESSION['lang'] == "ar"){ ?>
 <?php include 'header.php'; ?>
 
 <section id="pointer">
-	<img src="images/pointer/divider.png"/>
-	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="services.php?id=opration"><b> <?php echo _forms_oprations_title; ?> </b></a> / <a href="#"><b>   <?php echo _Apply; ?>   </b></a>
+  <img src="images/pointer/divider.png"/>
+  <a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
+  / <a href="services.php?id=opration"><b> <?php echo _forms_oprations_title; ?> </b></a> / <a href="#"><b>   <?php echo _Apply; ?>   </b></a>
 </section>
 
 <section id="forms">
-	<br/><br/>
+  <br/><br/>
 <div class="container">
   
  <div class="form-head">
@@ -229,15 +229,15 @@ if($_SESSION['lang'] == "ar"){ ?>
         <div class="col-md-12">
            
         <div class="alert alert-warning" role="alert">
-  		<?php echo _forms_massage; ?>
-		</div>
+      <?php echo _forms_massage; ?>
+    </div>
 
-		<div class="row">
+    <div class="row">
 
        <div class="col-md-6 form-group">
                 <label> <?php echo _forms_oprations_step1_f1."TTT"; ?> </label>
                 <?php if($_SESSION=="ar"){ ?>
-                  <select class="form-control mr-1" name="machine_type" id="machine_type" required>
+                  <select class="form-control mr-1" name="machine_type" id="machine_type">
                     <option value="" disabled selected> -- </option>
                     <option value="حفار"> حفار </option>
                     <option value="لوبد">  لوبد </option>
@@ -254,7 +254,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                     <option value="ماكينة تخريم">  ماكينة تخريم </option>
                   </select>
                   <?php }else{ ?>
-                      <select class="form-control mr-1" name="machine_type" id="machine_type"  required>
+                      <select class="form-control mr-1" name="machine_type" id="machine_type">
                     <option value="" disabled selected> --   Choose  -- </option>
                     <option value="Digger"> Digger </option>
                     <option value="LOBID">  LOBID </option>
@@ -274,7 +274,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
        <div class="form-group col-md-6">
          <label> <?php echo _forms_oprations_step1_f2; ?> </label>
-         <input type="text" class="form-control" id="inputDate" name="size_id" required /></div>
+         <input type="text" class="form-control" id="inputDate" name="size_id"/></div>
 
         </div>
 
@@ -289,9 +289,9 @@ if($_SESSION['lang'] == "ar"){ ?>
         <input type="text" class="form-control " id="year_of_manufacture_idhide" name="year_of_manufacture_idhide" placeholder="" >     
       </div>
 
-  	</div>
+    </div>
 
-  	<div class="row">
+    <div class="row">
 
      <div class="form-group col-md-6">
             <label> <?php echo _forms_oprations_step1_f5; ?> </label>
@@ -357,7 +357,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                     <!-- <option value="hand">  ادخال يدوي </option> -->
                   </select>
                <?php }else{ ?>
-                 <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();"  required>
+                 <select class="form-control mr-1" name="work_field" id="work_field" onchange="select_work_field();">
                     <option disabled selected> -- </option>
                     <option> mining </option>
                     <option>  cement </option>
@@ -371,7 +371,7 @@ if($_SESSION['lang'] == "ar"){ ?>
       </div>
 
       <div class="row"> 
-      	
+        
 
           <div class="form-group col-md-6">
           <label> <?php echo _forms_oprations_step1_f9; ?>  </label>
@@ -439,7 +439,7 @@ if($_SESSION['lang'] == "ar"){ ?>
              </select>
         <input id="hair_operator_idhide" name="hair_operator_idhide" type="text" class="form-control" placeholder=" حدد القيد  " style="display: none;">
         <?php }else{ ?>
-         <select class="form-control mr-1" id="hair_operator_id" name="hair_operator_id" onchange="select_hair_operator();" required>
+         <select class="form-control mr-1" id="hair_operator_id" name="hair_operator_id" onchange="select_hair_operator();">
                <option value="" disabled selected> --  </option>
                <option> by equipation </option>
                <option> by me </option>
@@ -494,9 +494,9 @@ if($_SESSION['lang'] == "ar"){ ?>
       <div class="col-lg-12 col-xs-6 col-md-offset-3">
         <div class="col-md-12">
 
-       <div class="alert alert-warning" role="alert">
+ <!--       <div class="alert alert-warning" role="alert">
       يرجي ملئ جميع بياات موقع الآلية بشكل صحيح ...
-    </div>
+    </div> -->
 
         <div class="row">
 
@@ -525,7 +525,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                <option value="ولاية وسط دارفور">ولاية وسط دارفور </option>
              </select>
               <?php }else{ ?>
-               <select class="form-control mr-1" id="state_id" name="" required>
+               <select class="form-control mr-1" id="state_id" name="">
                <option value="" disabled selected> -- </option>
                <option value="Khartoum"> Khartoum </option>
                <option value=" North Kordofan"> North Kordofan </option>
@@ -576,7 +576,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                <option value="غير متاح"> غير متاح</option>
              </select>
             <?php }else{ ?>
-              <select class="form-control mr-1" id="ready" name="network" required>
+              <select class="form-control mr-1" id="ready" name="network">
                 <option value="" disabled selected> -- </option>
                <option value="available"> Available  </option>
                <option value="not_available"> Not Available </option>
@@ -659,7 +659,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                 <option value="وسيط"> وسيط </option>
                 </select> 
                 <?php }else{ ?>
-                <select class="form-control mr-1" name="job" id="job" onchange="" required>
+                <select class="form-control mr-1" name="job" id="job" onchange="">
                <option value="" disabled selected> -- </option>
                 <option value="Owner"> Owner   </option>
                 <option value="Partner"> Partner </option>
@@ -683,7 +683,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                 </select>  
                 <input id="sidehide" type="text" name="company_name" class="form-control" placeholder=" ادخل اسم الشركة يدوي " style="display: none;" />
                 <?php }else{ ?>
-                 <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" required>
+                 <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();">
                 <option value="" disabled selected> -- </option>
                 <option value="company"> Company </option>
                 <option value="individual"> Individual </option>
@@ -709,7 +709,7 @@ if($_SESSION['lang'] == "ar"){ ?>
                 </select>
                <input id="wwushide" type="text" class="form-control" placeholder=" في اي موقع عملت معنا " style="display: none;" />
                <?php }else{ ?>
-                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" required>
+                <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();">
                  <option value="" disabled selected> -- </option>
                 <option value="yes"> Yes </option>
                 <option value="no"> No </option>
