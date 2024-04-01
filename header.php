@@ -207,7 +207,7 @@ include 'lang/ar.php';
 	</div>
 
 	<div class="col-lg-2">
-		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal"> <?php echo _Inquiries; ?> </button>
+		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal" style="width: 200px;"> <?php echo _Inquiries; ?> </button>
 	</div>
 		
 	</div>
