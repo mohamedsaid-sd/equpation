@@ -10,6 +10,15 @@ define('_our_services' , 'خدماتنا');
 define('_work_fildes' , 'مجالات العمل');
 define('_news' , 'الاخبار');
 define('_contact' , 'إتصل بنا');
+define('_Inquiries' , 'إستعلام وإستفسار');
+
+define('_model1' , 'الإسم ثلاثى');
+define('_model2' , 'رقم الهاتف ');
+define('_model3' , ' البريد الإلكترونى ');
+define('_model4' , ' اخبرنا بطلبك وإستفسارك');
+define('_model5' , 'أرسال  ');
+
+define('_Apply' , 'تقديم طلب ');
 
 /*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
 

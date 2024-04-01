@@ -6,30 +6,30 @@
     
     <form method="POST" action="#">
 
-    <h4> طلب إستفسار <a style="color: gray;" data-dismiss="modal" href="#"><i  class="icon-remove-circle"> </i> </a> </h4>  
+    <center><h4>   <a style="color: gray;" data-dismiss="modal" href="#"><i  class="icon-remove-circle"> </i> </a> </h4>  </center>
 
     <div class="form-group">
-      <label> الإسم ثلاثى </label>
-      <input class="form-control" type="text" name="name" placeholder="ادخل الإسم ثلاثى" required autofocus>
+      <label>   <?php echo _model1; ?></label>
+      <input class="form-control" type="text" name="name" placeholder="   <?php echo _model1; ?>" required autofocus>
     </div>
 
     <div class="form-group">
-      <label> رقم الهاتف </label>
-      <input class="form-control" type="text" name="name" placeholder="ادخل رقم الهاتف ">
+      <label>  <?php echo _model2; ?> </label>
+      <input class="form-control" type="text" name="name" placeholder="   <?php echo _model2; ?> ">
     </div>
 
     <div class="form-group">
-      <label> البريد الإلكترونى </label>
-      <input class="form-control" type="text" name="name" placeholder="ادخل البريد الإلكترونى ">
+      <label>   <?php echo _model3; ?> </label>
+      <input class="form-control" type="text" name="name" placeholder=" <?php echo _model3; ?>   ">
     </div>
 
     <div class="form-group">
-      <label> اخبرنا بطلبك وإستفسارك </label>
-      <textarea class="form-control" placeholder="اخبرنا بطلبك واستفسارك" rows="3"></textarea>
+      <label>    <?php echo _model4; ?> </label>
+      <textarea class="form-control" placeholder=" <?php echo _model4; ?>  " rows="3"></textarea>
     </div>
 
     <div class="form-group">
-      <button style="width: 100%;" class="btn-main"> تأكيد وإرسال </button>
+      <button style="width: 100%;" class="btn-main">  <?php echo _model5; ?>  </button>
     </div>
       
          </form>
