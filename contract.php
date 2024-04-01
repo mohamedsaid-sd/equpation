@@ -20,165 +20,148 @@ if(isset($_GET['lang'])){
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link href="vendor/css/style.css" rel="stylesheet"/>
 </head>
 <script type="text/javascript">
-      // deal with period  
-   function select_brand(){
-     var type = document.getElementById("brand_id").value;
+  // ready to go with js function 
+  $skill_counter = 2 ; 
+
+   // deal with period  
+   function select_period(){
+     var type = document.getElementById("work_duration_id").value;
       if(type == "hand"){
-      document.getElementById("brand_idhide").style.display = "block";
+      document.getElementById("durationhide").style.display = "block";
       }else{
-      document.getElementById("brand_idhide").value = "";
-      document.getElementById("brand_idhide").style.display = "none";
+      document.getElementById("durationhide").value = "";
+      document.getElementById("durationhide").style.display = "none";
       }
    }
 
-    function select_size(){
-     var type = document.getElementById("size_id").value;
+  //deal with hour of day
+   function select_hourday(){
+     var type = document.getElementById("daily_work_hours_id").value;
       if(type == "hand"){
-      document.getElementById("size_idhide").style.display = "block";
+      document.getElementById("work_hourshide").style.display = "block";
       }else{
-      document.getElementById("size_idhide").value = "";
-      document.getElementById("size_idhide").style.display = "none";
+      document.getElementById("work_hourshide").value = "";
+      document.getElementById("work_hourshide").style.display = "none";
       }
    }
 
-   function select_model(){
-     var type = document.getElementById("model_id").value;
+
+    // deal with filed
+    function select_work_field(){
+     var type = document.getElementById("work_field_id").value;
       if(type == "hand"){
-      document.getElementById("model_idhide").style.display = "block";
+      document.getElementById("work_fieldhide").style.display = "block";
       }else{
-      document.getElementById("model_idhide").value = "";
-      document.getElementById("model_idhide").style.display = "none";
+      document.getElementById("work_fieldhide").value = "";
+      document.getElementById("work_fieldhide").style.display = "none";
       }
    }
 
-  function select_year(){
-     var type = document.getElementById("year_of_manufacture_id").value;
-      if(type == "hand"){
-      document.getElementById("year_of_manufacture_idhide").style.display = "block";
+
+    // deal with old
+    function select_old(){
+     var type = document.getElementById("site_age").value;
+      if(type == "old"){
+      document.getElementById("oldhide").style.display = "block";
       }else{
-      document.getElementById("year_of_manufacture_idhide").value = "";
-      document.getElementById("year_of_manufacture_idhide").style.display = "none";
+      document.getElementById("start_date").value = "";
+      document.getElementById("oldhide").style.display = "none";
       }
    }
 
-   function select_condition(){
-     var type = document.getElementById("condition_id").value;
-      if(type == "hand"){
-      document.getElementById("condition_idhide").style.display = "block";
+
+      // deal with location side
+   function select_side(){
+     var type = document.getElementById("customer_type_selection").value;
+      if(type == "company"){
+      document.getElementById("company").style.display = "block";
       }else{
-      document.getElementById("condition_idhide").value = "";
-      document.getElementById("condition_idhide").style.display = "none";
+      document.getElementById("company").value = "";
+      document.getElementById("company").style.display = "none";
       }
    }
 
-  function select_state(){
-     var type = document.getElementById("state_id").value;
-      if(type == "hand"){
-      document.getElementById("state_idhide").style.display = "block";
+   // deal with work with us 
+   function select_wwus(){
+     var type = document.getElementById("ever_work_with_us").value;
+      if(type == "yes"){
+      document.getElementById("wwushide").style.display = "block";
       }else{
-      document.getElementById("state_idhide").value = "";
-      document.getElementById("state_idhide").style.display = "none";
+      document.getElementById("wwushide").value = "";
+      document.getElementById("wwushide").style.display = "none";
       }
    }
 
-   function select_advance(){
-     var type = document.getElementById("advance_id").value;
-      if(type == "hand"){
-      document.getElementById("advance_idhide").style.display = "block";
+
+    // deal with work with us 
+    function select_wwus(){
+     var type = document.getElementById("ever_work_with_us").value;
+      if(type == "yes"){
+      document.getElementById("wwushide").style.display = "block";
       }else{
-      document.getElementById("advance_idhide").value = "";
-      document.getElementById("advance_idhide").style.display = "none";
+      document.getElementById("wwushide").value = "";
+      document.getElementById("wwushide").style.display = "none";
       }
    }
 
-   function select_catogry(){
-     var type = document.getElementById("category_id").value;
-      if(type == "hand"){
-      document.getElementById("category_idhide").style.display = "block";
-      }else{
-      document.getElementById("category_idhide").value = "";
-      document.getElementById("category_idhide").style.display = "none";
-      }
-   }
+   function add_distance_line() {
+    //alert("go");
+    var skills = document.getElementById("distancediv");
 
-   function select_hourly_work(){
-    var variable = document.getElementById("hourly_work_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("hourly_work_idhide").style.display = "block";
-    }else{
-      document.getElementById("hourly_work_idhide").value = "";
-      document.getElementById("hourly_work_idhide").style.display = "none";
-    }
-   }
+    var div = document.createElement("div");
+    div.setAttribute("class" , "col-md-3 form-group");
+    var label = document.createElement("label");
+    var input = document.createElement("input");
+    input.setAttribute("class" , "form-control");
+    input.setAttribute("placeholder" , "product name ");
+    input.setAttribute("name" , "product" + $skill_counter);
+    div.appendChild(label);
+    div.appendChild(input);
 
-   function select_gorvernment_fees(){
-    var variable = document.getElementById("gorvernment_fees_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("gorvernment_fees_idhide").style.display = "block";
-    }else{
-      document.getElementById("gorvernment_fees_idhide").value = "";
-      document.getElementById("gorvernment_fees_idhide").style.display = "none";
-    }
-   }
+    var div2 = document.createElement("div");
+    div2.setAttribute("class" , "col-md-3 form-group");
+    var label2 = document.createElement("label");
+    label2.innerHTML = "";
+    var input2 = document.createElement("input");
+    input2.setAttribute("class" , "form-control");
+    input2.setAttribute("placeholder" , "Transportation distance ");
+    input2.setAttribute("name" , "distance" + $skill_counter);
+    div2.appendChild(label2);
+    div2.appendChild(input2);
 
-   function select_availablity(){
-    var variable = document.getElementById("availability_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("availability_idhide").style.display = "block";
-    }else{
-      document.getElementById("availability_idhide").value = "";
-      document.getElementById("availability_idhide").style.display = "none";
-    }
-   }
 
-   function select_hair_operator(){
-    var variable = document.getElementById("hair_operator_id").value;
-    if(variable == "hand"){
-      document.getElementById("hair_operator_idhide").style.display = "block";
-    }else{
-      document.getElementById("hair_operator_idhide").value = "";
-      document.getElementById("hair_operator_idhide").style.display = "none";
-    }
-   }
+    skills.appendChild(div);
+    skills.appendChild(div2);
+    
+    $skill_counter ++;
+  }
 
-   function select_maintenance(){
-    var variable = document.getElementById("maintenance_id").value;
-    if(variable == "hand" || variable == "handx"){
-      document.getElementById("maintenance_idhide").style.display = "block";
-    }else{
-      document.getElementById("maintenance_idhide").value = "";
-      document.getElementById("maintenance_idhide").style.display = "none";
-    }
-   }
 
-   function select_contracts(){
-    var variable = document.getElementById("cotracts_id").value;
-    if(variable == "hand"){
-      document.getElementById("cotracts_idhide").style.display = "block";
-    }else{
-      document.getElementById("cotracts_idhide").value = "";
-      document.getElementById("cotracts_idhide").style.display = "none";
-    }
-   }
 
-   function select_clearences(){
-    document.getElementById("clearances_idhide").style.display = "block";
-   }
 </script>
 <body>
 
 <?php include 'header.php'; ?>
 
 <section id="pointer">
+<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/  <a href="services.php?id=contract"><b> خدملة المقاولة  </b></a> / <a href="#"><b> تقديم طلب </b></a>
+	/  <a href="services.php?id=contract"><b>  <?php echo _forms_contract_title; ?>  </b></a> / <a href="#"><b>   <?php echo _Apply; ?>  </b></a>
 </section>
 
 <section id="forms">
@@ -187,7 +170,9 @@ if(isset($_GET['lang'])){
   
  <div class="form-head">
    <!--  <img style="width: 100%;height: 100px;" src="../images/hero.jpg"> -->
-    <h1 align="center"> طلب المقاولة  </h1>
+    <h1 align="center">  <?php echo _forms_contract_title; ?>  </h1>
+
+    
   </div>
 
 <div class="stepwizard col-lg-12">
@@ -197,17 +182,17 @@ if(isset($_GET['lang'])){
     <div class="stepwizard-row setup-panel">
 
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b>   متطلبات المقاولة  </a>
+        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b> <?php echo _forms_contract_step1; ?>   </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  مواصفات الموقع  </a>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  <?php echo _forms_contract_step2; ?>  </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  بيانات العميل</a>
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b> <?php echo _forms_contract_step3; ?>  </a>
       
       </div>
 
@@ -224,11 +209,13 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
            
         <div class="alert alert-warning" role="alert">
-  		يرجي ملئ جميع بياات ومواصفات المعدة بشكل صحيح ...
+        <?php echo _forms_massage; ?>
 		</div>
 
 
-            <div class="row">
+
+<?php if($_SESSION['lang'] == "ar"){ ?>
+    <div class="row">
                
                 <div class="col-md-4 form-group">
                 <label> نوع العمل</label>
@@ -285,7 +272,30 @@ if(isset($_GET['lang'])){
 
               </div>
 
+
+
+                       <h3> اضافه  إسم المنتج المراد نقله ومسافة النقل </h3>
       
+      <div id="distancediv" class="row">
+
+      <div class="col-md-3 form-group">
+      <label></label>
+      <input type="text" name="product1" class="form-control" placeholder="اسم المنتج"/>
+      </div>
+
+      <div class="col-md-3 form-group">
+      <label>  </label>
+      <input type="text" name="distance1" class="form-control" placeholder="مسافة النقل"/>
+
+      </div>
+
+
+      </div><br/>
+
+
+
+
+
 
               <h3> اضافه  إسم المنتج المراد نقله ومسافة النقل </h3>
       
@@ -332,16 +342,129 @@ if(isset($_GET['lang'])){
                 
               </div>
 
+  <?php }else{ ?>
+
+
+
+      <div class="row">
+               
+                <div class="col-md-4 form-group">
+                Work type <br/>
+
+                <select class="form-control mr-1" name="work_type_id" id="work_type_id" onchange="select_period();" required>
+                    <option value="Moving materials">Moving materials</option>
+                    <option value="Run Mine">Run Mine</option>
+                    <option value="Establishing a camp">Establishing a camp</option>
+                    <option value="Equipping basins">Equipping basins</option>
+                    <option value="road paving">road paving</option>
+
+                  </select>
+                </div>
+
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                Duration <br/>
+                  <select class="form-control mr-1" name="work_duration_id" id="work_duration_id" onchange="select_period();" required>
+                    <option value="" disabled selected> --  Choose the duration  -- </option>
+                    <option value="month"> month </option>
+                    <option value="3month"> 3 month  </option>
+                    <option value="year"> year </option>
+                    <option value="hand">  Manual entry </option>
+                  </select>
+                  <input id="durationhide" name="durationhide" type="text" class="form-control" placeholder="    Manual entry " style="display: none;">
+                </div>
+
+
+                <div class="col-md-4 form-group">
+         <label>Unit of measurement</label>
+         <select class="form-control mr-1" id="unit_of_measure" name="unit_of_measure" onchange="select_hourday();" required>
+            <option value="" disabled selected> </option>
+            <option value="tons">tons</option>
+            <option value="cubic metres">cubic metres</option>
+            <option value="kilometers">Kilometers</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+<div class="col-md-4 form-group">
+              <label>Otal TION</label>
+              <input id="total_ton" name="total_ton" type="number" class="form-control" placeholder="distance of mobilization waste"/>
+              </div> 
+
+              <div class="col-md-4 form-group">
+              <label>Daily TON</label>
+              <input id="daily_ton" name="daily_ton" type="number" class="form-control" placeholder="distance of mobilization waste"/>
+              </div> 
+              
+
+              </div>
+
+
+
+                            <h5>  Add the name of the transport intended to be transported and the transport distance </h5>
+      
+      <div id="distancediv" class="row">
+
+      <div class="col-md-3 form-group">
+      <label></label>
+      <input type="text" name="product1" class="form-control" placeholder="product name"/>
+      </div>
+
+      <div class="col-md-3 form-group">
+      <label>  </label>
+      <input type="text" name="distance1" class="form-control" placeholder="Transportation distance"/>
+
+      </div>
+
+
+      </div><br/>
+      <span style="width: 150px; padding: 3px; margin: 5px;" class="btn btn-primary" onclick="add_distance_line();">  Add a product + </span>
+    
+
+             <div class="row">
+
+        <div class="form-group col-md-4">
+        <label> Daily work hours   </label>
+          <select class="form-control mr-1" id="daily_work_hours_id" name="daily_work_hours_id" onchange="select_hourday();" required>
+            <option value="" disabled selected> -- Choose  -- </option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="20">20</option>
+            <option value="hand"> manual entry  </option>
+          </select>
+          <input id="work_hourshide" name="work_hourshide" type="number" class="form-control" placeholder="  manual entry Hour   " style="display: none;">
+        </div>
+
+         <div class="col-md-4 form-group">
+         <label> Expected begining of work</label>
+          <input id="expected_beginning_of_work" name="expected_beginning_of_work" type="date" class="form-control" placeholder=" "/>
+        </div> 
+                
+              </div>
+    <br/>
+
+
+
+  <?php } ?>
+
+        
+      
+
+
          
    
 
   
-
+    <?php if($_SESSION['lang'] == "ar"){ ?>
         <div style="text-align: left;">
-
           <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
         </div>
+        <?php }else{ ?> 
+        <div style="float: right;">
+          <button class="btn btn-warning nextBtn btn-lg" type="button">  <i class="icon-arrow-right"></i> Confirm and continue  </button>
+        </div>
+         <?php } ?> 
 
         </div>
       </div>
@@ -361,11 +484,13 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
 
        <div class="alert alert-warning" role="alert">
-      يرجي ملئ جميع بياات موقع الآلية بشكل صحيح ...
+       <?php echo _forms_massage; ?>
     </div>
 
-   
-   <div class="row">
+
+<?php if($_SESSION['lang'] == "ar"){ ?>
+
+  <div class="row">
        
          <div class="col-md-4 form- mt-3 mt-md-0">
             <label>    الولاية </label>
@@ -563,14 +688,236 @@ if(isset($_GET['lang'])){
 
 
 
-      <br/>
+  <?php }else{ ?>
 
-          <div style="text-align: left;">
-         
-          <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-           <button class="btn btn-warning prevBtn btn-lg" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
+
+      <div class="row">
+      
+        <div class="form-group col-md-4">
+           <label>  states  </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="state" name="state" required>
+               <option value="" disabled selected> -- Choose -- </option>
+               <option value="Khartoum"> Khartoum </option>
+               <option value=" North Kordofan"> North Kordofan </option>
+               <option value="Northern"> Northern </option>
+               <option value="Kassala"> Kassala </option>
+               <option value="Blue Nile"> Blue Nile </option>
+               <option value="North Darfur "> North Darfur  </option>
+               <option value="South Darfur "> South Darfur  </option>
+               <option value="South Kordofan "> South Kordofan  </option>
+               <option value="Gezira"> Gezira </option>
+               <option value="White Nile "> White Nile  </option>
+               <option value="River Nile "> River Nile  </option>
+               <option value="Red Sea"> Red Sea </option>
+               <option value="Al Qadarif "> Al Qadarif  </option>
+               <option value="Sennar"> Sennar </option>
+               <option value="West Darfur "> West Darfur  </option>
+               <option value="Central Darfur "> Central Darfur  </option>
+               <option value="East Darfur "> East Darfur  </option>
+               <option value="West Kordofan"> West Kordofan </option>
+             </select>
+           </div>
+         </div>
+
+
+          <div class="form-group col-md-4">
+           <label>  The nature of the site </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="region" name="region" required>
+               <option value="" disabled selected> -- Choose -- </option>
+               <option value="Mountains"> Mountains </option>
+               <option value=" Wells"> Wells </option>
+               <option value="Farm"> Farm </option>
+               <option value="Mine"> Mine </option>
+               <option value="Open sites"> Open sites </option>
+             </select>
+           </div>
+         </div>
+
+             
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+        WORK FIELD <br/>
+                  <select class="form-control mr-1" name="work_field_id" id="work_field_id" onchange="select_work_field();" required>
+                    <option disabled selected> -- Choose   -- </option>
+                    <option value="1"> mining </option>
+                    <option value="2">  cement </option>
+                    <option value="3">  agricultural </option>
+                    <option value="hand">   manual entry </option>
+                  </select>
+
+                  <input id="work_fieldhide" name="work_fieldhide" type="text" class="form-control" placeholder="   manual entry " style="display: none;">
+          </div>
+        <!-- <div class="form-group col-md-4">
+       <input type="number" class="form-control" name="distance_from_nearest" id="distance_from_nearest" placeholder=" Nearest city  " required>
+          </div> -->
+
+
+
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <label> Narest City </label>
+            <input type="text" name="nearest_city" class="form-control" placeholder="Enter nearest city" required/>
+            </div>
+
+            <!-- <div class="col-md-4 form-group mt-3 mt-md-0">
+            <label> Nearest Market </label>
+            <input type="text" id="nearest_market" name="nearest_market" class="form-control" placeholder="Enter nearest market" required/>
+            </div> -->
+
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+            <label> Nearest Paved Road </label>
+            <input type="text" id="nearest_paved_road" name="nearest_paved_road" class="form-control" placeholder="Enter nearest paved road" required/>
+            </div>
+
+            <div class="form-group col-md-4">
+             work starting date (manual entry/calendar) :  <br/>
+             <input type="date" name="start_date" class="form-control" placeholder="   work starting date (manual entry/calendar) " required>     
+         </div>                      
+            
+      </div>
+
+      <div class="row">
+   
+
+        
+             
+
+        </div>
+  <label> <b>JOB SITE READINESS  : </b> </label><br>
+
+          <div class="row">
+
+        
+          
+          <div class="form-group col-md-4">
+           <label> living </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="living_selection" name="living_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="excellent"> excellent </option>
+               <option value="good"> good </option>
+               <option value="normal"> normal </option>
+             </select>
+           </div>
+         </div>
+
+
+          <div class="form-group col-md-4">
+           <label> subsistence </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="subsistence_selection" name="subsistence_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+                <option value="excellent"> excellent </option>
+               <option value="good"> good </option>
+               <option value="normal"> normal </option>
+             </select>
+           </div>
+         </div>
+
+          <div class="form-group col-md-4">
+           <label> internet </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="internet_selection" name="internet_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+            
+          </div>
+
+       <div class="row">
+            
+        <div class="form-group col-md-4">
+           <label>  communication </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="communication_selection" name="communication_selection" required>
+               <option value="" disabled selected> --  Choose  -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+
+         <div class="form-group col-md-4">
+           <label>  workshop </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="workshop_selection" name="workshop_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+
+          <div class="form-group col-md-4">
+           <label> compressor </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="compressor_selection" name="compressor_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
 
           </div>
+
+          <div class="row">
+
+          <div class="form-group col-md-4">
+           <label> fuel </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="fuel_selection" name="fuel_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+            
+
+           <div class="form-group col-md-4">
+           <label> water </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="water_selection" name="water_selection" required>
+               <option value="" disabled selected> --   Choose   -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+
+          <div class="form-group col-md-4">
+           <label> electricity </label>
+           <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="electricity_selection" name="electricity_selection" required>
+               <option value="" disabled selected> --   Choose -- </option>
+               <option value="available"> available </option>
+               <option value="not_available"> not available </option>
+             </select>
+           </div>
+         </div>
+          </div>
+
+  <?php } ?>
+   
+ 
+
+      <br/>
+   <?php if($_SESSION['lang'] == "ar"){ ?>
+          <div style="text-align: left;">
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
+          </div>
+          <?php }else{ ?>
+          <div style="float: right;">
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button">  Previous <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> Confirm & Contenue  </button>
+          </div>
+          <?php } ?>
+          
         </div>
       </div>
     </div>

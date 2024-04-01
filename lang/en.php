@@ -351,7 +351,30 @@ define('_forms_rental_step6' , ' EXPECTED WORK START ');
 // define('_forms_rental_step11' , ' '); 
 // define('_forms_rental_step12' , ' ');
 
+//contract 
+define('_forms_contract_title' , '   Contract Request   ');//
 
+
+define('_forms_contract_step1' , '  Contract Requirement');  // 
+define('_forms_contract_step2' , 'SITE DESCRIPTION '); //
+define('_forms_contract_step3' , '  CUSTOMER DATA'); //
+
+
+
+//Migration
+define('_forms_migration_title' , '   Migration Request   ');//
+
+
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
+// define('_forms_migration_step1' , ' ');  // 
 
 /*-----------------------------------------------
 footer

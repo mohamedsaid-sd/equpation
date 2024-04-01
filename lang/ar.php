@@ -343,6 +343,22 @@ define('_forms_rental_step6' , 'بداية العمل المتوقعة  ');
 // define('_forms_rental_step1' , ' '); 
 // define('_forms_rental_step1' , ' ');
 
+
+//contract 
+define('_forms_contract_title' , '  طلب المقاولة  ');//Contract Request 
+
+
+define('_forms_contract_step1' , '  متطلبات المقاولة ');  //Contract Requirement 
+define('_forms_contract_step2' , 'مواصفات الموقع  '); //SITE DESCRIPTION
+define('_forms_contract_step3' , ' بيانات العميل'); //CUSTOMER DATA
+// define('_forms_contract_step1' , ' '); 
+// define('_forms_contract_step1' , ' '); 
+// define('_forms_contract_step1' , ' '); 
+// define('_forms_contract_step1' , ' '); 
+// define('_forms_contract_step1' , ' '); 
+// define('_forms_contract_step1' , ' '); 
+
+
 /*-----------------------------------------------
 footer
 ----------------------------------------------------------------*/
