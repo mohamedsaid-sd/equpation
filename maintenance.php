@@ -16,7 +16,7 @@ if(isset($_GET['lang'])){
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<title> أيكوبيشن > الخدمات >  خدمة الصيانة </title>
+<title> أيكوبيشن > الخدمات >  خدمة الصيانة </title>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
@@ -455,6 +455,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
                 <div class="col-md-4 form- mt-3 mt-md-0">
                 <label> <?php echo _forms_oprations_step3_f5; ?>  </label> 
+                <?php if($_SESSION=="ar"){ ?>
                 <select class="form-control mr-1" name="job" id="job" onchange="" required>
                 <option value="" disabled selected>  </option>
                 <option value="مالك"> مالك   </option>
@@ -465,36 +466,64 @@ if($_SESSION['lang'] == "ar"){ ?>
                 <option value="وكيل"> وكيل </option>
                 <option value="وسيط"> وسيط </option>
                 </select> 
-                  </div>
+                <?php }else{ ?>
+                <select class="form-control mr-1" name="job" id="job" onchange="" required>
+                <option value="" disabled selected> -- </option>
+                <option value="Owner"> Owner   </option>
+                <option value="Partner"> Partner </option>
+                <option value="Manager"> Manager </option>
+                <option value="Employee"> Employee </option>
+                <option value="Moderator"> Moderator </option>
+                <option value="agent"> agent </option>
+                <option value="broker"> broker </option>
+                </select> 
+                <?php } ?>
+              </div>
 
               <div class="col-md-4 form-">
                 <label> <?php echo _forms_oprations_step3_f6; ?></label> 
+                <?php if($_SESSION=="ar"){ ?>
                 <select class="form-control mr-1" name="work_for" id="work_for" onchange="select_side();" required>
                 <option value="" disabled selected> </option>
                 <option value="company"> شركة </option>
                 <option value="individual"> فرد </option>
                 </select>  
                 <input id="sidehide" type="text" name="company_name" class="form-control" placeholder=" ادخل اسم الشركة يدوي " style="display: none;" />
+                <?php }else{ ?>
+                <select class="form-control mr-1" name="work_for" id="side" onchange="select_side();" required>
+                <option value="" disabled selected> -- </option>
+                <option value="company"> Company </option>
+                <option value="individual"> Individual </option>
+                </select>  
+                <input id="sidehide" type="text" name="company_name" class="form-control" placeholder="   Company Name " style="display: none;" />
+                <?php } ?>
               </div>
 
               <div class="col-md-4 form- mt-3 mt-md-0">
               <label>  <?php echo _forms_oprations_step3_f7; ?></label> 
+                <?php if($_SESSION=="ar"){ ?>
                 <select class="form-control mr-1" name="previous" id="previous" onchange="select_wwus();" required>
                 <option value="" disabled selected>  </option>
                 <option value="yes"> نعم </option>
                 <option value="no"> لا </option>
                 </select>
-
                <input id="wwushide" type="text" class="form-control" placeholder=" في اي موقع عملت معنا " style="display: none;" />
                <!-- required style="display:none" -->
-               
-              
-
+               <?php }else{ ?>
+               <select class="form-control mr-1" name="previous" id="wwus" onchange="select_wwus();" required>
+                <option value="" disabled selected> -- </option>
+                <option value="yes"> Yes </option>
+                <option value="no"> No </option>
+                </select>
+               <input id="wwushide" type="text" class="form-control" placeholder=" On any construction site with us" style="display: none;" />
+               <?php } ?>
+      
               </div>
 
               <div class="col-md-4 form- mt-3 mt-md-0">
               <div class="form-">
               <label for="exampleFormControlSelect2"><?php echo _forms_oprations_step3_f8; ?></label>
+              <?php if($_SESSION=="ar"){ ?>
               <select  class="form-control" name="know" id="exampleFormControlSelect2">
                 <option value="media"> الفيسبوك </option>
                 <option value="media"> التويتر </option>
@@ -503,6 +532,15 @@ if($_SESSION['lang'] == "ar"){ ?>
                 <option value="advertisemen"> عن طريق الاعلانات  </option>
                 <option value="other">  اخري  </option>
               </select>
+              <?php }else{ ?>
+              <select  class="form-control" name="know" id="exampleFormControlSelect2">
+                <option value="media"> Facebook </option>
+                <option value="media"> Twiter </option>
+                <option value="advertisemen"> Advertisment </option>
+                <option value="friend"> By a friend </option>
+                <option value="other"> Others  </option>
+              </select>
+              <?php } ?>
               </div>
              </div>
 
