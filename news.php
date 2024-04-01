@@ -34,7 +34,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 <?php include 'header.php'; ?>
 <section id="pointer">
+	<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ <a href="#"><b> الاخبار </b></a>
 </section>

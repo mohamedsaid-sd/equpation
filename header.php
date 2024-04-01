@@ -64,7 +64,7 @@ include 'lang/ar.php';
   </ul>
           </li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> <?php echo _work_fildes; ?> </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?> </a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?> </a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"><?php echo _contact; ?> </a></li>
               <li style="text-align: right;"><button class="btn-main" data-toggle="modal" data-target="#form_modal">   <?php echo _Inquiries; ?>  </button></li>
             </ul>
@@ -201,7 +201,7 @@ include 'lang/ar.php';
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
               <li><i class="bx bx-chevron-right" onclick="fun();" id="service-togle"></i> <a onclick="fun();" href="#"><?php echo _our_services; ?></a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"><?php echo _work_fildes; ?></a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?></a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?></a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"><?php echo _contact; ?></a></li>
             </ul>
 	</div>
