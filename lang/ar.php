@@ -19,6 +19,13 @@ define('_model4' , ' اخبرنا بطلبك وإستفسارك');
 define('_model5' , 'أرسال  ');
 
 define('_Apply' , 'تقديم طلب ');
+define('_Apply2' , ' تقديم طلب الخدمة  ');
+
+define('_successline' , '  تم بنجاح   ');
+define('_success' , '  تهانينا ...    ');//Congratulations...
+define('_success1' , '   تم تاكيد إستلام طلبك بنجاح   ');//Your request has been successfully received
+define('_success2' , '  سنقوم بالتواصل معك في خلال 24 ساعة     ');//We will contact you within 24 hours
+define('_success3' , '  رقم الطلب : #234567890    ');//Order number: #234567890
 
 /*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
@@ -358,6 +365,36 @@ define('_forms_contract_step3' , ' بيانات العميل'); //CUSTOMER DATA
 // define('_forms_contract_step1' , ' '); 
 // define('_forms_contract_step1' , ' '); 
 
+//Migration
+define('_forms_migration_title' , '  طلب الترحيل ');//
+
+
+define('_forms_migration_step1' , ' خدمة الترحيل ');  // 
+define('_forms_migration_step2' , ' مطلوبات الترحيل');  //  
+define('_forms_migration_step3' ,'بيانات موقع الآلية  ');  //  
+define('_forms_migration_step4' , ' بيانات العميل');  //
+define('_forms_migration_step5' , ' مقاس الآلية');  // 
+define('_forms_migration_step6' , ' ادخل حجم مولد ');  // 
+define('_forms_migration_step7' , ' ادخل حجم كمبروسير ');  // 
+define('_forms_migration_step8' , ' ادخل حجم  مكنة لحام ');  // 
+define('_forms_migration_step9' , ' ادخل حجم حفار ');  // 
+define('_forms_migration_step10' , ' مقاس الالية المطلوبة للترحيل ');  // 
+define('_forms_migration_step11' , 'ادخل مقاس اللوبيد  ');  // 
+define('_forms_migration_step12' , ' ادخل مقاس الدفار ');  // 
+define('_forms_migration_step13' , ' معلومات الموقع ');  //   
+define('_forms_migration_step14' , 'المدينة ');  // 
+define('_forms_migration_step15' , 'الشركة ');  // 
+define('_forms_migration_step16' , ' وصف كتابي دقيق للموقع  ');  // 
+define('_forms_migration_step17' , ' الموقع');  // 
+define('_forms_migration_step18' , '  رقم التواصل 1    مثال 00249123000000');  // 
+define('_forms_migration_step19' , '  رقم التواصل 2   مثال 00249123000000');  //
+define('_forms_migration_step20' , ' جهة توصيل الآلية ');  // 
+define('_forms_migration_step21' , 'المدينة ');  // 
+define('_forms_migration_step22' , 'الشركة ');  // 
+define('_forms_migration_step23' , 'وصف كتابي دقيق للموقع   ');  // 
+define('_forms_migration_step24' , '  رقم التواصل 1    مثال 00249123000000');  // 
+define('_forms_migration_step25' , '  رقم التواصل 2   مثال 00249123000000');  // 
+// define('_forms_migration_step26' , ' ');  // 
 
 /*-----------------------------------------------
 footer

@@ -20,6 +20,14 @@ define('_model4' , 'Tell us your request');
 define('_model5' , 'Confirm and send');
 
 define('_Apply' , 'Apply');
+
+define('_Apply2' , 'Application submission service');
+
+define('_successline' , '  success   ');
+define('_success' , '  Congratulations...   ');
+define('_success1' , ' Your request has been successfully received  ');
+define('_success2' , ' We will contact you within 24 hours    ');
+define('_success3' , '  Order number: #234567890   ');
 /*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 /*-----------------------------------------------
@@ -365,17 +373,35 @@ define('_forms_contract_step3' , '  CUSTOMER DATA'); //
 define('_forms_migration_title' , '   Migration Request   ');//
 
 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-// define('_forms_migration_step1' , ' ');  // 
-
+define('_forms_migration_step1' , ' Migration Request ');  // خدمة الترحيل 
+define('_forms_migration_step2' , ' Relocation liabilities');  //  مطلوبات الترحيل
+define('_forms_migration_step3' ,'Mechanism location data  ');  //  بيانات موقع الآلية
+define('_forms_migration_step4' , 'CUSTOMER DATA');  // بيانات العميل
+define('_forms_migration_step5' , ' Size of machine');  // مقاس الآلية
+define('_forms_migration_step6' , ' Entry generator size');  // ادخل حجم مولد 
+define('_forms_migration_step7' , ' Entry comprossor  size');  // ادخل حجم كمبروسير 
+define('_forms_migration_step8' , ' Entry welding_machine size');  // ادخل حجم  مكنة لحام 
+define('_forms_migration_step9' , ' Entry excavator size ');  // ادخل حجم حفار
+define('_forms_migration_step10' , ' Type of machine to MOB/DIMOB');  // مقاس الالية المطلوبة للترحيل 
+define('_forms_migration_step11' , 'Enter lowbed Size ');  // ادخل مقاس اللوبيد 
+define('_forms_migration_step12' , ' Enter truck Size');  // ادخل مقاس الدفار 
+define('_forms_migration_step13' , ' Location machine');  //   معلومات الموقع 
+define('_forms_migration_step14' , 'zone ');  // المدينة
+define('_forms_migration_step15' , 'workplace ');  // الشركة
+define('_forms_migration_step16' , 'write a precise description of the workplace  ');  //  وصف كتابي دقيق للموقع 
+define('_forms_migration_step17' , ' location');  // الموقع
+define('_forms_migration_step18' , '  phone number 1 (002499123xxx)');  //  رقم التواصل 1    مثال 00249123000000
+define('_forms_migration_step19' , ' phone number 2 (002499123xxx)');  // رقم التواصل 2   مثال 00249123000000
+define('_forms_migration_step20' , ' Destination');  // جهة توصيل الآلية 
+define('_forms_migration_step21' , 'zone ');  // المدينة
+define('_forms_migration_step22' , 'workplace ');  // الشركة
+define('_forms_migration_step23' , 'write a precise description of the workplace  ');  // 
+define('_forms_migration_step24' , '  phone number 1 (002499123xxx)');  // 
+define('_forms_migration_step25' , ' phone number 2 (002499123xxx)');  // 
+// define('_forms_migration_step26' , ' ');  // 
+// define('_forms_migration_step27' , ' ');  // 
+// define('_forms_migration_step28' , ' ');  // 
+// define('_forms_migration_step29' , ' ');  // 
 /*-----------------------------------------------
 footer
 ----------------------------------------------------------------*/

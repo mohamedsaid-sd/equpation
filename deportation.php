@@ -20,7 +20,12 @@ if(isset($_GET['lang'])){
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link href="vendor/css/style.css" rel="stylesheet"/>
@@ -178,7 +183,7 @@ if(isset($_GET['lang'])){
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="services.php?id=transport"><b> خدمة الترحيل </b></a> / <a href="#"><b> تقديم طلب </b></a>
+	/ <a href="services.php?id=transport"><b>   <?php echo _forms_migration_step1; ?></b></a> / <a href="#"><b> <?php echo _Apply; ?></b></a>
 </section>
 
 <section id="forms">
@@ -187,7 +192,7 @@ if(isset($_GET['lang'])){
   
  <div class="form-head">
    <!--  <img style="width: 100%;height: 100px;" src="../images/hero.jpg"> -->
-    <h1 align="center"> طلب الترحيل </h1>
+    <h1 align="center"><?php echo _forms_migration_title; ?></h1>
   </div>
 
 <div class="stepwizard col-lg-12">
@@ -197,17 +202,17 @@ if(isset($_GET['lang'])){
     <div class="stepwizard-row setup-panel">
 
       <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b>  مطلوبات الترحيل</a>
+        <a href="#step-1" type="button" class="btn btn-warning btn-circle"> <b> 1 </b>  <?php echo _forms_migration_step2; ?> </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  بيانات موقع الآلية</a>
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 2 </b>  <?php echo _forms_migration_step3; ?>  </a>
        
       </div>
 
       <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>  بيانات العميل</a>
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><b> 3 </b>   <?php echo _forms_migration_step4; ?></a>
       
       </div>
 
@@ -224,17 +229,17 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
            
         <div class="alert alert-warning" role="alert">
-  		يرجي ملئ جميع بياات ومواصفات المعدة بشكل صحيح ...
+        <?php echo _forms_massage; ?>
 		</div>
 
 
 
           <div class="row">
-
-                <div class="col-md-4 form-group">
+          <?php if($_SESSION['lang'] == "ar"){ ?>
+            <div class="col-md-4 form-group">
                   <label>نوع الآلية المرحلة</label>
                   <select class="form-control mr-1" name="machine" id="machine" onchange="select_type();" >
-                    <option value="" disabled selected> -- اختار النوع  -- </option>
+                    <option value="" disabled selected>   </option>
                     <option> دفار </option>
                     <option> دوزر </option>
                     <option> مولد </option>
@@ -243,14 +248,28 @@ if(isset($_GET['lang'])){
                   <input id="machinehide" name="machinehide" type="text" class="form-control" placeholder=" ادخل نوع الالية يدوي "  style="display:none">
                 </div>
 
+	<?php }else{ ?>
+    <div class="col-md-4 form-group">
+                <label> Type of machine </label>
+                  <select class="form-control mr-1" name="machine" id="machine" onchange="select_type();">
+                    <option value="" disabled selected>  </option>
+                    <option> Excavator </option>
+                    <option> Dozer </option>
+                    <option> Generator </option>
+                    <option value="hand"> Manual Entry </option>
+                  </select>
+                  <input id="machinehide" name="machinehide" type="text" class="form-control" placeholder="  Manual Entry " style="display:none">
+                </div>
+	<?php } ?>
+             
                 <div class="col-md-4 form-group mt-3 mt-md-0">
-                  <label>مقاس الآلية</label>
-                  <input type="number" step="0.01" id="comprossor" name="comprossor" class="form-control" placeholder="ادخل حجم كمبروسير ">
+                  <label> <?php echo _forms_migration_step5; ?></label>
+                  <input type="number" step="0.01" id="comprossor" name="comprossor" class="form-control" placeholder="<?php echo _forms_migration_step7; ?>">
                 </div>
 
                 <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label></label>
-                <input type="number" step="0.01" id="generator" name="generator" class="form-control" placeholder="ادخل حجم مولد ">
+                <input type="number" step="0.01" id="generator" name="generator" class="form-control" placeholder="  <?php echo _forms_migration_step6; ?> ">
                 </div>
 
               </div>
@@ -259,16 +278,17 @@ if(isset($_GET['lang'])){
                 
               <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label></label>
-                <input type="number" step="0.01" id="welding_machine" name="welding_machine" class="form-control" placeholder="ادخل حجم  مكنة لحام  ">
+                <input type="number" step="0.01" id="welding_machine" name="welding_machine" class="form-control" placeholder="    <?php echo _forms_migration_step8; ?>  ">
                </div>
 
               <div class="col-md-4 form-group mt-3 mt-md-0">
                 <label></label>
-                <input type="number" step="0.01" id="excavator" name="excavator" class="form-control" placeholder="ادخل حجم حفار">
+                <input type="number" step="0.01" id="excavator" name="excavator" class="form-control" placeholder="<?php echo _forms_migration_step9; ?>  ">
               </div>
 
 
-              <div class="col-md-4 form-group mt-3 mt-md-0">
+              <?php if($_SESSION['lang'] == "ar"){ ?>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
                  <label>ماركة الآلية المرحلة</label>
                  <select class="form-control mr-1" name="model" id="model" onchange="select_brand();" >
                     <option disabled selected> --  اختار الماركة  -- </option>
@@ -280,13 +300,33 @@ if(isset($_GET['lang'])){
                   <input id="modelhide" name="modelhide" type="text" class="form-control" placeholder=" ادخل ماركة الالية يدوي "  style="display:none">
                 </div>
 
+	       <?php }else{ ?>
+    <div class="col-md-4 form-group mt-3 mt-md-0">
+                 <label>Model of machine</label>
+                 <select class="form-control mr-1" name="model" id="model" onchange="select_brand();">
+                    <option disabled selected> --   Choose  -- </option>
+                    <option > GAT </option>
+                    <option> JCB </option>
+                    <option> ATLAS CAPS </option>
+                    <option value="hand"> manual entry </option>
+                  </select>    
+                  <input id="modelhide" name="modelhide" type="text" class="form-control" placeholder="    manual entry " style="display:none">
               
+                </div>
+	<?php } ?>
+
+          
+              
+          
+
                 </div>
 
      <!-- Start Input Start Time -->
      <div class="row">
 
-     <div class="col-md-4 form-group">
+    
+      <?php if($_SESSION['lang'] == "ar"){ ?>
+        <div class="col-md-4 form-group">
         <label>وزن الآلية (طن) </label>
        
           <select class="form-control mr-1" name="wieght" id="wieght" onchange="select_weight();" >
@@ -298,20 +338,34 @@ if(isset($_GET['lang'])){
           </select>
           <input id="wieghthide" name="wieghthide" type="text" class="form-control" placeholder=" ادخل الوزن يدوي " style="display: none;" />
       </div>
+	<?php }else{ ?>
+    <div class="col-md-4 form-group">
+        <label>   wieght of machine(TON) </label>
+          <select class="form-control mr-1" name="wieght" id="wieght" onchange="select_weight();">
+          <option value="" disabled selected> --  Choose -- </option>  
+            <option value="10">10</option>
+            <option value="12">20</option>
+            <option value="15">30</option>
+            <option value="hand"> manual entry</option>
+          </select>
+          <input id="wieghthide" name="wieghthide" type="text" class="form-control" placeholder="   manual entry " style="display: none;" />
+      </div>
 
+	<?php } ?>
    
       <div class="form-group col-md-4">
-        <label>  مقاس الالية المطلوبة للترحيل </label>
-        <input id="lowbed" name="lowbed" type="number" step="0.01" class="form-control" placeholder="ادخل مقاس اللوبيد"/>
+        <label>   <?php echo _forms_migration_step10; ?>   </label>
+        <input id="lowbed" name="lowbed" type="number" step="0.01" class="form-control" placeholder="<?php echo _forms_migration_step11; ?>   "/>
       </div>
 
       <div class="form-group col-md-4">
       <label></label>
-     <input id="truck" name="truck" type="number" step="0.01" class="form-control" placeholder="ادخل مقاس الدفار"/>
+     <input id="truck" name="truck" type="number" step="0.01" class="form-control" placeholder=" <?php echo _forms_migration_step12; ?>   "/>
       </div>
   
   </div>
 
+  <?php if($_SESSION['lang'] == "ar"){ ?>
     <div class="form-group col-md-4">
      <label>   سطحة </label>
           <select class="form-control mr-1" name="trailer" id="trailer" >
@@ -321,14 +375,32 @@ if(isset($_GET['lang'])){
           
           </select>
     </div>
+	<?php }else{ ?>
+    <div class="form-group col-md-4">
+     <label>   Trailer </label>
+          <select class="form-control mr-1" name="trailer" id="trailer" >
+            <option value="zs" disabled selected> --  Choose -- </option>
+            <option value="zs">  zs </option>
+            <option value="zy">  zy </option>
+          
+          </select>
+    
+      </div>
+	<?php } ?>
+
+ 
        
 
 
+  <?php if($_SESSION['lang'] == "ar"){ ?>
         <div style="text-align: left;">
-
           <button class="btn btn-warning nextBtn btn-lg" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
         </div>
+        <?php }else{ ?> 
+        <div style="float: right;">
+          <button class="btn btn-warning nextBtn btn-lg" type="button">  <i class="icon-arrow-right"></i> Confirm and continue  </button>
+        </div>
+         <?php } ?> 
 
         </div>
       </div>
@@ -341,16 +413,16 @@ if(isset($_GET['lang'])){
         <div class="col-md-12">
 
        <div class="alert alert-warning" role="alert">
-      يرجي ملئ جميع بياات موقع الآلية بشكل صحيح ...
+       <?php echo _forms_massage; ?>
     </div>
 
 
 
-    <br/><h3 for="textAreaRemark">معلومات الموقع</h3>
+    <br/><h3 for="textAreaRemark">   <?php echo _forms_migration_step13; ?> </h3>
 
 
       <div class="row">
-
+      <?php if($_SESSION['lang'] == "ar"){ ?>
         <div class="col-md-4 form-group">
           <label></label>
            <div class="d-flex flex-row justify-content-between align-items-center">
@@ -378,15 +450,45 @@ if(isset($_GET['lang'])){
              </select>
            </div>
         </div>
+	<?php }else{ ?>
+    <div class="col-md-4 form-group">
+       <label>Location machine</label>
+
+          <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="state" name="state_id" required>
+               <option value="" disabled selected> -- state -- </option>
+               <option value="Khartoum"> Khartoum </option>
+               <option value=" North Kordofan"> North Kordofan </option>
+               <option value="Northern"> Northern </option>
+               <option value="Kassala"> Kassala </option>
+               <option value="Blue Nile"> Blue Nile </option>
+               <option value="North Darfur "> North Darfur  </option>
+               <option value="South Darfur "> South Darfur  </option>
+               <option value="South Kordofan "> South Kordofan  </option>
+               <option value="Gezira"> Gezira </option>
+               <option value="White Nile "> White Nile  </option>
+               <option value="River Nile "> River Nile  </option>
+               <option value="Red Sea"> Red Sea </option>
+               <option value="Al Qadarif "> Al Qadarif  </option>
+               <option value="Sennar"> Sennar </option>
+               <option value="West Darfur "> West Darfur  </option>
+               <option value="Central Darfur "> Central Darfur  </option>
+               <option value="East Darfur "> East Darfur  </option>
+               <option value="West Kordofan"> West Kordofan </option>
+             </select>
+           </div>
+        </div>
+	<?php } ?>
+      
 
         <div class="col-md-4 form-group mt-3 mt-md-0">
           <label></label>
-          <input type="text" class="form-control" id="zone" name="zone" placeholder=" المدينة " >
+          <input type="text" class="form-control" id="zone" name="zone" placeholder=" <?php echo _forms_migration_step14; ?> " >
         </div>
 
         <div class="form-group col-md-4">
           <label></label>
-          <input type="text" class="form-control" id="workplace" name="workplace" placeholder="الشركة " >
+          <input type="text" class="form-control" id="workplace" name="workplace" placeholder="<?php echo _forms_migration_step15; ?> " >
         </div>
 
       </div>
@@ -395,23 +497,23 @@ if(isset($_GET['lang'])){
       
       <div class="col-md-4 form-group mt-3 mt-md-0">
         <label></label>
-        <textarea class="form-control" id="validationTextarea" name="description" placeholder="  وصف كتابي دقيق للموقع " ></textarea>    
+        <textarea class="form-control" id="validationTextarea" name="description" placeholder="     <?php echo _forms_migration_step16; ?> " ></textarea>    
       </div>
 
       <div class="col-md-4 form-group mt-3 mt-md-0">
       <label></label>
-      <input type="text" class="form-control" id="location" name="location" placeholder="  الموقع ">
+      <input type="text" class="form-control" id="location" name="location" placeholder="  <?php echo _forms_migration_step17; ?> ">
       </div>
        
       <div class="form-group col-md-4">
       <label></label>
-        <input type="number" class="form-control" id="phone" name="phone" placeholder=" رقم التواصل 1    مثال 00249123000000" >  
+        <input type="number" class="form-control" id="phone" name="phone" placeholder="   <?php echo _forms_migration_step18; ?>     " >  
     </div>
          
    
          <div class="form-group col-md-4">
           <label></label>
-         <input type="number" class="form-control" id="mobile" name="mobile" placeholder=" رقم التواصل 2   مثال 00249123000000" >  
+         <input type="number" class="form-control" id="mobile" name="mobile" placeholder=" <?php echo _forms_migration_step19; ?>      " >  
          </div>
 
     </div>
@@ -419,11 +521,12 @@ if(isset($_GET['lang'])){
 
 
 
-          <h3 for="textAreaRemark"> جهة توصيل الآلية </h3>
-
-
+          <h3 for="textAreaRemark"> <?php echo _forms_migration_step20; ?>   </h3>
+     
           <div class="row">
-        <div class="col-md-4 form-group">
+
+          <?php if($_SESSION['lang'] == "ar"){ ?>
+            <div class="col-md-4 form-group">
            <div class="d-flex flex-row justify-content-between align-items-center">
              <select class="form-control mr-1" id="des_state" name="des_state" required>
                <option value="" disabled selected> -- حدد  الولاية -- </option>
@@ -447,13 +550,44 @@ if(isset($_GET['lang'])){
              </select>
            </div>
         </div>
+<?php }else{ ?>
+  <div class="col-md-4 form-group">
+
+
+          <div class="d-flex flex-row justify-content-between align-items-center">
+             <select class="form-control mr-1" id="des_state" name="des_state" required>
+               <option value="" disabled selected> -- state -- </option>
+               <option value="Khartoum"> Khartoum </option>
+               <option value=" North Kordofan"> North Kordofan </option>
+               <option value="Northern"> Northern </option>
+               <option value="Kassala"> Kassala </option>
+               <option value="Blue Nile"> Blue Nile </option>
+               <option value="North Darfur "> North Darfur  </option>
+               <option value="South Darfur "> South Darfur  </option>
+               <option value="South Kordofan "> South Kordofan  </option>
+               <option value="Gezira"> Gezira </option>
+               <option value="White Nile "> White Nile  </option>
+               <option value="River Nile "> River Nile  </option>
+               <option value="Red Sea"> Red Sea </option>
+               <option value="Al Qadarif "> Al Qadarif  </option>
+               <option value="Sennar"> Sennar </option>
+               <option value="West Darfur "> West Darfur  </option>
+               <option value="Central Darfur "> Central Darfur  </option>
+               <option value="East Darfur "> East Darfur  </option>
+               <option value="West Kordofan"> West Kordofan </option>
+             </select>
+           </div>
+        </div>
+<?php } ?>
+
+   
         
         <div class="col-md-4 form-group mt-3 mt-md-0">
-          <input type="text" class="form-control" id="zone" name="des_zone" placeholder=" المدينة " >
+          <input type="text" class="form-control" id="zone" name="des_zone" placeholder=" <?php echo _forms_migration_step21; ?> " >
         </div>
 
         <div class="form-group col-md-4">
-          <input type="text" class="form-control" id="workplace" name="des_workplace" placeholder="   الشركة " >
+          <input type="text" class="form-control" id="workplace" name="des_workplace" placeholder="   <?php echo _forms_migration_step22; ?> " >
         </div>
 
       </div>
@@ -462,29 +596,36 @@ if(isset($_GET['lang'])){
       
       <div class="col-md-4 form-group mt-3 mt-md-0">
         <label></label>
-        <textarea class="form-control" id="validationTextarea" name="des_description" placeholder="  وصف كتابي دقيق للموقع " ></textarea>    
+        <textarea class="form-control" id="validationTextarea" name="des_description" placeholder="  <?php echo _forms_migration_step23; ?>    " ></textarea>    
       </div>
        
       <div class="form-group col-md-4">
         <label></label>  
-        <input type="number" class="form-control" id="phone" name="des_phone" placeholder="    رقم التواصل 1   مثال 00249123000000" >  
+        <input type="number" class="form-control" id="phone" name="des_phone" placeholder="      <?php echo _forms_migration_step24; ?>   " >  
       </div>
          
    
          <div class="form-group col-md-4">
           <label></label>
-         <input type="number" class="form-control" id="mobile" name="des_mobile" placeholder="   رقم التواصل 2   مثال 00249123000000" >  
+         <input type="number" class="form-control" id="mobile" name="des_mobile" placeholder="   <?php echo _forms_migration_step25; ?>      " >  
          </div>
               </div>
 
       <br/>
 
-          <div>
-     
-          <button class="btn btn-warning nextBtn btn-lg pull-right" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
-
-               <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
+         
+      <?php if($_SESSION['lang'] == "ar"){ ?>
+          <div style="text-align: left;">
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> تأكيد وإستمرار <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> السابق  </button>
           </div>
+          <?php }else{ ?>
+          <div style="float: right;">
+          <button class="btn btn-warning prevBtn btn-lg pull-left" type="button">  Previous <i class="icon-arrow-left"></i> </button>
+          <button class="btn btn-warning nextBtn btn-lg pull-left" type="button"> <i class="icon-arrow-right"></i> Confirm & Contenue  </button>
+          </div>
+          <?php } ?>
+
         </div>
       </div>
     </div>

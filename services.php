@@ -93,7 +93,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="contract.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="contract.php"><button class="btn-main"> <?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>
@@ -121,7 +121,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="rental.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="rental.php"><button class="btn-main"> <?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>
@@ -149,7 +149,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="opration.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="opration.php"><button class="btn-main"> <?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>
@@ -177,7 +177,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="job.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="job.php"><button class="btn-main">   <?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>
@@ -205,7 +205,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="maintenance.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="maintenance.php"><button class="btn-main"> <?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>
@@ -233,7 +233,7 @@ include 'header.php'; ?>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق اعلي انتاجية ممكنة </li>
 			<li> <img src="images/our-message/dark-check.png"> تحقيق استقرار وإستمرار العمل </li>
 			</ul>
-			<a href="deportation.php"><button class="btn-main"> تقديم طلب الخدمة </button></a>
+			<a href="deportation.php"><button class="btn-main"><?php echo _Apply2; ?></button></a>
 			</div>
 			</div>
 		</div>

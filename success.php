@@ -31,8 +31,9 @@ if(isset($_GET['lang'])){
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="#"><b> اتصل بنا </b></a>
+	/ <a href="#"><b><?php echo _successline; ?> </b></a>
 </section>
+
 
 <section id="success">
 
@@ -42,11 +43,11 @@ if(isset($_GET['lang'])){
 		<center>
 		<img src="images/success/success.png">
 		
-		<h3> تهانينا ... <br/>
-		 تم تاكيد إستلام طلبك بنجاح </h3>
-		<h5> سنقوم بالتواصل معك في خلال 24 ساعة  </h5>
+		<h3><?php echo _success; ?>  <br/>
+		<?php echo _success1; ?> </h3>
+		<h5> <?php echo _success2; ?>  </h5>
 
-		<h6> رقم الطلب : #234567890 </h6>
+		<h6> <?php echo _success3; ?> </h6>
 		</center>
 	</div>
 
