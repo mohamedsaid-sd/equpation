@@ -66,7 +66,7 @@ include 'lang/ar.php';
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"> <?php echo _work_fildes; ?> </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="news.php"> <?php echo _news; ?> </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"><?php echo _contact; ?> </a></li>
-              <li style="text-align: right;"><button class="btn-main" data-toggle="modal" data-target="#form_modal"> إستعلام وإستفسار >> </button></li>
+              <li style="text-align: right;"><button class="btn-main" data-toggle="modal" data-target="#form_modal">   <?php echo _Inquiries; ?>  </button></li>
             </ul>
 
        <!--  <ul> 
@@ -207,7 +207,7 @@ include 'lang/ar.php';
 	</div>
 
 	<div class="col-lg-2">
-		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal"> إستعلام وإستفسار </button>
+		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal"> <?php echo _Inquiries; ?> </button>
 	</div>
 		
 	</div>

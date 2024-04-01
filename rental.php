@@ -118,7 +118,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <section id="pointer">
 	<img src="images/pointer/divider.png"/>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
-	/ <a href="services.php?id=rental"><b> <?php echo _forms_rental_title; ?> </b></a> / <a href="#"><b> تقديم طلب </b></a>
+	/ <a href="services.php?id=rental"><b> <?php echo _forms_rental_title; ?> </b></a> / <a href="#"><b>  <?php echo _Apply; ?>  </b></a>
 </section>
 
 <section id="forms">

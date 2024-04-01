@@ -11,7 +11,15 @@ define('_our_services' , 'Our Services');
 define('_work_fildes' , 'Work Fildes');
 define('_news' , 'News');
 define('_contact' , 'Contact Us');
+define('_Inquiries' , 'Inquiries and inquiries');
 
+define('_model1' , 'name');
+define('_model2' , 'phone number');
+define('_model3' , 'E-mail');
+define('_model4' , 'Tell us your request');
+define('_model5' , 'Confirm and send');
+
+define('_Apply' , 'Apply');
 /*oooooooooooooooooooooooooooooooooooooooooooooooooo*/
 
 /*-----------------------------------------------
