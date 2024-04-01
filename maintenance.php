@@ -98,7 +98,7 @@ if($_SESSION['lang'] == "ar"){ ?>
   <br/>
   <br/>
   
-  <form role="form" action="#" method="post">
+  <form role="form" action="success.php" method="post">
     <div class="row setup-content" id="step-1">
 
       <div class=" col-lg-12 col-xs-6 col-md-offset-3">

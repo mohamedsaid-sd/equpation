@@ -959,6 +959,10 @@ h2{
 	padding: 10px;
 }  
 
+#success .card h3{
+	font-size: 20px;
+}
+
 /*************************************************/
 
 #service-items{

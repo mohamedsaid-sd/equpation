@@ -21,15 +21,23 @@ if(isset($_GET['lang'])){
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<?php
+if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="vendor/css/style.css" rel="stylesheet"/>
+<?php }elseif ($_SESSION['lang'] == "en") {?>
+<link rel="stylesheet" type="text/css" href="css/style-eng.css">
+ <?php } ?><link href="vendor/css/style.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 
 <?php include 'header.php'; ?>
 <section id="pointer">
+	<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
+	<?php }else{ ?>
+	<img src="images/pointer/divideren.png"/>
+	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ <a href="#"><b><?php echo _successline; ?> </b></a>
 </section>
