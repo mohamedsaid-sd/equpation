@@ -30,7 +30,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 <link href="vendor/css/style.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
+<style type="text/css">
+	#more{display: none;}
+</style>
 <body>
+
 
 <?php include 'header.php'; ?>
 
@@ -356,4 +360,27 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 <?php include 'footer.php'; ?>
 </body>
+<script type="text/javascript">
+	function fun_readmore() {
+		
+
+		var dots = document.getElementById('dots');
+		var more = document.getElementById('more');
+		var link = document.getElementById('link');
+
+		if(more.style.display == "none")
+		{
+			alert("none");
+			dots.style.display = "inline";
+			more.style.display = "none";
+		}
+		else
+		{
+			dots.style.display = "none";	
+			more.style.display = "inline";	
+			link.style.display = "none";	
+
+		}
+	}
+</script>
 </html>
