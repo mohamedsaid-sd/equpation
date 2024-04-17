@@ -18,7 +18,7 @@ if(isset($_GET['lang'])){
 <head>
 <title> إكوبيشن > الرئيسية </title>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=0.7" name="viewport">
+<meta content="width=device-width, initial-scale=0.7s" name="viewport">
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
