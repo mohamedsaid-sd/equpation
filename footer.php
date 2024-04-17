@@ -100,7 +100,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php#services"><?php echo _our_services; ?></a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="workfields.php"><?php echo _work_fildes; ?> </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="news.php"><?php echo _news; ?></a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="news.php"><?php echo _news; ?></a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="contactus.php"> <?php echo _contact; ?></a></li>
 
             </ul>
