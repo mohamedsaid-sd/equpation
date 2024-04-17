@@ -1,3 +1,30 @@
+
+/*--------------------------------------------------------------
+Animations 
+---------------------------------------------------------------*/
+
+@keyframes button_move{
+	0%{  background: rgb(255,177,28);  }
+	15%{  background: linear-gradient(to right , #444 10%, rgb(255,177,28) 40%);  }
+	25%{  background: linear-gradient(to right , #444 30%, rgb(255,177,28) 50%);  }
+    50%{ background: linear-gradient(to right , #444 50%, rgb(255,177,28) 70%); }
+    60%{ background: linear-gradient(to right , #444 70%, rgb(255,177,28) 90%); }
+	75%{ background: linear-gradient(to right , #444 90%, rgb(255,177,28) 100%); }
+	100%{ background: #444; }
+}
+
+@keyframes cardcome{
+	from{
+		width: 1px;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+
+/*---------------------------------------------------------------*/
+
 /*@font-face{
   font-family: Montserrat-Arabic-Regular ;
   src : url('../fonts/Montserrat-Arabic-Regular.ttf');
@@ -42,6 +69,10 @@ h2{
 
 .btn-main:hover{
 	background-color: gray;
+	animation-name: button_move;
+	animation-duration: 0.3s;
+	animation-timing-function: ease; 
+	animation-fill-mode: both;
 }
 
 /*---------------------------------------------------------*/
