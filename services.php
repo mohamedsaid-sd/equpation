@@ -1,4 +1,8 @@
 <?php 
+
+// page that give a few description for each service and 
+// had a links for the forms of the each services
+
 session_start();
 // set session
 if(!isset($_SESSION['lang'])){
@@ -43,13 +47,13 @@ include 'header.php'; ?>
 	<?php } ?>
 	<a href="index.php"><img style="height: 30px;" src="images/pointer/home.png"></a>
 	/ 
-
+	<!-- The name of each service in the pointer section  -->
 	<?php if($id == "contract"){ ?>
 	<a href="#"><b> <?php echo _services_list_part88; ?> </b></a>
 	<?php } elseif ($id == "rental") { ?>
-	<a href="#"><b> <?php echo _services_list_part77; ?> </b></a>
-	<?php } elseif ($id == "opration") { ?>
 	<a href="#"><b> <?php echo _services_list_part66; ?> </b></a>
+	<?php } elseif ($id == "opration") { ?>
+	<a href="#"><b> <?php echo _services_list_part77; ?> </b></a>
 	<?php } elseif ($id == "employement") { ?>
 	<a href="#"><b> <?php echo _services_list_part55; ?> </b></a>
 	<?php } elseif ($id == "maintenance") { ?>
@@ -72,6 +76,9 @@ include 'header.php'; ?>
 	?>
 	
 		<?php if($id == "contract"){ ?>
+
+		<!-- Check the link GET value  to deside wich sevices id Displayed > > >  -->
+
 		<div class="row">
 			<div class="col-lg-12">
 				<img src="images/fileds/2.png">

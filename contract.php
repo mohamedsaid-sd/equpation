@@ -1,8 +1,12 @@
 <?php 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The contract form page
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 session_start();
 // set session
 if(!isset($_SESSION['lang'])){
   // set english as default
+
   $_SESSION['lang'] = 'en';
 }
 if(isset($_GET['lang'])){
@@ -210,7 +214,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 <div class="stepwizard col-lg-12">
 
-
+<!-- The step wizerd to devid the form into theree tabs and steps  -->
 
     <div class="stepwizard-row setup-panel">
 
@@ -1074,7 +1078,8 @@ if($_SESSION['lang'] == "ar"){ ?>
       <?php } ?>
         </div>
       </div>
-    </form></div>
+    </form>
+  </div>
 
 </section>
 

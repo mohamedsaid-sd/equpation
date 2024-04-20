@@ -3,6 +3,10 @@ session_start();
 // set session
 if(!isset($_SESSION['lang'])){
   // set english as default
+
+  // using session to set language for web site 
+  // en = english language 
+  // ar = arabic language 
   $_SESSION['lang'] = 'en';
 }
 if(isset($_GET['lang'])){
@@ -32,8 +36,12 @@ if($_SESSION['lang'] == "ar"){ ?>
 </head>
 <body>
 
+<!-- Call the header of the web site  -->
 <?php include 'header.php'; ?>
+
+
 <section id="pointer">
+<!-- The section that display the name of the currunt page and link  --> 
 <?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
 	<?php }else{ ?>
@@ -46,7 +54,9 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 
 <section id="contact">
-	
+
+<!-- Display the contact forms and contact information for the company -->
+
 <br/>
 	<h4>  <?php echo _CONTACT; ?>  </h4>
 	<h2> <?php echo _our_travel_part2; ?>  </h2>
@@ -55,6 +65,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <div class="row">
 	
 	<div class="col-lg-6">
+		<!-- The Form  -->
 		<div class="div" style="background-color: #fff;">
 			<br/>
 			<h3>  <?php echo _Connect_us_part1; ?>  </h3>
@@ -106,6 +117,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 	</div>
 
 	<div class="col-lg-6">
+		<!-- The information  -->
 		<div class="div">
 			<h3> <?php echo _Connect_us_part8; ?> </h3>
 			<p> <?php echo _Connect_us_part9; ?> 	 </p>
@@ -151,8 +163,10 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 </section>
 
-
 <img src="images/divider2.png" style="width: 100%;border:none;">
+
+<!-- Call the header of the web site  -->
 <?php include 'footer.php'; ?>
+
 </body>
 </html>

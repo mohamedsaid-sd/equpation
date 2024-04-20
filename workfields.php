@@ -2,6 +2,11 @@
 session_start();
 // set session
 if(!isset($_SESSION['lang'])){
+
+  // using session to set language for web site 
+  // en = english language 
+  // ar = arabic language 
+
   // set english as default
   $_SESSION['lang'] = 'en';
 }
@@ -18,23 +23,37 @@ if(isset($_GET['lang'])){
 <head>
 	<title> أيكوبيشن >  مجالات العمل </title>
 	<meta charset="utf-8">
+
+<!-- Set the View port -->
 <meta content="width=device-width, initial-scale=0.7" name="viewport">
+<!-- Call bootstrap style --> 
+<!-- main bootstrap -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Icons -->
 <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
 <?php
-if($_SESSION['lang'] == "ar"){ ?>
+if($_SESSION['lang'] == "ar"){ 
+// if ar is call arabic style file
+?>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<?php }elseif ($_SESSION['lang'] == "en") {?>
+<?php }elseif ($_SESSION['lang'] == "en") {
+	// else if en call english style file
+	?>
 <link rel="stylesheet" type="text/css" href="css/style-eng.css">
  <?php } ?>
+ <!-- Call the style sheet for the navbar  -->
 <link href="vendor/css/style.css" rel="stylesheet"/>
+<!-- The Icon file -->
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 
-
+<!-- Call the header of the web site  -->
 <?php include 'header.php'; ?>
+
 <section id="pointer">
+<!-- The section that display the name of the currunt page and link  --> 
 <?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
 	<?php }else{ ?>
@@ -45,6 +64,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 </section>
 
 <section id="fildes">
+<!-- 	Section that display the work fileds of the company  -->
 	<br/>
 	<h4>  <?php echo _work_fildes; ?>  </h4>
 	<h2><?php echo _our_travel_part2; ?>    </h2>

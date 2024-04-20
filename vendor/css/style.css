@@ -1,12 +1,8 @@
-@font-face{
-  font-family: Montserrat-Arabic-Regular ;
-  src : url('../../fonts/Montserrat-Arabic-Regular.ttf');
-}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Arrow back to top and navbar desigin
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/
 
-@font-face{
-  font-family: Montserrat-Arabic-Bold ;
-  src : url('../../fonts/Montserrat-Arabic-Bold.ttf');
-}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -308,13 +304,15 @@
   color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
   #headerr , #topbar , .navbar {
+   /* Hide the full screen Header and display mobile Header and navbar*/
     display: block;
   }
 
   .mobile-nav-toggle {
+    /*display mobile navbar*/
     display: block;
   }
 

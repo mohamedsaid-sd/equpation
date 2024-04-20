@@ -173,7 +173,7 @@ include 'lang/ar.php';
 		</div>
 
 		<div class="col-lg-1">
-			<a href="index.php?lang=ar"> <img src="images/header/Arabic.png"/> العربية</a>
+			<a href="index.php?lang=ar"> <img src="images/header/Arabic.png"/> Ara </a>
 		</div>
 		
 	</div>
@@ -183,19 +183,19 @@ include 'lang/ar.php';
 
 <!-- <hr style="color: gray;background-color: gray;" /> -->
 
-<div class="bottom">
+<div class="bottom" style="width: 100%;">
 
 <div class="row">
 
-	<div class="col-lg-2" style="background-color: #fff;padding: 0px;">
+	<div class="col-lg-2" style="background-color: #000;padding: 0px;margin-left: 10px;">
     <?php if($_SESSION['lang'] == "ar"){ ?>
 		<img src="images/logo/logo-right.jpg" width="180" height="100%">
     <?php }else{ ?>
-    <img style="float: right;" src="images/logo/logo-left.jpg" width="180" height="100%">
+    <img style="float: right;" src="images/logo/logo-left.jpg" width="100%" height="100%">
     <?php } ?>
 	</div>
 
-	<div class="col-lg-8">
+	<div class="col-lg-7">
 		    <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.php"><?php echo _home; ?></a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.php"><?php echo _about; ?></a></li>
@@ -207,7 +207,7 @@ include 'lang/ar.php';
 	</div>
 
 	<div class="col-lg-2">
-		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal" style="width: 200px;"> <?php echo _Inquiries; ?> </button>
+		<button  type="button" class="btn-main" data-toggle="modal" data-target="#form_modal" style="width: 180px;"> <?php echo _Inquiries; ?> </button>
 	</div>
 		
 	</div>

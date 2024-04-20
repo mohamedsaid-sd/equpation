@@ -3,6 +3,12 @@ session_start();
 // set session
 if(!isset($_SESSION['lang'])){
   // set english as default
+
+  // using session to set language for web site 
+  // en = english language 
+  // ar = arabic language 
+
+  // set english as default
   $_SESSION['lang'] = 'en';
 }
 if(isset($_GET['lang'])){
@@ -35,10 +41,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 </style>
 <body>
 
-
+<!-- Call the header of the web site  -->
 <?php include 'header.php'; ?>
 
 <section id="pointer">
+	<!-- The section that display the name of the currunt page and link  --> 
 	<?php if($_SESSION['lang'] == "ar"){ ?>
 	<img src="images/pointer/divider.png"/>
 	<?php }else{ ?>
@@ -49,7 +56,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 </section>
 
 <section id="about">
-
+<!-- The section That descripe how is Equpation with more detailes  -->
 <div class="row">
 
 	<div class="col-lg-6">
@@ -71,7 +78,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 </section>
 
 <section id="our-story">
-	
+	<!-- The section That descripe how is Equpation  -->
 	<div class="row">
 
 		<div class="col-lg-6">
@@ -103,7 +110,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <img src="images/divider2.png" style="width: 100%;border:none;">
 
 <section id="our-travel">
-
+<!-- Section that display the small vedio of introduce the company -->
 		<h4> <?php echo _our_travel_part1; ?> </h4>
 		<h2> <?php echo _our_travel_part2; ?> </h2>
 
@@ -117,7 +124,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <img style="width: 100%;" src="images/divider.png">
 
 <section id="why" style="">
-
+<!-- The section that display why choose Equpation Company : activities , projects , team -->
 <div class="row">
 
 	<div class="col-lg-5">
@@ -196,6 +203,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 <section id="our-messages">
 
+<!-- The section that display message Vision Goals and Values of the company  -->
 
 <div class="row">
 	<div class="col-lg-2">
@@ -291,7 +299,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <img src="images/divider2.png" style="width: 100%;">
 
 <section id="messter">
-	
+<!-- Section that diplay The CEO Statement -->	
 	<h3> <?php echo _messter_part1;?>  </h3>
 	<br/>
 
@@ -319,9 +327,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 	</div>
 	<br/><br/>
 </section>
-<img src="images/divider.png" style="width: 100%;border:none;">
-<section id="team">
 
+<img src="images/divider.png" style="width: 100%;border:none;">
+
+<section id="team">
+<!-- Section display a word from the Ecopen team -->
 	<div class="row">
 		
 		<div class="col-lg-4">
@@ -358,9 +368,14 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 <img src="images/divider2.png" style="width: 100%;border:none;">
 
+<!-- Call the header of the web site  -->
 <?php include 'footer.php'; ?>
+
 </body>
 <script type="text/javascript">
+
+
+	// The read more function for expand the text
 	function fun_readmore() {
 		
 

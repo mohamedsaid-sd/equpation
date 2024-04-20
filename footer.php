@@ -1,4 +1,5 @@
-
+    
+    <!-- The model for Inquiries and inquiries -->
     <div class="modal hide" id="form_modal" role="dialog" aria-hidden="true">
     <center>
     <br/><br/><br/>

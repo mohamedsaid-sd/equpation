@@ -1,4 +1,8 @@
 <?php 
+
+
+ // Comming soon
+
 session_start();
 // set session
 if(!isset($_SESSION['lang'])){

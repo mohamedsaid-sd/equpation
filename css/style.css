@@ -1,3 +1,8 @@
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The Arabic Design For web Site
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/
+
 /*--------------------------------------------------------------
 Animations 
 ---------------------------------------------------------------*/
@@ -39,10 +44,16 @@ Animations
 General
 ---------------------------------------------------------------*/
 
+html{
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #000;
+}
+
 body{
-/*	background-color: red;
-	width: 100%;
-	padding: 100px;*/
+margin-right: 10px;
+	margin-left: 10px;
+	background-color: #fff;
 }
 
 h4{
@@ -58,6 +69,9 @@ h2{
 
 
 .btn-main{
+
+/*The main button for whole web site */
+
 	font-family: Montserrat-Arabic-Regular ;
 	background : rgb(255,177,28);
 	color: #fff;
@@ -1325,6 +1339,7 @@ mobile our story
 }
 
 #our-messages .row .col-lg-2 .icon{
+	/*Hide the icon for mobile desigin*/
 		display: none;
 	}
 
