@@ -1220,198 +1220,243 @@ modal
 mobilel General
 ----------------------------------------------------------*/
 
- h2 , h4 {
-	font-size: 20px;
+img{
+	border : none ;
 }
 
-/*---------------------------------------------------------
-mobilel fileds 
-----------------------------------------------------------*/
-
-#fildes{
-	padding: 5px;
-}
-
-#fildes h4 , #fildes h2{
-	font-size: 20px;
-}
-
-#fildes .row{
-margin: 10px;
-}
-
-#fildes .row ul{
+html , body{
 	padding: 0px;
 }
 
-#fildes .row .col-lg-4 ,
-#fildes .row .col-lg-3 ,
-#fildes .row .col-lg-5 {
-	padding: 0px;
-	margin: 5px;
+#header .bottom , #header #top {
+		display: none;
 }
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel pointer
+----------------------------------------------------------*/
+#pointer{
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+#pointer img{
+	width: 20%;
+}
+
+#pointer a{
+	color: #000;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#pointer a img{
+	width: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel why
+----------------------------------------------------------*/
+#pointer{
+		font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel Hero
+----------------------------------------------------------*/
+#hero {
+	height: 350px;
+}
+
+#hero h1 {
+		letter-spacing: 5px;
+		word-spacing: 15px;
+		font-size: 35px;
+		padding-top: 30px;
+		line-height: 55px;
+}
+
+#hero p{
+	width: 95%;
+	font-size: 20px;
+	font-weight: 200; 
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
 
 /*---------------------------------------------------------
-mobilel why 
+mobilel why
 ----------------------------------------------------------*/
-
-#why , #about {
-	background-color: rgb(20,20,20);
-}
-
-#why .col-lg-2{
-	padding : 10px;
-}
-
- #why  h2{
-color: #fff;
-}
-
-#why .col-lg-2 {
-	color: #fff;
-	padding-right: 30px;
-}
-
-#why img{
-	margin-right: 15px;
+#why h4 , h2{
+	font-size: 30px;
 }
 
 #why p{
-	padding : 10px;
-	font-weight: normal;
-	color: #aaa;
-	font-family: Montserrat-Arabic-Regular;
+	font-size: 20px;
 }
 
+#why .col-lg-2{
+	font-size: 25px;
+	height: 60px;
+}
+
+#why p{
+	font-size: 20px;
+	font-weight: 200;
+}
+
+#why img{
+	position: absolute;
+	left: 30px;
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
 /*---------------------------------------------------------
-mobilel footer
+mobilel why
 ----------------------------------------------------------*/
-#footer{
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+#about{
+	margin:0;
+	background : none ;
+	background-color: #222222;
+	padding-top: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 50px;
 }
 
-#footer .row .col-lg-6 form{
-	width: 90%;
-	text-align: center;
-	position: relative;
-	top: -15px;
+#about h4 , h2{
+	font-size: 30px;
 }
 
-#footer .row .col-lg-3 p{
-	display: block;
-	text-align: center;
+#about p{
+	font-size: 20px;
+	font-weight: 200;
 }
 
-#footer .col-lg-6 , #footer .col-lg-3{
-	padding: 0px;
-	margin: 0px;
+#about button{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel why
+----------------------------------------------------------*/
+#services h4 {
+	font-size: 25px;
 }
 
-#footer .col-lg-9 ul li a{
-	font-size: 10px;
+#services h2{
+	font-size: 20px;
 }
 
-/*-----------------------------------------------
-mobile partener 
--------------------------------------------------*/
-
-#partener img{ 
-width: 20%;
-margin: 2px;
+#services .col-lg-4{
+	width: 100%;
 }
 
-/*------------------------------------------------*/
-
-/*--------------------------------------------------
-mobile our story
----------------------------------------------------*/
-
-#our-story .col-lg-6{
-	padding: 20px;
+#services .col-lg-4 h5{
+	font-size: 25px;
+	height: 70px;
+	font-weight: 700;
 }
 
-#our-story .col-lg-6 .title{
-	padding-right: 10px;
+#services .col-lg-4 p{
+	font-size: 23px;
+	font-weight: 200;
 }
 
-#our-messages .row .col-lg-2 .icon{
-	/*Hide the icon for mobile desigin*/
-		display: none;
-	}
-
-	#header .bottom , #header #top {
-		display: none;
-	}
-
-	#services .col-lg-3 h5 , #services .col-lg-3 a {
-		font-size: 15px;
-	}
-
-	#services .col-lg-3 , #statics .col-lg-2{
-		width: 50%;
-	}
-
-	#forms .container{
-		width: 100%;
-	}
-
-	#forms .container .form-head h1{
-		font-size: 20px;
-		padding: 30px;
-		margin-bottom: 20px;
-	}
-
-	.stepwizard-step a{
-		font-size: 12px;
-	}
-
-	.stepwizard-step a b{
-	font-size: 11px;
-	display: block;
-	width: 15px;
-	height: 15px;
+#services .col-lg-4 img{
+	position: absolute;
+	left: 50px;
+	top : 50px;
+	width: 70px;
+	height: 70px;
+	border: solid 1px #888 ;
 	border-radius: 50%;
-	background-color: gray;
-	color: #fff;float: right;
-	}
+	padding: 5px;
+}
 
+#services .col-lg-4 a{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
-	body{
-		padding: 0px;
-		shape-margin: 0px;
-	}
+/*---------------------------------------------------------
+mobilel statics
+----------------------------------------------------------*/
+#statics h4 {
+	font-size: 30px;
+}
 
-	#hero{
-		height: 290px;
-		background-size: 100%;
-	}
+#statics h2{
+	font-size: 25px;
+}
 
-	#hero h1{
-		padding-top: 70px; 
-		font-size: 25px;
-	}
+#statics .col-lg-2{
+	width: 50%;
+}
 
-	#hero p{
-		font-size: 10px;
-		width: 85%;
-	}
+#statics .row .col-lg-2 h3{
+	font-size: 40px;
+}
 
-	#about {
-		padding-top: 20px;
-		background: none;
-		background-color: #000000dd;
-		height: inherit;
-	}
+#statics .row .col-lg-2 b{
+	font-size: 18px;
+}
 
-	#fileds  .item{
-		width: 47%;
-	}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
-	#galary{
+/*---------------------------------------------------------
+Mobile fileds
+----------------------------------------------------------*/
+#fileds h4{
+	font-size: 30px;
+}
+
+#fileds h2{
+	font-size: 25px;
+}
+
+#fileds  .item{
+	width: 47%;
+}
+
+#fileds  .item h5{
+	font-size: 19px;
+	height: 20px;
+}
+
+#fileds  .item a{
+	font-size: 17px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile galary
+----------------------------------------------------------*/
+#galary h4{
+	font-size: 30px;
+}
+
+#galary h2{
+	font-size: 25px;
+}
+
+#galary{
 		padding-top:50px;
 		padding-bottom: 10px;
 		padding-left: 0px;
@@ -1419,17 +1464,514 @@ mobile our story
 		clear: both;
 		width: 100%;
 	}
+/*
+#galary .row img{
+	margin: 0;padding: 0;
+	width: 90%;
+	height: 300px;
+}*/
 
 	#galary .col-lg-4 img{
 		width: 31%;
-		float: right;
+		float: left;
 		height: 250px;
 	}
 
 	#galary .col-lg-4 .center{
 		width: 47%;
-		float: right;
+		float: left;
 	}
 
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
+/*---------------------------------------------------------
+Mpbile partener
+----------------------------------------------------------*/
+#partener h4{
+	font-size: 30px;
+}
+
+#partener h2{
+	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel our-story
+----------------------------------------------------------*/
+#our-story{
+	padding: 0;margin: 0;
+}
+
+#our-story h4{
+	font-size: 30px;
+}
+
+#our-story h2{
+	width: 100%;
+	font-size: 25px;
+}
+
+#our-story .col-lg-6 .title{
+	padding:0px;
+}
+
+#our-story .col-lg-6 div{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile our-travel
+----------------------------------------------------------*/
+#our-travel{
+	margin: 0;padding :0;
+}
+
+#our-travel h4{
+		font-size: 30px;
+}
+
+#our-travel h2{
+	   font-size: 25px;
+}
+
+#our-travel video{
+	width: 100%;
+	height: 400px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile our-messages
+----------------------------------------------------------*/
+#our-messages{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+}
+
+#our-messages .row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 0;
+}
+
+#our-messages .row .col-lg-2{
+	margin: 0;padding: 0;
+	margin-right: 50px;
+	margin-left: 20px;
+}
+
+#our-messages .row .col-lg-2 .icon{
+	position: absolute;
+	right: -30px;
+	top : 70px;
+}
+
+#our-messages .row .col-lg-10 h2{
+	font-size: 30px;
+}
+
+#our-messages .row .col-lg-10 .row .col-lg-4 , 
+#our-messages .row .col-lg-10 .row .col-lg-6 ,
+#our-messages .row .col-lg-10 p {
+	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile messter
+----------------------------------------------------------*/
+#messter{
+	padding: 0px;margin: 0px;
+}
+
+#messter h3{
+	padding: 0px;margin: 0px;
+	font-size: 30px;
+	padding-top: 5px;
+}
+
+#messter .row{
+	padding: 0px;margin: 0px;
+}
+
+#messter .row .col-lg-1{
+	width: 5%;
+}
+
+#messter .row .col-lg-1 img{
+	display: none;
+}
+
+#messter .row .col-lg-10{
+	font-size: 20px;
+	width: 100%;
+}
+
+#messter .row .col-lg-10 img{
+	width: 90px;
+	height: 90px;
+}
+
+#messter .row .col-lg-10 b ,
+#messter .row .col-lg-10 i {
+	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile team
+----------------------------------------------------------*/
+#team{
+	margin: 1px;padding: 1px;
+}
+
+#team .row{
+	margin: 1px;padding: 1px;
+}
+
+#team .row .col-lg-1{
+	display: none;
+}
+
+#team .row .col-lg-6 h3{
+	font-size: 30px;
+	text-align: center;
+}
+
+#team .row .col-lg-6 p{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile fildes
+----------------------------------------------------------*/
+#fildes{
+	margin: 0px;
+	padding: 0px;
+}
+
+#fildes h4{
+	font-size: 30px;
+}
+
+#fildes h2{
+	font-size: 25px;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+#fildes .row{
+	padding: 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#fildes .row .col-lg-3{
+	width: 100%;
+	padding: 0px;
+			background-color: red;
+}
+
+#fildes .row .col-lg-4 h5 ,
+#fildes .row .col-lg-4 h5 b , 
+#fildes .row .col-lg-5 h5 , 
+#fildes .row .col-lg-5 h5 b{
+	font-size:28px;
+}
+
+#fildes .row .col-lg-5 , 
+#fildes .row .col-lg-4{
+	font-size: 20px;
+	padding-top : 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#fildes .row .col-lg-5 ul , 
+#fildes .row .col-lg-4 ul {
+	padding: 5px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile contact
+----------------------------------------------------------*/
+#contact{
+	padding: 0px;
+	margin: 0px;
+}
+
+#contact h4{
+	font-size: 30px;
+}
+
+#contact h2{
+	font-size: 25px;
+}
+
+#contact .row{
+	padding: 0px;margin: 0px;
+}
+
+#contact .row .col-lg-6 .div{
+	padding: 0px;
+	margin: 0px;
+	font-size: 23px;
+	font-weight: 100;
+}
+
+#contact .row .col-lg-6 .div h3{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+#contact .row .col-lg-6 .div form label{
+	font-size: 20px;
+	font-weight: 200;
+}
+
+#contact .row .col-lg-6 .div .card h5{
+	font-size:20px;
+	font-weight: 100;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel service-items
+----------------------------------------------------------*/
+#service-items{
+margin: 0px;padding: 0px;
+}
+
+#service-items .row{
+	margin: 0px;
+}
+
+#service-items .row .col-lg-12{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8{
+	margin: 0px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8 div{
+	margin: 0px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8 div h3{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 32px;
+}
+
+#service-items .row .col-lg-8 div p{
+	font-size: 24px;
+}
+
+#service-items .row .col-lg-4{
+	background-color: red;
+	padding: 0px; margin : 0px;
+}
+
+#service-items .row .col-lg-4 h3{
+	font-size: 30px;
+}
+
+#service-items .row .col-lg-4 ul{
+	margin: 0px;
+	padding: 0pc;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+#service-items .row .col-lg-4 a button{
+	font-size: 23px;
+	margin: 0px;
+	padding: 7px;
+	width: 100%;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel forms
+----------------------------------------------------------*/
+#forms{
+	padding: 0px;margin: 0px;
+	width: 100%;
+}
+
+#forms .container{
+	width: 100%;
+	/*padding: 0px;margin: 0px;*/
+}
+
+#forms .container .form-head h1{
+	font-size: 30px;
+	margin: 0px;
+	padding: 30px;
+}
+
+#forms .container .stepwizard{
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#forms .container .stepwizard .stepwizard-row .stepwizard-step a{
+	padding: 5px;margin: 0px;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+#forms .container .stepwizard .stepwizard-row .stepwizard-step b{
+/*	background-color: rgb(255,193,7);*/
+/*	color: #000;*/
+	display: block;
+	width: 20%;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-radius: 30px 20px 30px 20px;
+	font-style: normal;
+}
+
+#forms .container form{
+	/*background-color: #ffffef;*/
+	margin: 0px;
+	padding: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#forms .container form .alert{
+	font-size: 20px;
+}
+
+#forms .container form label{
+	color: #000;
+	width: 100%;
+	
+	font-size: 20px;
+	font-style: italic;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	margin-right: 10px;
+}
+
+#forms .container form input ,
+#forms .container form select {
+	margin-right: 8px;
+	font-size: 20px;
+	color: #000;
+	font-style: oblique;
+	width: 95%;
+	padding: 10px;
+	color: #000;
+}
+
+#forms .container form button{
+	font-size: 20px;
+	font-weight: bold;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel footer
+----------------------------------------------------------*/
+#footer{
+	padding: 0;margin:0;
+}
+
+#footer .row .col-lg-6{
+	padding: 0;margin:0;
+	width: 100%;
+}
+
+#footer .col-lg-6 h2{
+	margin:0px;padding:20px;
+	width: 100%;
+	font-size: 25px;
+}
+
+#footer .row .col-lg-6 form{
+	width: 100%;
+	background-color: red;
+	float: none;
+	text-align: center;
+}
+
+#footer .col-lg-3{
+	padding: 10px;
+}
+
+
+#footer .col-lg-6 form{
+	margin-right:20%;
+	margin-left:20%;
+}
+
+#footer .col-lg-3 h4{
+	padding: 0;margin:0;
+	font-size: 25px;
+	text-align: center;
+}
+
+#footer .col-lg-3 p{
+	padding: 0;margin:0;
+	font-size: 20px;
+	text-align: center;
+}
+
+#footer .row .col-lg-9{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#footer .row .col-lg-9 ul{
+	padding: 0;margin:0;
+}
+
+#footer .row .col-lg-9 ul li a{
+	font-size: 15px;
+	font-weight: 200;
+	padding: 5;margin:5;
+}
+
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 }

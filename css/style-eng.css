@@ -1056,7 +1056,7 @@ h2{
 
 
 #service-items .row .col-lg-4 img{
-	width: 25px;
+	width: 32px;
 }
 
 #service-items .row .col-lg-4 button{
@@ -1290,6 +1290,29 @@ html , body{
 /*---------------------------------------------------------
 ----------------------------------------------------------*/
 
+/*---------------------------------------------------------
+mobilel pointer
+----------------------------------------------------------*/
+#pointer{
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+#pointer img{
+	width: 20%;
+}
+
+#pointer a{
+	color: #000;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#pointer a img{
+	width: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
 
 /*---------------------------------------------------------
 mobilel why
@@ -1308,6 +1331,8 @@ mobilel Hero
 }
 
 #hero h1 {
+		letter-spacing: 5px;
+		word-spacing: 15px;
 		font-size: 35px;
 		padding-top: 60px;
 
@@ -1525,6 +1550,417 @@ Mpbile partener
 
 #partener h2{
 	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel our-story
+----------------------------------------------------------*/
+#our-story{
+	padding: 0;margin: 0;
+}
+
+#our-story h4{
+	font-size: 30px;
+}
+
+#our-story h2{
+	width: 100%;
+	font-size: 25px;
+}
+
+#our-story .col-lg-6 .title{
+	padding:0px;
+}
+
+#our-story .col-lg-6 div{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile our-travel
+----------------------------------------------------------*/
+#our-travel{
+	margin: 0;padding :0;
+}
+
+#our-travel h4{
+		font-size: 30px;
+}
+
+#our-travel h2{
+	   font-size: 25px;
+}
+
+#our-travel video{
+	width: 100%;
+	height: 400px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile our-messages
+----------------------------------------------------------*/
+#our-messages{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+}
+
+#our-messages .row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 0;
+}
+
+#our-messages .row .col-lg-2{
+	margin: 0;padding: 0;
+	margin-right: 20px;
+	margin-left: 50px;
+}
+
+#our-messages .row .col-lg-2 .icon{
+	position: absolute;
+	left: -30px;
+	top : 70px;
+}
+
+#our-messages .row .col-lg-10 h2{
+	font-size: 30px;
+}
+
+#our-messages .row .col-lg-10 .row .col-lg-4 , 
+#our-messages .row .col-lg-10 .row .col-lg-6 ,
+#our-messages .row .col-lg-10 p {
+	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile messter
+----------------------------------------------------------*/
+#messter{
+	padding: 0px;margin: 0px;
+}
+
+#messter h3{
+	padding: 0px;margin: 0px;
+	font-size: 30px;
+	padding-top: 5px;
+}
+
+#messter .row{
+	padding: 0px;margin: 0px;
+}
+
+#messter .row .col-lg-1{
+	width: 5%;
+}
+
+#messter .row .col-lg-1 img{
+	display: none;
+}
+
+#messter .row .col-lg-10{
+	font-size: 20px;
+	width: 100%;
+}
+
+#messter .row .col-lg-10 img{
+	width: 90px;
+	height: 90px;
+}
+
+#messter .row .col-lg-10 b ,
+#messter .row .col-lg-10 i {
+	font-size: 25px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile team
+----------------------------------------------------------*/
+#team{
+	margin: 1px;padding: 1px;
+}
+
+#team .row{
+	margin: 1px;padding: 1px;
+}
+
+#team .row .col-lg-1{
+	display: none;
+}
+
+#team .row .col-lg-6 h3{
+	font-size: 30px;
+	text-align: center;
+}
+
+#team .row .col-lg-6 p{
+	font-size: 20px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile fildes
+----------------------------------------------------------*/
+#fildes{
+	margin: 0px;
+	padding: 0px;
+}
+
+#fildes h4{
+	font-size: 30px;
+}
+
+#fildes h2{
+	font-size: 25px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+#fildes .row{
+	padding: 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#fildes .row .col-lg-3{
+	width: 100%;
+	padding: 0px;
+			background-color: red;
+}
+
+#fildes .row .col-lg-4 h5 ,
+#fildes .row .col-lg-4 h5 b , 
+#fildes .row .col-lg-5 h5 , 
+#fildes .row .col-lg-5 h5 b{
+	font-size:28px;
+}
+
+#fildes .row .col-lg-5 , 
+#fildes .row .col-lg-4{
+	font-size: 20px;
+	padding-top : 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#fildes .row .col-lg-5 ul , 
+#fildes .row .col-lg-4 ul {
+	padding: 5px;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+Mobile contact
+----------------------------------------------------------*/
+#contact{
+	padding: 0px;
+	margin: 0px;
+}
+
+#contact h4{
+	font-size: 30px;
+}
+
+#contact h2{
+	font-size: 25px;
+}
+
+#contact .row{
+	padding: 0px;margin: 0px;
+}
+
+#contact .row .col-lg-6 .div{
+	padding: 0px;
+	margin: 0px;
+	font-size: 23px;
+	font-weight: 100;
+}
+
+#contact .row .col-lg-6 .div h3{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+#contact .row .col-lg-6 .div form label{
+	font-size: 20px;
+	font-weight: 200;
+}
+
+#contact .row .col-lg-6 .div .card h5{
+	font-size:20px;
+	font-weight: 100;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel service-items
+----------------------------------------------------------*/
+#service-items{
+margin: 0px;padding: 0px;
+}
+
+#service-items .row{
+	margin: 0px;
+}
+
+#service-items .row .col-lg-12{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8{
+	margin: 0px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8 div{
+	margin: 0px;
+	padding: 0px;
+}
+
+#service-items .row .col-lg-8 div h3{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 32px;
+}
+
+#service-items .row .col-lg-8 div p{
+	font-size: 24px;
+}
+
+#service-items .row .col-lg-4{
+	background-color: red;
+	padding: 0px; margin : 0px;
+}
+
+#service-items .row .col-lg-4 h3{
+	font-size: 30px;
+}
+
+#service-items .row .col-lg-4 ul{
+	margin: 0px;
+	padding: 0pc;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+#service-items .row .col-lg-4 a button{
+	font-size: 23px;
+	margin: 0px;
+	padding: 7px;
+	width: 100%;
+}
+/*---------------------------------------------------------
+----------------------------------------------------------*/
+
+/*---------------------------------------------------------
+mobilel forms
+----------------------------------------------------------*/
+#forms{
+	padding: 0px;margin: 0px;
+	width: 100%;
+}
+
+#forms .container{
+	width: 100%;
+	/*padding: 0px;margin: 0px;*/
+}
+
+#forms .container .form-head h1{
+	font-size: 30px;
+	margin: 0px;
+	padding: 30px;
+}
+
+#forms .container .stepwizard{
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#forms .container .stepwizard .stepwizard-row .stepwizard-step a{
+	padding: 5px;margin: 0px;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+#forms .container .stepwizard .stepwizard-row .stepwizard-step b{
+/*	background-color: rgb(255,193,7);*/
+/*	color: #000;*/
+	display: block;
+	width: 20%;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-radius: 30px 20px 30px 20px;
+	font-style: normal;
+}
+
+#forms .container form{
+	/*background-color: #ffffef;*/
+	margin: 0px;
+	padding: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#forms .container form .alert{
+	font-size: 20px;
+}
+
+#forms .container form label{
+	color: #000;
+	width: 100%;
+	
+	font-size: 20px;
+	font-style: italic;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+
+#forms .container form input ,
+#forms .container form select {
+	margin-left: 8px;
+	font-size: 20px;
+	color: #000;
+	font-style: oblique;
+	width: 95%;
+	padding: 10px;
+	color: #000;
+}
+
+#forms .container form button{
+	font-size: 20px;
+	font-weight: bold;
 }
 /*---------------------------------------------------------
 ----------------------------------------------------------*/

@@ -37,7 +37,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <style type="text/css">
-	#more{display: none;}
+	#more , #more2{display: none;}
 </style>
 <body>
 
@@ -306,7 +306,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 	<div class="row">
 
 		<div class="col-lg-1">
+			<?php if($_SESSION['lang'] == "ar"){ ?>
 			<img src="images/master/right.png">
+			<?php }else{ ?>
+			<img src="images/master/left.png">
+			<?php } ?>
 		</div>
 
 		<div class="col-lg-10">
@@ -321,7 +325,11 @@ if($_SESSION['lang'] == "ar"){ ?>
 		</div>
 
 		<div class="col-lg-1">
+			<?php if($_SESSION['lang'] == "ar"){ ?>
 			<img src="images/master/left.png">
+			<?php }else{ ?>
+			<img src="images/master/right.png">
+			<?php } ?>
 		</div>
 		
 	</div>
@@ -377,12 +385,9 @@ if($_SESSION['lang'] == "ar"){ ?>
 
 	// The read more function for expand the text
 	function fun_readmore() {
-		
-
 		var dots = document.getElementById('dots');
 		var more = document.getElementById('more');
 		var link = document.getElementById('link');
-
 		if(more.style.display == "none")
 		{
 			alert("none");
@@ -394,7 +399,25 @@ if($_SESSION['lang'] == "ar"){ ?>
 			dots.style.display = "none";	
 			more.style.display = "inline";	
 			link.style.display = "none";	
+		}
+	}
 
+		// The read more function for expand the text
+	function fun_readmore2() {
+		var dots2 = document.getElementById('dots2');
+		var more2 = document.getElementById('more2');
+		var link2 = document.getElementById('link2');
+		if(more2.style.display == "none")
+		{
+			alert("none");
+			dots2.style.display = "inline";
+			more2.style.display = "none";
+		}
+		else
+		{
+			dots2.style.display = "none";	
+			more2.style.display = "inline";	
+			link2.style.display = "none";	
 		}
 	}
 </script>
