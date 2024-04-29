@@ -37,7 +37,7 @@ if($_SESSION['lang'] == "ar"){ ?>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <style type="text/css">
-	#more , #more2{display: none;}
+	
 </style>
 <body>
 
